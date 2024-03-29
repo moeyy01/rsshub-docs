@@ -17,7 +17,7 @@ const width = props.size === 'sm' ? '22' : '30';
 try {
   if (props.url) {
     const location = new URL(`https://${props.url}`);
-    icon = `https://icons.duckduckgo.com/ip3/${location.hostname}.ico`;
+    icon = `https://cdn.moeyy.cn/favicon/${location.hostname}.ico`;
   }
 } catch (error) { }
 

@@ -21,7 +21,7 @@
     <p class="author">
       👨‍💻 Author: {{ ' ' }}
       <a v-for="(uid, index) in data.maintainers" :key="index" :href="`https://github.com/${uid}`" target="_blank">
-        @{{ uid }}{{' '}}
+        @{{ uid }}{{ ' ' }}
       </a>
     </p>
     <p v-if="demoUrl" class="example">
@@ -29,7 +29,8 @@
       <a :href="demoUrl" target="_blank">
         {{ demoUrl }}
       </a>
-      <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(demoUrl)}&cacheSeconds=7200`" />
+      <!-- <img loading="lazy"
+        :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(demoUrl)}&cacheSeconds=7200`" /> -->
     </p>
     <p class="path">
       🛎️ Route: <code>/{{ namespace + data.path }}</code>
@@ -79,13 +80,13 @@ const props = defineProps<{
   }
 }>();
 
-const demoUrl = props.data.example ? ('https://rsshub.app' + props.data.example) : null;
+const demoUrl = props.data.example ? ('https://rsshub.moeyy.cn' + props.data.example) : null;
 const paramMatch = props.data.path.match?.(/(?<=:).*?(?=\/|$)/g);
 
 const renderMarkdown = (item, inline = true) => {
-    const md = new MarkdownIt({
-        html: true,
-    });
-    return inline ? md.renderInline(item) : md.render(item);
+  const md = new MarkdownIt({
+    html: true,
+  });
+  return inline ? md.renderInline(item) : md.render(item);
 };
 </script>

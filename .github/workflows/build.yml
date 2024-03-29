@@ -1,0 +1,38 @@
+name: Build
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - name: Use Node.js Active LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm i
+      - name: Build docs
+        run: pnpm run docs:build
+      
+      - name: Set Config
+        uses: manyuanrong/setup-ossutil@master
+        with:
+            endpoint: oss-cn-hongkong.aliyuncs.com
+            access-key-id: ${{ secrets.OSS_KEY }}
+            access-key-secret: ${{ secrets.OSS_SECRET }}
+      - name: Delete files
+        run: ossutil rm -r -f oss://rsshub-docs/
+      - name: Upload files
+        run: ossutil cp -j 100 -rf .vitepress/dist/ oss://rsshub-docs/

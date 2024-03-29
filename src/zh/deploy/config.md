@@ -138,13 +138,13 @@ RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全�
 | ----------- | ----------------- | ---------------------------------------- | -------------------------------- |
 | ILoveRSSHub | /qdaily/column/59 | md5('/qdaily/column/59' + 'ILoveRSSHub') | 0f820530128805ffc10351f22b5fd121 |
 
--   此时可以通过 `code` 访问路由，例如：`https://rsshub.app/qdaily/column/59?code=0f820530128805ffc10351f22b5fd121`
+-   此时可以通过 `code` 访问路由，例如：`https://rsshub.moeyy.cn/qdaily/column/59?code=0f820530128805ffc10351f22b5fd121`
 
--   或使用访问密钥 `key` 直接访问所有路由，例如：`https://rsshub.app/qdaily/column/59?key=ILoveRSSHub`
+-   或使用访问密钥 `key` 直接访问所有路由，例如：`https://rsshub.moeyy.cn/qdaily/column/59?key=ILoveRSSHub`
 
 ## 日志配置
 
-`DEBUG_INFO`: 是否在首页显示路由信息。值为非 `true` `false` 时，在请求中带上参数 `debug` 开启显示，例如：`https://rsshub.app/?debug=value_of_DEBUG_INFO` 。默认 `true`
+`DEBUG_INFO`: 是否在首页显示路由信息。值为非 `true` `false` 时，在请求中带上参数 `debug` 开启显示，例如：`https://rsshub.moeyy.cn/?debug=value_of_DEBUG_INFO` 。默认 `true`
 
 `LOGGER_LEVEL`: 指明输出到 console 和日志文件的日志的最大 [等级](https://github.com/winstonjs/winston#logging-levels)，默认 `info`
 

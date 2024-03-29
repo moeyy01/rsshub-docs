@@ -361,9 +361,9 @@ You can change the language of each route to the languages listed below.
 :::
 
 :::tip
-JavBus has multiple backup domains, these routes use default domain `https://javbus.com`. If the domain is unreachable, you can add `?domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.icu`, you can add `?domain=javsee.icu` to the end of the route, then the route will be [`/javbus/en?domain=javsee.icu`](https://rsshub.app/javbus?domain=javsee.icu)
+JavBus has multiple backup domains, these routes use default domain `https://javbus.com`. If the domain is unreachable, you can add `?domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.icu`, you can add `?domain=javsee.icu` to the end of the route, then the route will be [`/javbus/en?domain=javsee.icu`](https://rsshub.moeyy.cn/javbus?domain=javsee.icu)
 
-**Note**: **Western** has different domain than the main site, the backup domains are also different. The default domain is `https://javbus.org` and you can add `?western_domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.one`, you can add `?western_domain=javsee.one` to the end of the route, then the route will be [`/javbus/western/en?western_domain=javsee.one`](https://rsshub.app/javbus/western?western_domain=javsee.one)
+**Note**: **Western** has different domain than the main site, the backup domains are also different. The default domain is `https://javbus.org` and you can add `?western_domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.one`, you can add `?western_domain=javsee.one` to the end of the route, then the route will be [`/javbus/western/en?western_domain=javsee.one`](https://rsshub.moeyy.cn/javbus/western?western_domain=javsee.one)
 :::
 
 ### Unknown <Site url="www.seejav.pw/" size="sm" />
@@ -421,7 +421,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 ### Jobs <Site url="linkedin.com" size="sm" />
 
-<Route namespace="linkedin" :data='{"path":"/cn/jobs/:keywords?","categories":["other"],"example":"/linkedin/cn/jobs/Software","parameters":{"keywords":"搜索关键字"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":["bigfei"],"description":"另外，可以通过添加额外的以下 query 参数来输出满足特定要求的工作职位：\n\n  | 参数       | 描述                                              | 举例                                                    | 默认值  |\n  | ---------- | ------------------------------------------------- | ------------------------------------------------------- | ------- |\n  | `geo`      | geo 编码                                          | 102890883（中国）、102772228（上海）、103873152（北京） | 空      |\n  | `remote`   | 是否只显示远程工作                                | `true/false`                                            | `false` |\n  | `location` | 工作地点                                          | `china/shanghai/beijing`                                | 空      |\n  | `relevant` | 排序方式 (true: 按相关性排序，false： 按日期排序) | `true/false`                                            | `false` |\n  | `period`   | 发布时间                                          | `1/7/30`                                                | 空      |\n\n  例如：\n  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.app/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作\n\n  **为了方便起见，建议您在 [LinkedIn.cn](https://www.linkedin.cn/incareer/jobs/search) 上进行搜索，并使用 [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 加载特定的 feed。**","location":"cn/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="linkedin" :data='{"path":"/cn/jobs/:keywords?","categories":["other"],"example":"/linkedin/cn/jobs/Software","parameters":{"keywords":"搜索关键字"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":["bigfei"],"description":"另外，可以通过添加额外的以下 query 参数来输出满足特定要求的工作职位：\n\n  | 参数       | 描述                                              | 举例                                                    | 默认值  |\n  | ---------- | ------------------------------------------------- | ------------------------------------------------------- | ------- |\n  | `geo`      | geo 编码                                          | 102890883（中国）、102772228（上海）、103873152（北京） | 空      |\n  | `remote`   | 是否只显示远程工作                                | `true/false`                                            | `false` |\n  | `location` | 工作地点                                          | `china/shanghai/beijing`                                | 空      |\n  | `relevant` | 排序方式 (true: 按相关性排序，false： 按日期排序) | `true/false`                                            | `false` |\n  | `period`   | 发布时间                                          | `1/7/30`                                                | 空      |\n\n  例如：\n  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.moeyy.cn/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作\n\n  **为了方便起见，建议您在 [LinkedIn.cn](https://www.linkedin.cn/incareer/jobs/search) 上进行搜索，并使用 [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 加载特定的 feed。**","location":"cn/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 另外，可以通过添加额外的以下 query 参数来输出满足特定要求的工作职位：
 
@@ -434,7 +434,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
   | `period`   | 发布时间                                          | `1/7/30`                                                | 空      |
 
   例如：
-  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.app/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作
+  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.moeyy.cn/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作
 
   **为了方便起见，建议您在 [LinkedIn.cn](https://www.linkedin.cn/incareer/jobs/search) 上进行搜索，并使用 [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 加载特定的 feed。**
 
@@ -448,21 +448,21 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 ### Unknown <Site url="logonews.cn/work" size="sm" />
 
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.cn/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
 
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
-
-### Unknown <Site url="logonews.cn/work" size="sm" />
-
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
-
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
+如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.cn/logonews/tag/china)。
 
 ### Unknown <Site url="logonews.cn/work" size="sm" />
 
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.cn/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
 
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
+如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.cn/logonews/tag/china)。
+
+### Unknown <Site url="logonews.cn/work" size="sm" />
+
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.cn/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+
+如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.cn/logonews/tag/china)。
 
 ## Mozilla <Site url="monitor.firefox.com"/>
 
@@ -1681,7 +1681,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 若只查看榜单前 50，可在订阅 URL 后加入 `?limit=50`。
 
-即，以 [热门节目](https://xyzrank.com/#/) 为例，路由为[`/xyzrank?limit=50`](https://rsshub.app/xyzrank?limit=50)。
+即，以 [热门节目](https://xyzrank.com/#/) 为例，路由为[`/xyzrank?limit=50`](https://rsshub.moeyy.cn/xyzrank?limit=50)。
 :::
 
 ### Unknown <Site url="xyzrank.com/" size="sm" />

@@ -1,5 +1,5 @@
 ---
-sidebar: auto
+sidebar: display
 ---
 
 # Deployment
@@ -359,7 +359,7 @@ $ pm2 start lib/index.js --name rsshub
 
 Visit [http://127.0.0.1:1200/](http://127.0.0.1:1200/), and enjoy it! ✅
 
-Refer to our [Guide](https://docs.rsshub.app/) for usage. Replace `https://rsshub.app/` with `http://localhost:1200` in any route example to see the effect.
+Refer to our [Guide](https://docs.rsshub.app/) for usage. Replace `https://rsshub.moeyy.cn/` with `http://localhost:1200` in any route example to see the effect.
 
 ### Configuration
 

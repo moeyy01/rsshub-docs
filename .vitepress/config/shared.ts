@@ -35,25 +35,25 @@ export const shared = defineConfig({
   },
 
   head: [
-    ['meta', { property: 'og:image', content: 'https://docs.rsshub.app/logo.png' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'twitter:domain', content: 'rsshub.app' }],
-    ['meta', { property: 'twitter:image', content: 'https://docs.rsshub.app/logo.png' }],
-    ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
-    ['script', {
-      src: 'https://umami.diygod.dev/script.js', 
-      'data-website-id': 'be1761be-7547-49d5-91b8-5c97c8f7cec7',
-      defer: ''
-    }]
+    // ['meta', { property: 'og:image', content: 'https://docs.rsshub.app/logo.png' }],
+    // ['meta', { property: 'og:type', content: 'website' }],
+    // ['meta', { property: 'twitter:domain', content: 'rsshub.app' }],
+    // ['meta', { property: 'twitter:image', content: 'https://docs.rsshub.app/logo.png' }],
+    // ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+    // ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
+    // ['script', {
+    //   src: 'https://umami.diygod.dev/script.js', 
+    //   'data-website-id': 'be1761be-7547-49d5-91b8-5c97c8f7cec7',
+    //   defer: ''
+    // }]
   ],
 
   themeConfig: {
     logo: '/logo.png',
-    carbonAds: {
-      code: 'CEAI653E',
-      placement: 'docsrsshubapp'
-    },
+    // carbonAds: {
+    //   code: 'CEAI653E',
+    //   placement: 'docsrsshubapp'
+    // },
     outline: {
       level: [2, 3],
     },
@@ -79,17 +79,17 @@ export const shared = defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
-      { text: 'Join Us', link: '/joinus/' },
-      { text: 'Deploy', link: '/deploy/' },
+      // { text: 'Join Us', link: '/joinus/' },
+      // { text: 'Deploy', link: '/deploy/' },
       { text: 'Ecosystem', link: '/ecosystem' },
-      { text: 'Sponsor', link: '/sponsor' },
+      // { text: 'Sponsor', link: '/sponsor' },
     ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/DIYgod/RSSHub' },
-      { icon: { svg: telegramLogo }, link: 'https://t.me/rsshub' },
-      { icon: { svg: telegramLogo }, link: 'https://t.me/awesomeRSSHub' },
-      { icon: 'twitter', link: 'https://twitter.com/intent/follow?screen_name=_RSSHub' },
+      // { icon: { svg: telegramLogo }, link: 'https://t.me/rsshub' },
+      // { icon: { svg: telegramLogo }, link: 'https://t.me/awesomeRSSHub' },
+      // { icon: 'twitter', link: 'https://twitter.com/intent/follow?screen_name=_RSSHub' },
     ],
     editLink: {
       pattern: 'https://github.com/DIYgod/RSSHub-Docs/edit/main/src/:path',

@@ -9,10 +9,10 @@ export const zh = defineConfig({
     nav: [
       { text: '首页', link: '/zh/' },
       { text: '指南', link: '/zh/guide/' },
-      { text: '参与我们', link: '/zh/joinus/' },
-      { text: '部署', link: '/zh/deploy/' },
+      // { text: '参与我们', link: '/zh/joinus/' },
+      // { text: '部署', link: '/zh/deploy/' },
       { text: '生态系统', link: '/zh/ecosystem' },
-      { text: '赞助', link: '/zh/sponsor' },
+      // { text: '赞助', link: '/zh/sponsor' },
     ],
 
     editLink: {

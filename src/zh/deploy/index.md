@@ -1,5 +1,5 @@
 ---
-sidebar: auto
+sidebar: display
 ---
 
 # 部署
@@ -347,7 +347,7 @@ $ pm2 start lib/index.js --name rsshub
 
 在浏览器中打开 [http://127.0.0.1:1200](http://127.0.0.1:1200)，enjoy it! ✅
 
-详细使用说明参照 [指南](/zh/)，替换所有路由例子中的 `https://rsshub.app/` 为 `http://localhost:1200` 即可正常使用
+详细使用说明参照 [指南](/zh/)，替换所有路由例子中的 `https://rsshub.moeyy.cn/` 为 `http://localhost:1200` 即可正常使用
 
 ### 添加配置
 

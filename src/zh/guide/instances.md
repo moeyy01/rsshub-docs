@@ -8,7 +8,7 @@
 
 | URL | Location | Maintainer | Online |
 | --- | --- | --- | --- |
-| [rsshub.app](https://rsshub.app) | 🇺🇸 | [DIYgod](https://diygod.cc) | ![](https://img.shields.io/website.svg?label=&url=https://rsshub.app/test/cache) |
+| [rsshub.app](https://rsshub.moeyy.cn) | 🇺🇸 | [DIYgod](https://diygod.cc) | ![](https://img.shields.io/website.svg?label=&url=https://rsshub.moeyy.cn/test/cache) |
 
 ## Public
 
