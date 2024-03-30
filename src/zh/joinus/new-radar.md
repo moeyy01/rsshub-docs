@@ -23,7 +23,7 @@ export default {
         '.': [
             {
                 title: '仓库 Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo/issues/:id', '/:user/:repo/issues',  '/:user/:repo'],
                 target: '/github/issue/:user/:repo',
             },
@@ -115,7 +115,7 @@ export default {
 
 ### `docs`
 
-文档链接也是*必填*字段。在这种情况下，`GitHub 仓库 Issues` 的文档链接将是 `https://docs.rsshub.app/routes/programming#github`。请注意，URL hash 应位于二级标题 (`##`) 处，而不是三级标题 (`###`) `https://docs.rsshub.app/routes/programming#github-cang-ku-issues`。
+文档链接也是*必填*字段。在这种情况下，`GitHub 仓库 Issues` 的文档链接将是 `https://moeyy.cn/rsshub/routes/programming#github`。请注意，URL hash 应位于二级标题 (`##`) 处，而不是三级标题 (`###`) `https://moeyy.cn/rsshub/routes/programming#github-cang-ku-issues`。
 
 ### `source`
 
@@ -157,7 +157,7 @@ export default {
         '.': [
             {
                 title: '仓库 Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo/issues/:id', '/:user/:repo/issues',  '/:user/:repo'],
                 // highlight-next-line
                 target: (params) => `/github/issue/${params.user}/${params.repo}`,
@@ -177,7 +177,7 @@ export default {
         '.': [
             {
                 title: '仓库 Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo'],
                 // highlight-next-line
                 target: (_, url) => `/github/issue${new URL(url).pathname}`
@@ -214,7 +214,7 @@ export default {
         '.': [
             {
                 title: '仓库 Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo/issues/:id', '/:user/:repo/issues',  '/:user/:repo'],
                 target: '/github/issue/:user/:repo',
             },
@@ -232,7 +232,7 @@ export default {
         www: [
             {
                 title: '分区视频',
-                docs: 'https://docs.rsshub.app/social-media#bilibili',
+                docs: 'https://moeyy.cn/rsshub/social-media#bilibili',
                 source: '/v/*tpath',
                 target: (params) => {
                     let tid;
@@ -254,7 +254,7 @@ export default {
             {
                 // for twitter.com
                 title: '用户时间线',
-                docs: 'https://docs.rsshub.app/social-media#twitter',
+                docs: 'https://moeyy.cn/rsshub/social-media#twitter',
                 source: '/:id',
                 target: (params) => {
                     if (params.id !== 'home') {
@@ -269,7 +269,7 @@ export default {
         www: [
             {
                 title: '用户收藏',
-                docs: 'https://docs.rsshub.app/social-media#pixiv',
+                docs: 'https://moeyy.cn/rsshub/social-media#pixiv',
                 source: '/bookmark.php',
                 target: (params, url) => `/pixiv/user/bookmarks/${new URL(url).searchParams.get('id')}`,
             },
@@ -280,7 +280,7 @@ export default {
         '.': [
             {
                 title: '博主',
-                docs: 'https://docs.rsshub.app/social-media#%E5%BE%AE%E5%8D%9A',
+                docs: 'https://moeyy.cn/rsshub/social-media#%E5%BE%AE%E5%8D%9A',
                 source: ['/u/:id', '/:id'],
                 target: (params, url, document) => {
                     const uid = document && document.documentElement.innerHTML.match(/\$CONFIG\['oid']='(\d+)'/)[1];

@@ -35,10 +35,10 @@ export const shared = defineConfig({
   },
 
   head: [
-    // ['meta', { property: 'og:image', content: 'https://docs.rsshub.app/logo.png' }],
+    // ['meta', { property: 'og:image', content: 'https://moeyy.cn/rsshub/logo.png' }],
     // ['meta', { property: 'og:type', content: 'website' }],
     // ['meta', { property: 'twitter:domain', content: 'rsshub.app' }],
-    // ['meta', { property: 'twitter:image', content: 'https://docs.rsshub.app/logo.png' }],
+    // ['meta', { property: 'twitter:image', content: 'https://moeyy.cn/rsshub/logo.png' }],
     // ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
     // ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
     // ['script', {

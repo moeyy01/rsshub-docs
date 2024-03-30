@@ -23,7 +23,7 @@ export default {
         '.': [
             {
                 title: 'Repo Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo/issues/:id', '/:user/:repo/issues',  '/:user/:repo'],
                 target: '/github/issue/:user/:repo',
             },
@@ -115,9 +115,9 @@ The title is a *required* field and should be the same as the level 3 heading (`
 
 ### `docs`
 
-The documentation link is also a *required* field. In this case, the documentation link for `GitHub Repo Issues` will be `https://docs.rsshub.app/routes/programming#github`.
+The documentation link is also a *required* field. In this case, the documentation link for `GitHub Repo Issues` will be `https://moeyy.cn/rsshub/routes/programming#github`.
 
-Note that the hash should be positioned to the level 2 heading (`##`), and not `https://docs.rsshub.app/routes/programming#github-repo-issues`.
+Note that the hash should be positioned to the level 2 heading (`##`), and not `https://moeyy.cn/rsshub/routes/programming#github-repo-issues`.
 
 ### `source`
 
@@ -161,7 +161,7 @@ export default {
         '.': [
             {
                 title: 'Repo Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo/issues/:id', '/:user/:repo/issues',  '/:user/:repo'],
                 // highlight-next-line
                 target: (params) => `/github/issue/${params.user}/${params.repo}`,
@@ -181,7 +181,7 @@ export default {
         '.': [
             {
                 title: 'Repo Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo'],
                 // highlight-next-line
                 target: (_, url) => `/github/issue${new URL(url).pathname}`
@@ -218,7 +218,7 @@ Here's an example radar rule that you can play with:
         '.': [
             {
                 title: 'Repo Issues',
-                docs: 'https://docs.rsshub.app/routes/programming#github',
+                docs: 'https://moeyy.cn/rsshub/routes/programming#github',
                 source: ['/:user/:repo/issues/:id', '/:user/:repo/issues',  '/:user/:repo'],
                 target: '/github/issue/:user/:repo',
             },
@@ -236,7 +236,7 @@ Here's an example radar rule that you can play with:
         www: [
             {
                 title: '分区视频',
-                docs: 'https://docs.rsshub.app/social-media#bilibili',
+                docs: 'https://moeyy.cn/rsshub/social-media#bilibili',
                 source: '/v/*tpath',
                 target: (params) => {
                     let tid;
@@ -258,7 +258,7 @@ Here's an example radar rule that you can play with:
             {
                 // for twitter.com
                 title: '用户时间线',
-                docs: 'https://docs.rsshub.app/social-media#twitter',
+                docs: 'https://moeyy.cn/rsshub/social-media#twitter',
                 source: '/:id',
                 target: (params) => {
                     if (params.id !== 'home') {
@@ -273,7 +273,7 @@ Here's an example radar rule that you can play with:
         www: [
             {
                 title: '用户收藏',
-                docs: 'https://docs.rsshub.app/social-media#pixiv',
+                docs: 'https://moeyy.cn/rsshub/social-media#pixiv',
                 source: '/bookmark.php',
                 target: (params, url) => `/pixiv/user/bookmarks/${new URL(url).searchParams.get('id')}`,
             },
@@ -284,7 +284,7 @@ Here's an example radar rule that you can play with:
         '.': [
             {
                 title: '博主',
-                docs: 'https://docs.rsshub.app/social-media#%E5%BE%AE%E5%8D%9A',
+                docs: 'https://moeyy.cn/rsshub/social-media#%E5%BE%AE%E5%8D%9A',
                 source: ['/u/:id', '/:id'],
                 target: (params, url, document) => {
                     const uid = document && document.documentElement.innerHTML.match(/\$CONFIG\['oid']='(\d+)'/)[1];

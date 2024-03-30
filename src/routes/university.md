@@ -500,7 +500,7 @@
 ## 哈尔滨工业大学 <Site url="jwc.hit.edu.cn"/>
 
 :::warning
-哈工大网站疑似禁止了`rsshub.app`的访问，使用路由需要自行 [部署](https://docs.rsshub.app/deploy/)。
+哈工大网站疑似禁止了`rsshub.app`的访问，使用路由需要自行 [部署](https://moeyy.cn/rsshub/deploy/)。
 :::
 
 ### 教务处通知公告 <Site url="jwc.hit.edu.cn/*" size="sm" />
@@ -1550,10 +1550,10 @@ author 列表：
 
 ### 计算机学院通知公告 <Site url="jsjxy.stbu.edu.cn/news" size="sm" />
 
-<Route namespace="stbu" :data='{"path":"/jsjxy","categories":["university"],"example":"/stbu/jsjxy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jsjxy.stbu.edu.cn/news","jsjxy.stbu.edu.cn/"]}],"name":"计算机学院通知公告","maintainers":["HyperCherry"],"url":"jsjxy.stbu.edu.cn/news","description":":::warning\n计算机学院通知公告疑似禁止了非大陆 IP 访问，使用路由需要自行 [部署](https://docs.rsshub.app/deploy/)。\n:::","location":"jsjxy.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="stbu" :data='{"path":"/jsjxy","categories":["university"],"example":"/stbu/jsjxy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jsjxy.stbu.edu.cn/news","jsjxy.stbu.edu.cn/"]}],"name":"计算机学院通知公告","maintainers":["HyperCherry"],"url":"jsjxy.stbu.edu.cn/news","description":":::warning\n计算机学院通知公告疑似禁止了非大陆 IP 访问，使用路由需要自行 [部署](https://moeyy.cn/rsshub/deploy/)。\n:::","location":"jsjxy.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::warning
-计算机学院通知公告疑似禁止了非大陆 IP 访问，使用路由需要自行 [部署](https://docs.rsshub.app/deploy/)。
+计算机学院通知公告疑似禁止了非大陆 IP 访问，使用路由需要自行 [部署](https://moeyy.cn/rsshub/deploy/)。
 :::
 
 ## 苏州科技大学 <Site url="jwch.usts.edu.cn"/>
