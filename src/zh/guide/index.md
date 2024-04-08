@@ -4,11 +4,11 @@
 
 比如你希望订阅 Telegram 上 [@awesomeRSSHub](https://t.me/awesomeRSSHub) 频道的内容
 
-根据 [Telegram 路由](/zh/routes/social-media#telegram)的文档，路由为 `/telegram/channel/:username/:routeParams?`，其中 username 为必选参数，routeParams 为可选参数，把 `:username` 替换为频道 id awesomeRSSHub，得到路径为 `/telegram/channel/awesomeRSSHub`，再加上实例域名 `https://rsshub.app`，一个订阅源就生成了：`https://rsshub.app/telegram/channel/awesomeRSSHub`
+根据 [Telegram 路由](/zh/routes/social-media#telegram)的文档，路由为 `/telegram/channel/:username/:routeParams?`，其中 username 为必选参数，routeParams 为可选参数，把 `:username` 替换为频道 id awesomeRSSHub，得到路径为 `/telegram/channel/awesomeRSSHub`，再加上实例域名 `https://rsshub.moeyy.cn`，一个订阅源就生成了：`https://rsshub.moeyy.cn/telegram/channel/awesomeRSSHub`
 
-然后你可以把 `https://rsshub.app/telegram/channel/awesomeRSSHub` 添加到任意 RSS 阅读器里来使用
+然后你可以把 `https://rsshub.moeyy.cn/telegram/channel/awesomeRSSHub` 添加到任意 RSS 阅读器里来使用
 
-其中实例域名 `https://rsshub.app` 可以替换为你[自部署](/zh/deploy/)或任意[公共实例](/zh/guide/instances)的域名
+其中实例域名 `https://rsshub.moeyy.cn` 可以替换为你[自部署](/zh/deploy/)或任意[公共实例](/zh/guide/instances)的域名
 
 另外 RSSHub 支持很多实用的参数，比如内容过滤、全文输出等，可以在 [通用参数](/zh/guide/parameters) 文档了解具体使用方法
 
@@ -74,7 +74,7 @@ RSSHub 还提供了一个 Radar 功能，用于将网站地址映射到 RSSHub �
 
 ### 规则
 
-可以通过实例的 API 来获取当前实例支持的 Radar 规则，比如官方实例 https://rsshub.app/api/radar/rules
+可以通过实例的 API 来获取当前实例支持的 Radar 规则，比如官方实例 https://rsshub.moeyy.cn/api/radar/rules
 
 ### 使用
 

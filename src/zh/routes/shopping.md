@@ -221,10 +221,10 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 国内折扣 / 海外折扣 <Site url="guangdiu.com" size="sm" />
 
-<Route namespace="guangdiu" :data='{"path":"/:query?","categories":["shopping"],"example":"/guangdiu/k=daily","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国内折扣 / 海外折扣","maintainers":["Fatpandac"],"description":":::tip\n  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="guangdiu" :data='{"path":"/:query?","categories":["shopping"],"example":"/guangdiu/k=daily","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国内折扣 / 海外折扣","maintainers":["Fatpandac"],"description":":::tip\n  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.moeyy.cn/guangdiu/k=daily&c=us)\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
-  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)
+  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.moeyy.cn/guangdiu/k=daily&c=us)
   :::
 
 ### 九块九 <Site url="guangdiu.com" size="sm" />
@@ -239,10 +239,10 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 商品价格 <Site url="item.jd.com" size="sm" />
 
-<Route namespace="jd" :data='{"path":"/price/:id","categories":["shopping"],"example":"/jd/price/526835","parameters":{"id":"商品 id，可在商品详情页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"商品价格","maintainers":["nczitzk"],"description":":::tip\n  如商品 `https://item.jd.com/526835.html` 中的 id 为 `526835`，所以路由为 [`/jd/price/526835`](https://rsshub.app/jd/price/526835)\n  :::","location":"price.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jd" :data='{"path":"/price/:id","categories":["shopping"],"example":"/jd/price/526835","parameters":{"id":"商品 id，可在商品详情页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"商品价格","maintainers":["nczitzk"],"description":":::tip\n  如商品 `https://item.jd.com/526835.html` 中的 id 为 `526835`，所以路由为 [`/jd/price/526835`](https://rsshub.moeyy.cn/jd/price/526835)\n  :::","location":"price.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
-  如商品 `https://item.jd.com/526835.html` 中的 id 为 `526835`，所以路由为 [`/jd/price/526835`](https://rsshub.app/jd/price/526835)
+  如商品 `https://item.jd.com/526835.html` 中的 id 为 `526835`，所以路由为 [`/jd/price/526835`](https://rsshub.moeyy.cn/jd/price/526835)
   :::
 
 ## 摩点 <Site url="modian.com"/>
@@ -534,20 +534,20 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 厂牌 - 演出更新 <Site url="www.showstart.com" size="sm" />
 
-<Route namespace="showstart" :data='{"path":"/brand/:id","categories":["shopping"],"example":"/showstart/brand/34707","parameters":{"id":"厂牌 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.showstart.com/host/:id"]}],"name":"厂牌 - 演出更新","maintainers":["lchtao26"],"description":":::tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)\n:::","location":"brand.ts"}' :test='{"code":0}' />
+<Route namespace="showstart" :data='{"path":"/brand/:id","categories":["shopping"],"example":"/showstart/brand/34707","parameters":{"id":"厂牌 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.showstart.com/host/:id"]}],"name":"厂牌 - 演出更新","maintainers":["lchtao26"],"description":":::tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.moeyy.cn/showstart/search/brand/ 声场](https://rsshub.moeyy.cn/showstart/search/brand/声场)\n:::","location":"brand.ts"}' :test='{"code":0}' />
 
 :::tip
-厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)
+厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.moeyy.cn/showstart/search/brand/ 声场](https://rsshub.moeyy.cn/showstart/search/brand/声场)
 :::
 
 ### 演出更新 <Site url="www.showstart.com" size="sm" />
 
-<Route namespace="showstart" :data='{"path":"/event/:cityCode/:showStyle?","categories":["shopping"],"example":"/showstart/event/571/3","parameters":{"cityCode":"演出城市 (编号)","showStyle":"演出风格 (编号)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出更新","maintainers":["lchtao26"],"description":":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n:::","location":"event.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="showstart" :data='{"path":"/event/:cityCode/:showStyle?","categories":["shopping"],"example":"/showstart/event/571/3","parameters":{"cityCode":"演出城市 (编号)","showStyle":"演出风格 (编号)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出更新","maintainers":["lchtao26"],"description":":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.moeyy.cn/showstart/search/city/ 杭州](https://rsshub.moeyy.cn/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.moeyy.cn/showstart/search/style/ 摇滚](https://rsshub.moeyy.cn/showstart/search/style/摇滚)\n:::","location":"event.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
--   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)
+-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.moeyy.cn/showstart/search/city/ 杭州](https://rsshub.moeyy.cn/showstart/search/city/杭州)
 
--   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)
+-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.moeyy.cn/showstart/search/style/ 摇滚](https://rsshub.moeyy.cn/showstart/search/style/摇滚)
 :::
 
 ### 演出搜索 <Site url="www.showstart.com" size="sm" />
@@ -556,10 +556,10 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 音乐人 - 演出更新 <Site url="www.showstart.com" size="sm" />
 
-<Route namespace="showstart" :data='{"path":"/artist/:id","categories":["shopping"],"example":"/showstart/artist/301783","parameters":{"id":"音乐人 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.showstart.com/artist/:id"]}],"name":"音乐人 - 演出更新","maintainers":["lchtao26"],"description":":::tip\n音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.app/showstart/search/artist/ 周杰伦](https://rsshub.app/showstart/search/artist/周杰伦)\n:::","location":"artist.ts"}' :test='{"code":0}' />
+<Route namespace="showstart" :data='{"path":"/artist/:id","categories":["shopping"],"example":"/showstart/artist/301783","parameters":{"id":"音乐人 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.showstart.com/artist/:id"]}],"name":"音乐人 - 演出更新","maintainers":["lchtao26"],"description":":::tip\n音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.moeyy.cn/showstart/search/artist/ 周杰伦](https://rsshub.moeyy.cn/showstart/search/artist/周杰伦)\n:::","location":"artist.ts"}' :test='{"code":0}' />
 
 :::tip
-音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.app/showstart/search/artist/ 周杰伦](https://rsshub.app/showstart/search/artist/周杰伦)
+音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.moeyy.cn/showstart/search/artist/ 周杰伦](https://rsshub.moeyy.cn/showstart/search/artist/周杰伦)
 :::
 
 ## 中国养猪网 <Site url="zhujia.zhuwang.cc"/>
