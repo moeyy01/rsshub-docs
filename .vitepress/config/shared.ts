@@ -79,7 +79,7 @@ export const shared = defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
-      // { text: 'Join Us', link: '/joinus/' },
+      // { text: 'Develop', link: '/joinus/' },
       // { text: 'Deploy', link: '/deploy/' },
       { text: 'Ecosystem', link: '/ecosystem' },
       // { text: 'Sponsor', link: '/sponsor' },
@@ -104,23 +104,13 @@ export const shared = defineConfig({
     sidebar: {
       '/joinus/': [
         {
-          text: 'Join Us',
+          text: 'Develop',
           items: [
             { text: 'Quick Start', link: '/joinus/' },
-          ],
-        },
-        {
-          text: 'New RSSHub Rules',
-          items: [
-            { text: 'Prerequisites', link: '/joinus/new-rss/prerequisites' },
+            { text: 'Development Environment', link: '/joinus/new-rss/prerequisites' },
             { text: 'Just before you start', link: '/joinus/new-rss/before-start' },
             { text: 'Create Route', link: '/joinus/new-rss/start-code' },
             { text: 'Submit your route', link: '/joinus/new-rss/submit-route' },
-          ],
-        },
-        {
-          items: [
-            { text: 'New RSSHub Radar Rules', link: '/joinus/new-radar' },
           ],
         },
         {
@@ -157,6 +147,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: 'Getting Started', link: '/guide/' },
         { text: 'Public Instances', link: '/guide/instances' },
         { text: 'FAQs', link: '/guide/faqs' },
+        { text: 'Troubleshooting', link: '/guide/troubleshooting' },
         { text: 'Parameters', link: '/guide/parameters' },
         { text: 'API', link: '/guide/api' },
       ],

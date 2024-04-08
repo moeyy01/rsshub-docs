@@ -8,8 +8,8 @@ export const zh = defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/zh/' },
-      { text: '指南', link: '/zh/guide/' },
-      // { text: '参与我们', link: '/zh/joinus/' },
+      { text: '食用指南', link: '/zh/guide/' },
+      // { text: '开发路由', link: '/zh/joinus/' },
       // { text: '部署', link: '/zh/deploy/' },
       { text: '生态系统', link: '/zh/ecosystem' },
       // { text: '赞助', link: '/zh/sponsor' },
@@ -53,23 +53,13 @@ export const zh = defineConfig({
     sidebar: {
       '/zh/joinus/': [
         {
-          text: '参与我们',
+          text: '开发路由',
           items: [
             { text: '快速开始', link: '/zh/joinus/' },
-          ],
-        },
-        {
-          text: '提交新的 RSSHub 规则',
-          items: [
-            { text: '准备工作', link: '/zh/joinus/new-rss/prerequisites' },
+            { text: '开发环境', link: '/zh/joinus/new-rss/prerequisites' },
             { text: '开始之前', link: '/zh/joinus/new-rss/before-start' },
             { text: '制作路由', link: '/zh/joinus/new-rss/start-code' },
             { text: '提交路由', link: '/zh/joinus/new-rss/submit-route' },
-          ],
-        },
-        {
-          items: [
-            { text: '提交新的 RSSHub Radar 规则', link: '/zh/joinus/new-radar' },
           ],
         },
         {
@@ -106,6 +96,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: '开始食用', link: '/zh/guide/' },
         { text: '公共实例', link: '/zh/guide/instances' },
         { text: '常见问题', link: '/zh/guide/faqs' },
+        { text: '故障排除', link: '/zh/guide/troubleshooting' },
         { text: '通用参数', link: '/zh/guide/parameters' },
         { text: 'API', link: '/zh/guide/api' },
       ],

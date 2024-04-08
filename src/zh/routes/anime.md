@@ -45,29 +45,29 @@
 
 ### 最近更新 <Site url="agemys.org/update" size="sm" />
 
-<Route namespace="agefans" :data='{"path":"/update","categories":["anime"],"example":"/agefans/update","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agemys.org/update","agemys.org/"]}],"name":"最近更新","maintainers":["nczitzk"],"url":"agemys.org/update","location":"update.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="agefans" :data='{"path":"/update","categories":["anime"],"example":"/agefans/update","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agemys.org/update","agemys.org/"]}],"name":"最近更新","maintainers":["nczitzk"],"url":"agemys.org/update","location":"update.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## CnGal <Site url="www.cngal.org"/>
 
 ### 每周速报 <Site url="www.cngal.org/" size="sm" />
 
-<Route namespace="cngal" :data='{"path":"/weekly","categories":["anime"],"example":"/cngal/weekly","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cngal.org/","www.cngal.org/weeklynews"]}],"name":"每周速报","maintainers":["chengyuhui"],"url":"www.cngal.org/","location":"weekly.ts"}' :test='{"code":0}' />
+<Route namespace="cngal" :data='{"path":"/weekly","categories":["anime"],"example":"/cngal/weekly","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cngal.org/","www.cngal.org/weeklynews"]}],"name":"每周速报","maintainers":["chengyuhui"],"url":"www.cngal.org/","location":"weekly.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 制作者 / 游戏新闻 <Site url="www.cngal.org" size="sm" />
 
-<Route namespace="cngal" :data='{"path":"/entry/:id","categories":["anime"],"example":"/cngal/entry/2693","parameters":{"id":"词条ID，游戏或制作者页面URL的最后一串数字"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cngal.org/entries/index/:id"]}],"name":"制作者 / 游戏新闻","maintainers":["chengyuhui"],"location":"entry.ts"}' :test='{"code":0}' />
+<Route namespace="cngal" :data='{"path":"/entry/:id","categories":["anime"],"example":"/cngal/entry/2693","parameters":{"id":"词条ID，游戏或制作者页面URL的最后一串数字"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cngal.org/entries/index/:id"]}],"name":"制作者 / 游戏新闻","maintainers":["chengyuhui"],"location":"entry.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Comicat <Site url="comicat.org"/>
 
 ### 搜索关键词 <Site url="comicat.org" size="sm" />
 
-<Route namespace="comicat" :data='{"path":"/search/:keyword","categories":["anime"],"example":"/comicat/search/喵萌奶茶屋+跃动青春+720P+简日","parameters":{"keyword":"关键词，请用`+`号连接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"搜索关键词","maintainers":["Cyang39"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="comicat" :data='{"path":"/search/:keyword","categories":["anime"],"example":"/comicat/search/喵萌奶茶屋+跃动青春+720P+简日","parameters":{"keyword":"关键词，请用`+`号连接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"搜索关键词","maintainers":["Cyang39"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Comics Kingdom <Site url="comicskingdom.com"/>
 
 ### Archive <Site url="comicskingdom.com" size="sm" />
 
-<Route namespace="comicskingdom" :data='{"path":"/:name","categories":["anime"],"example":"/comicskingdom/pardon-my-planet","parameters":{"name":"URL path of the strip on comicskingdom.com"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["comicskingdom.com/:name/*","comicskingdom.com/:name"]}],"name":"Archive","maintainers":["stjohnjohnson"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="comicskingdom" :data='{"path":"/:name","categories":["anime"],"example":"/comicskingdom/pardon-my-planet","parameters":{"name":"URL path of the strip on comicskingdom.com"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["comicskingdom.com/:name/*","comicskingdom.com/:name"]}],"name":"Archive","maintainers":["stjohnjohnson"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## CCC 創作集 <Site url="creative-comic.tw"/>
 
@@ -91,11 +91,17 @@
 
 ### Discounted Works <Site url="dlsite.com" size="sm" />
 
-<Route namespace="dlsite" :data='{"path":"/campaign/:type/:free?","categories":["anime"],"example":"/dlsite/campaign/home","parameters":{"type":"Type, see table above","free":"Free only, empty means false, other value means true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Discounted Works","maintainers":["cssxsh"],"location":"campaign.ts"}' :test='{"code":0}' />
+<Route namespace="dlsite" :data='{"path":"/campaign/:type/:free?","categories":["anime"],"example":"/dlsite/campaign/home","parameters":{"type":"Type, see table above","free":"Free only, empty means false, other value means true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Discounted Works","maintainers":["cssxsh"],"location":"campaign.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Unknown <Site url="dlsite.com" size="sm" />
 
 <Route namespace="dlsite" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
+
+## Doraemon Channel <Site url="www.dora-world.com"/>
+
+### Article <Site url="www.dora-world.com" size="sm" />
+
+<Route namespace="dora-world" :data='{"path":"/article/:topic/:topicId?","categories":["anime"],"example":"/dora-world/article/contents","parameters":{"topic":"Topic name, can be found in URL. For example: the topic name of [https://www.dora-world.com/movie](https://www.dora-world.com/movie) is `movie`","topicId":"Topic id, can be found in URL. For example: the topic id of [https://www.dora-world.com/contents?t=197](https://www.dora-world.com/contents?t=197) is `197`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dora-world.com/:topic"]}],"name":"Article","maintainers":["AChangAZha"],"location":"article.ts"}' :test='undefined' />
 
 ## Eventernote <Site url="www.eventernote.com"/>
 
@@ -171,17 +177,17 @@
 
 ### User Subscriptions <Site url="ecchi.iwara.tv/" size="sm" />
 
-<Route namespace="iwara" :data='{"path":"/subscriptions","categories":["anime"],"example":"/iwara/subscriptions","parameters":{},"features":{"requireConfig":[{"name":"IWARA_USERNAME","description":""},{"name":"IWARA_PASSWORD","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ecchi.iwara.tv/"]}],"name":"User Subscriptions","maintainers":["FeCCC"],"url":"ecchi.iwara.tv/","description":":::warning\n  This route requires username and password, therefore it&#39;s only available when self-hosting, refer to the [Deploy Guide](https://moeyy.cn/rsshub/deploy/config#route-specific-configurations) for route-specific configurations.\n  :::","location":"subscriptions.ts"}' :test='undefined' />
+<Route namespace="iwara" :data='{"path":"/subscriptions","categories":["anime"],"example":"/iwara/subscriptions","parameters":{},"features":{"requireConfig":[{"name":"IWARA_USERNAME","description":""},{"name":"IWARA_PASSWORD","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ecchi.iwara.tv/"]}],"name":"User Subscriptions","maintainers":["FeCCC"],"url":"ecchi.iwara.tv/","description":":::warning\n  This route requires username and password, therefore it&#39;s only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.\n  :::","location":"subscriptions.ts"}' :test='undefined' />
 
 :::warning
-  This route requires username and password, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://moeyy.cn/rsshub/deploy/config#route-specific-configurations) for route-specific configurations.
+  This route requires username and password, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.
   :::
 
 ## Kemono <Site url="kemono.su"/>
 
 ### Posts <Site url="kemono.su" size="sm" />
 
-<Route namespace="kemono" :data='{"path":"/:source?/:id?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/:source/user/:id","kemono.su/"]}],"name":"Posts","maintainers":["nczitzk"],"description":"Sources\n\n  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n  :::tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="kemono" :data='{"path":"/:source?/:id?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/:source/user/:id","kemono.su/"]}],"name":"Posts","maintainers":["nczitzk"],"description":"Sources\n\n  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n  :::tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 Sources
 
@@ -191,6 +197,7 @@ Sources
 
   :::tip
   When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.
+  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.
   :::
 
 ## lovelive-anime <Site url="www.lovelive-anime.jp"/>
@@ -219,29 +226,33 @@ Sources
 
 ### 首頁 <Site url="mox.moe" size="sm" />
 
-<Route namespace="mox" :data='{"path":"/:category?","categories":["anime"],"example":"/mox","parameters":{"category":"分类，可在对应分类页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mox.moe/l/:category","mox.moe/"]}],"name":"首頁","maintainers":["nczitzk"],"description":":::tip\n  在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.moeyy.cn/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="mox" :data='{"path":"/:category?","categories":["anime"],"example":"/mox","parameters":{"category":"分类，可在对应分类页 URL 中找到"},"features":{"requireConfig":[{"name":"MOX_COOKIE","optional":true,"description":"注册用户登录后的 Cookie, 可以从浏览器开发者工具Network面板中的mox页面请求获取，Cookie内容形如VOLSKEY=xxxxxx; VLIBSID=xxxxxx; VOLSESS=xxxxxx"}],"antiCrawler":true},"radar":[{"source":["mox.moe/l/:category","mox.moe/"]}],"name":"首頁","maintainers":["nczitzk"],"description":":::tip\n  在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n  :::\n\n  :::warning\n  由于 mox.moe 对非登录用户屏蔽了部分漫画详情内容的获取，且极易触发反爬机制，导致访问ip被重定向至google.com，因此在未配置`MOX_COOKIE`参数的情况下路由只会返回漫画标题和封面，不会对详情内容进行抓取。\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。
 
-  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.moeyy.cn/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)
+  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)
+  :::
+
+  :::warning
+  由于 mox.moe 对非登录用户屏蔽了部分漫画详情内容的获取，且极易触发反爬机制，导致访问ip被重定向至google.com，因此在未配置`MOX_COOKIE`参数的情况下路由只会返回漫画标题和封面，不会对详情内容进行抓取。
   :::
 
 ## nhentai <Site url="nhentai.net"/>
 
 ### Advanced Search <Site url="nhentai.net" size="sm" />
 
-<Route namespace="nhentai" :data='{"path":"/search/:keyword/:mode?","categories":["anime"],"example":"/nhentai/search/language%3Ajapanese+-scat+-yaoi+-guro+-\"mosaic+censorship\"","parameters":{"keyword":"Keywords for search. You can copy the content after `q=` after searching on the original website, or you can enter it directly. See the [official website](https://nhentai.net/info/) for details","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://moeyy.cn/rsshub/deploy/config#route-specific-configurations), default to `simple`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/:key/:keyword"}],"name":"Advanced Search","maintainers":["MegrezZhu","hoilc"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nhentai" :data='{"path":"/search/:keyword/:mode?","categories":["anime"],"example":"/nhentai/search/language%3Ajapanese+-scat+-yaoi+-guro+-\"mosaic+censorship\"","parameters":{"keyword":"Keywords for search. You can copy the content after `q=` after searching on the original website, or you can enter it directly. See the [official website](https://nhentai.net/info/) for details","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/:key/:keyword"}],"name":"Advanced Search","maintainers":["MegrezZhu","hoilc"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Filter <Site url="nhentai.net" size="sm" />
 
-<Route namespace="nhentai" :data='{"path":"/:key/:keyword/:mode?","categories":["anime"],"example":"/nhentai/language/chinese","parameters":{"key":"Filter term, can be: `parody`, `character`, `tag`, `artist`, `group`, `language` or `category`","keyword":"Filter value","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://moeyy.cn/rsshub/deploy/config#route-specific-configurations), default to `simple`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/:key/:keyword"}],"name":"Filter","maintainers":["MegrezZhu","hoilc"],"location":"other.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nhentai" :data='{"path":"/:key/:keyword/:mode?","categories":["anime"],"example":"/nhentai/language/chinese","parameters":{"key":"Filter term, can be: `parody`, `character`, `tag`, `artist`, `group`, `language` or `category`","keyword":"Filter value","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/:key/:keyword"}],"name":"Filter","maintainers":["MegrezZhu","hoilc"],"location":"other.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## NT动漫 <Site url="www.ntdm9.com"/>
 
 ### 番剧详情 <Site url="www.ntdm9.com" size="sm" />
 
-<Route namespace="ntdm" :data='{"path":"/video/:id","categories":["anime"],"example":"/ntdm/video/4309","parameters":{"id":"番剧 id，对应详情 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ntdm9.com/video/:id"]}],"name":"番剧详情","maintainers":["Yamico"],"location":"video.ts"}' :test='{"code":0}' />
+<Route namespace="ntdm" :data='{"path":"/video/:id","categories":["anime"],"example":"/ntdm/video/4309","parameters":{"id":"番剧 id，对应详情 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ntdm9.com/video/:id"]}],"name":"番剧详情","maintainers":["Yamico"],"location":"video.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## QooApp <Site url="apps.qoo-app.com"/>
 
@@ -321,6 +332,18 @@ Sources
 
 <Route namespace="xmanhua" :data='{"path":"/:uid","categories":["anime"],"example":"/xmanhua/73xm","parameters":{"uid":"漫画 id,在浏览器中可见，例如鬼灭之刃对应的 id 为 `73xm`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xmanhua.com/:uid"]}],"name":"最新动态","maintainers":["Ye11"],"location":"index.ts"}' :test='{"code":0}' />
 
+## yande <Site url="yande.re"/>
+
+yande post
+
+### posts <Site url="yande.re" size="sm" />
+
+<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["anime"],"example":"/yande/post/popular_recent/1d","parameters":{"period":"展示时间"},"radar":[{"source":["yande.re/post/"]}],"name":"posts","maintainers":["fashioncj"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | \n  | ------- | -------- | ------- | -------- | \n  | 1d | 1w | 1m ｜1y｜","location":"post.ts"}' :test='{"code":0}' />
+
+| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | 
+  | ------- | -------- | ------- | -------- | 
+  | 1d | 1w | 1m ｜1y｜
+
 ## 俺の 3D エロ動画 (oreno3d) <Site url="oreno3d.com"/>
 
 :::tip
@@ -371,7 +394,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### GNN 新聞 <Site url="acg.gamer.com.tw" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/gnn/:category?","categories":["anime"],"example":"/gamer/gnn/1","parameters":{"category":"版块"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"GNN 新聞","maintainers":["Arracc","ladeng07"],"description":"| 首頁 | PC | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |\n  | ---- | -- | ------- | -------- | ------ | -------- | -------- | ---- |\n  | 缺省 | 1  | 3       | 4        | 5      | 9        | 11       | 13   |\n\n  | Switch | PS5 | PS4 | XboxOne | XboxSX | PC 單機 | PC 線上 | iOS | Android | Web | 漫畫  | 動畫  |\n  | ------ | --- | --- | ------- | ------ | ------- | ------- | --- | ------- | --- | ----- | ----- |\n  | ns     | ps5 | ps4 | xbone   | xbsx   | pc      | olg     | ios | android | web | comic | anime |","location":"gnn-index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gamer" :data='{"path":"/gnn/:category?","categories":["anime"],"example":"/gamer/gnn/1","parameters":{"category":"版块"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"GNN 新聞","maintainers":["Arracc","ladeng07"],"description":"| 首頁 | PC | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |\n  | ---- | -- | ------- | -------- | ------ | -------- | -------- | ---- |\n  | 缺省 | 1  | 3       | 4        | 5      | 9        | 11       | 13   |\n\n  | Switch | PS5 | PS4 | XboxOne | XboxSX | PC 單機 | PC 線上 | iOS | Android | Web | 漫畫  | 動畫  |\n  | ------ | --- | --- | ------- | ------ | ------- | ------- | --- | ------- | --- | ----- | ----- |\n  | ns     | ps5 | ps4 | xbone   | xbsx   | pc      | olg     | ios | android | web | comic | anime |","location":"gnn-index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 首頁 | PC | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |
   | ---- | -- | ------- | -------- | ------ | -------- | -------- | ---- |
@@ -391,7 +414,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 熱門推薦 <Site url="acg.gamer.com.tw" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime"],"example":"/gamer/hot/47157","parameters":{"bsn":"板块 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime"],"example":"/gamer/hot/47157","parameters":{"bsn":"板块 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":0}' />
 
 ## 包子漫画 <Site url="www.baozimh.com"/>
 
@@ -413,24 +436,36 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 漫画更新 <Site url="cartoonmad.com" size="sm" />
 
-<Route namespace="cartoonmad" :data='{"path":"/comic/:id","categories":["anime"],"example":"/cartoonmad/comic/5827","parameters":{"id":"漫画ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cartoonmad.com/comic/:id"]}],"name":"漫画更新","maintainers":["KellyHwong"],"location":"comic.ts"}' :test='{"code":0}' />
+<Route namespace="cartoonmad" :data='{"path":"/comic/:id","categories":["anime"],"example":"/cartoonmad/comic/5827","parameters":{"id":"漫画ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cartoonmad.com/comic/:id"]}],"name":"漫画更新","maintainers":["KellyHwong"],"location":"comic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 番组放送 <Site url="bgmlist.com"/>
 
 ### 开播提醒 <Site url="bgmlist.com" size="sm" />
 
-<Route namespace="bgmlist" :data='{"path":"/onair/:lang?","categories":["anime"],"example":"/bgmlist/onair/zh-Hans","parameters":{"lang":"语言"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"开播提醒","maintainers":["x2cf"],"location":"onair.ts"}' :test='{"code":1,"message":"expected 314698132201 to be less than 311040000000"}' />
+<Route namespace="bgmlist" :data='{"path":"/onair/:lang?","categories":["anime"],"example":"/bgmlist/onair/zh-Hans","parameters":{"lang":"语言"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"开播提醒","maintainers":["x2cf"],"location":"onair.ts"}' :test='{"code":1,"message":"expected 315475778288 to be less than 311040000000"}' />
 
 ## 风之动漫 <Site url="manhua.fffdm.com"/>
 
 ### 在线漫画 <Site url="manhua.fffdm.com" size="sm" />
 
-<Route namespace="fffdm" :data='{"path":"/manhua/:id/:cdn?","categories":["anime"],"example":"/fffdm/manhua/93","parameters":{"id":"漫画ID。默认获取全部，建议使用通用参数limit获取指定数量","cdn":"cdn加速器。默认5，当前可选1-5"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.fffdm.com/manhua/:id","www.fffdm.com/:id"],"target":"/manhua/:id"}],"name":"在线漫画","maintainers":["zytomorrow"],"location":"manhua/manhua.ts"}' :test='{"code":1,"message":"expected [ …(30) ] to not include &#39;https://manhua.fffdm.com/93/020/&#39;"}' />
+<Route namespace="fffdm" :data='{"path":"/manhua/:id/:cdn?","categories":["anime"],"example":"/fffdm/manhua/93","parameters":{"id":"漫画ID。默认获取全部，建议使用通用参数limit获取指定数量","cdn":"cdn加速器。默认5，当前可选1-5"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.fffdm.com/manhua/:id","www.fffdm.com/:id"],"target":"/manhua/:id"}],"name":"在线漫画","maintainers":["zytomorrow"],"location":"manhua/manhua.ts"}' :test='{"code":1,"message":"expected [ …(33) ] to not include &#39;https://manhua.fffdm.com/93/020/&#39;"}' />
+
+## 幻之羁绊动漫网 <Site url="005.tv"/>
+
+### 资讯 <Site url="005.tv" size="sm" />
+
+<Route namespace="005" :data='{"path":"/:category?","name":"资讯","url":"005.tv","maintainers":["nczitzk"],"example":"/005/zx","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为二次元资讯"},"description":"\n  | 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |\n  | ---------- | ------ | -------- | -------- |\n  | zx         | zwh    | dtts     | zh       |\n    ","categories":["anime"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["005.tv/:category"]},{"title":"二次元资讯","source":["005.tv/zx/"],"target":"/005/zx"},{"title":"慢慢说","source":["005.tv/zwh/"],"target":"/005/zwh"},{"title":"道听途说","source":["005.tv/dtts/"],"target":"/005/dtts"},{"title":"展会资讯","source":["005.tv/zh/"],"target":"/005/zh"}],"location":"index.ts"}' :test='undefined' />
+
+
+  | 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |
+  | ---------- | ------ | -------- | -------- |
+  | zx         | zwh    | dtts     | zh       |
+    
 
 ## 禁漫天堂 <Site url="18comic.org"/>
 
 :::tip
-禁漫天堂有多个备用域名，本路由默认使用域名 `https://jmcomic.me`，若该域名无法访问，可以通过在路由最后加上 `?domain=<域名>` 指定路由访问的域名。如指定备用域名为 `https://jmcomic1.me`，则在所有禁漫天堂路由最后加上 `?domain=jmcomic1.me` 即可，此时路由为 [`/18comic?domain=jmcomic1.me`](https://rsshub.moeyy.cn/18comic?domain=jmcomic1.me)
+禁漫天堂有多个备用域名，本路由默认使用域名 `https://jmcomic.me`，若该域名无法访问，可以通过在路由最后加上 `?domain=<域名>` 指定路由访问的域名。如指定备用域名为 `https://jmcomic1.me`，则在所有禁漫天堂路由最后加上 `?domain=jmcomic1.me` 即可，此时路由为 [`/18comic?domain=jmcomic1.me`](https://rsshub.app/18comic?domain=jmcomic1.me)
 :::
 
 ### 成人 A 漫 <Site url="jmcomic.group/" size="sm" />
@@ -509,7 +544,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 漫画更新 <Site url="copymanga.com" size="sm" />
 
-<Route namespace="copymanga" :data='{"path":"/comic/:id/:chapterCnt?","categories":["anime"],"example":"/copymanga/comic/dianjuren/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为 `10`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"漫画更新","maintainers":["btdwv","marvolo666","yan12125"],"location":"comic.ts"}' :test='{"code":0}' />
+<Route namespace="copymanga" :data='{"path":"/comic/:id/:chapterCnt?","categories":["anime"],"example":"/copymanga/comic/dianjuren/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为 `10`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"漫画更新","maintainers":["btdwv","marvolo666","yan12125"],"location":"comic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 来漫画 <Site url="www.laimanhua8.com"/>
 
@@ -589,7 +624,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 用户日志 <Site url="bangumi.moe" size="sm" />
 
-<Route namespace="bangumi" :data='{"path":"/tv/user/blog/:id","categories":["anime"],"example":"/bangumi/tv/user/blog/sai","parameters":{"id":"用户 id, 在用户页面地址栏查看"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/user/:id"]}],"name":"用户日志","maintainers":["nczitzk"],"location":"tv/user/blog.ts"}' :test='{"code":1,"message":"expected 323135689300 to be less than 311040000000"}' />
+<Route namespace="bangumi" :data='{"path":"/tv/user/blog/:id","categories":["anime"],"example":"/bangumi/tv/user/blog/sai","parameters":{"id":"用户 id, 在用户页面地址栏查看"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/user/:id"]}],"name":"用户日志","maintainers":["nczitzk"],"location":"tv/user/blog.ts"}' :test='{"code":1,"message":"expected 323913334387 to be less than 311040000000"}' />
 
 ### 用户想看 <Site url="bangumi.moe" size="sm" />
 

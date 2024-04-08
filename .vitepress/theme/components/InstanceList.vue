@@ -63,16 +63,6 @@ const instances = [{
   maintainer: 'pseudoyu',
   maintainerUrl: 'https://www.pseudoyu.com',
 }, {
-  url: 'https://rsshub.friesport.ac.cn',
-  location: '🇨🇳',
-  maintainer: '薯条港研究院',
-  maintainerUrl: 'https://space.bilibili.com/1690617042',
-}, {
-  url: 'https://rsshub.friesport.ac.cn/us',
-  location: '🇺🇸',
-  maintainer: '薯条港研究院',
-  maintainerUrl: 'https://space.bilibili.com/1690617042',
-}, {
   url: 'https://rsshub.atgw.io',
   location: '🇺🇸',
   maintainer: 'limfoo',
@@ -107,6 +97,17 @@ const instances = [{
   location: '🇩🇪',
   maintainer: 'Vincent Yang',
   maintainerUrl: 'https://missuo.me',
+},
+{
+  url: 'https://rss.wudifeixue.com',
+  location: '🇨🇦',
+  maintainer: 'wudifeixue',
+  maintainerUrl: 'https://github.com/wudifeixue',
+}, {
+  url: 'https://yangzhi.app',
+  location: '🇯🇵',
+  maintainer: '仰止',
+  maintainerUrl: 'https://yangzhi.org',
 }
 ]
 

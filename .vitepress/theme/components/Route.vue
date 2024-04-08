@@ -4,7 +4,7 @@
       <Badge v-if="!test" type="warning">🟡 Missing Test</Badge>
       <Badge v-if="test?.code" type="danger" :title="test?.message">🔴 Failed Test</Badge>
       <Badge v-if="test && !test?.code" type="tip">🟢 Passed Test</Badge>
-      <a v-if="data.features?.antiCrawler" href="/faq" target="_blank">
+      <a v-if="data.features?.antiCrawler" href="/guide/faqs" target="_blank">
         <Badge type="danger">🚨 Strict Anti-crawling</Badge>
       </a>
       <Badge v-if="data.features?.supportBT" type="tip">🔄 Support BT</Badge>
@@ -42,7 +42,7 @@
           <code>{{ item.replace(/:|\?|\+|\*/g, '') }}</code>,{{ ' ' }}
           <!-- TODO: Handle below translations based on last character in the item -->
           required - {{ ' ' }}
-          <span>{{ renderMarkdown(data.parameters?.[item.replace(/:|\?|\+|\*/g, '')] || '') }}</span>
+          <span v-html="renderMarkdown(data.parameters?.[item.replace(/:|\?|\+|\*/g, '')] || '')"/>
         </li>
       </ul>
     </div>
@@ -53,7 +53,7 @@
           <code>{{ item.name }}</code>,{{ ' ' }}
           {{ item.optional ? 'optional' : 'required' }}
           {{ ' - ' }}
-          <span>{{ renderMarkdown(item.description) }}</span>
+          <span v-html="renderMarkdown(item.description)"/>
         </li>
       </ul>
     </div>

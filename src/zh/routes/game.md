@@ -150,7 +150,7 @@ Region
 
 ### FINAL FANTASY XIV (The Lodestone) <Site url="eu.finalfantasyxiv.com" size="sm" />
 
-<Route namespace="ff14" :data='{"path":["/global/:lang/:type?","/ff14_global/:lang/:type?"],"categories":["game"],"example":"/ff14/global/na/all","parameters":{"lang":"Region","type":"Category, `all` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"FINAL FANTASY XIV (The Lodestone)","maintainers":["chengyuhui"],"description":"Region\n\n  | North Ameria | Europe | France | Germany | Japan |\n  | ------------ | ------ | ------ | ------- | ----- |\n  | na           | eu     | fr     | de      | jp    |\n\n  Category\n\n  | all | topics | notices | maintenance | updates | status | developers |\n  | --- | ------ | ------- | ----------- | ------- | ------ | ---------- |","location":"ff14-global.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ff14" :data='{"path":["/global/:lang/:type?","/ff14_global/:lang/:type?"],"categories":["game"],"example":"/ff14/global/na/all","parameters":{"lang":"Region","type":"Category, `all` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"FINAL FANTASY XIV (The Lodestone)","maintainers":["chengyuhui"],"description":"Region\n\n  | North Ameria | Europe | France | Germany | Japan |\n  | ------------ | ------ | ------ | ------- | ----- |\n  | na           | eu     | fr     | de      | jp    |\n\n  Category\n\n  | all | topics | notices | maintenance | updates | status | developers |\n  | --- | ------ | ------- | ----------- | ------- | ------ | ---------- |","location":"ff14-global.ts"}' :test='{"code":0}' />
 
 Region
 
@@ -183,7 +183,7 @@ Region
 
 ### News <Site url="fortnite.com" size="sm" />
 
-<Route namespace="fortnite" :data='{"path":"/news/:options?","categories":["game"],"example":"/fortnite/news","parameters":{"options":"Params"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["lyqluis"],"description":"-   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)\n\n  | English (default) | Spanish | Japanese | French | Korean | Polish |\n  | ----------------- | ------- | -------- | ------ | ------ | ------ |\n  | en-US             | es-ES   | ja       | fr     | ko     | pl     |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="fortnite" :data='{"path":"/news/:options?","categories":["game"],"example":"/fortnite/news","parameters":{"options":"Params"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["lyqluis"],"description":"-   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)\n\n  | English (default) | Spanish | Japanese | French | Korean | Polish |\n  | ----------------- | ------- | -------- | ------ | ------ | ------ |\n  | en-US             | es-ES   | ja       | fr     | ko     | pl     |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 -   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)
 
@@ -223,7 +223,7 @@ Region
 
 ### Official Announcement <Site url="hoyolab.com" size="sm" />
 
-<Route namespace="hoyolab" :data='{"path":"/news/:language/:gids/:type","categories":["game"],"example":"/hoyolab/news/zh-cn/2/2","parameters":{"language":"Language","gids":"Game ID","type":"Announcement type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Official Announcement","maintainers":["ZenoTian"],"description":"| Language         | Code  |\n  | ---------------- | ----- |\n  | 简体中文         | zh-cn |\n  | 繁體中文         | zh-tw |\n  | 日本語           | ja-jp |\n  | 한국어           | ko-kr |\n  | English (US)     | en-us |\n  | Español (EU)     | es-es |\n  | Français         | fr-fr |\n  | Deutsch          | de-de |\n  | Русский          | ru-ru |\n  | Português        | pt-pt |\n  | Español (Latino) | es-mx |\n  | Indonesia        | id-id |\n  | Tiếng Việt       | vi-vn |\n  | ภาษาไทย          | th-th |\n\n  | Honkai Impact 3rd | Genshin Impact | Tears of Themis | HoYoLAB | Honkai: Star Rail | Zenless Zone Zero |\n  | ----------------- | -------------- | --------------- | ------- | ----------------- | ----------------- |\n  | 1                 | 2              | 4               | 5       | 6                 | 8                 |\n\n  | Notices | Events | Info |\n  | ------- | ------ | ---- |\n  | 1       | 2      | 3    |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="hoyolab" :data='{"path":"/news/:language/:gids/:type","categories":["game"],"example":"/hoyolab/news/zh-cn/2/2","parameters":{"language":"Language","gids":"Game ID","type":"Announcement type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Official Announcement","maintainers":["ZenoTian"],"description":"| Language         | Code  |\n  | ---------------- | ----- |\n  | 简体中文         | zh-cn |\n  | 繁體中文         | zh-tw |\n  | 日本語           | ja-jp |\n  | 한국어           | ko-kr |\n  | English (US)     | en-us |\n  | Español (EU)     | es-es |\n  | Français         | fr-fr |\n  | Deutsch          | de-de |\n  | Русский          | ru-ru |\n  | Português        | pt-pt |\n  | Español (Latino) | es-mx |\n  | Indonesia        | id-id |\n  | Tiếng Việt       | vi-vn |\n  | ภาษาไทย          | th-th |\n\n  | Honkai Impact 3rd | Genshin Impact | Tears of Themis | HoYoLAB | Honkai: Star Rail | Zenless Zone Zero |\n  | ----------------- | -------------- | --------------- | ------- | ----------------- | ----------------- |\n  | 1                 | 2              | 4               | 5       | 6                 | 8                 |\n\n  | Notices | Events | Info |\n  | ------- | ------ | ---- |\n  | 1       | 2      | 3    |","location":"news.ts"}' :test='{"code":1,"message":"expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality"}' />
 
 | Language         | Code  |
   | ---------------- | ----- |
@@ -258,15 +258,15 @@ Region
 
 ### 会员开发游戏库 <Site url="indienova.com/usergames" size="sm" />
 
-<Route namespace="indienova" :data='{"path":"/usergames","categories":["game"],"example":"/indienova/usergames","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/usergames","indienova.com/"]}],"name":"会员开发游戏库","maintainers":["TonyRL"],"url":"indienova.com/usergames","location":"usergames.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="indienova" :data='{"path":"/usergames","categories":["game"],"example":"/indienova/usergames","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/usergames","indienova.com/"]}],"name":"会员开发游戏库","maintainers":["TonyRL"],"url":"indienova.com/usergames","location":"usergames.ts"}' :test='{"code":0}' />
 
 ### 文章 <Site url="indienova.com" size="sm" />
 
-<Route namespace="indienova" :data='{"path":"/:type","categories":["game"],"example":"/indienova/article","parameters":{"type":"类型: `article` 文章，`development` 开发"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["GensouSakuya","kt286"],"location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="indienova" :data='{"path":"/:type","categories":["game"],"example":"/indienova/article","parameters":{"type":"类型: `article` 文章，`development` 开发"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["GensouSakuya","kt286"],"location":"article.ts"}' :test='{"code":0}' />
 
 ### 专题 <Site url="indienova.com" size="sm" />
 
-<Route namespace="indienova" :data='{"path":"/column/:columnId","categories":["game"],"example":"/indienova/column/52","parameters":{"columnId":"专题 ID，可在 URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/column/:columnId"]}],"name":"专题","maintainers":["TonyRL"],"description":"<details>\n    <summary>专题 ID</summary>\n\n    游戏推荐\n\n    | itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |\n    | --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |\n    | 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |\n\n    游戏评论\n\n    | 游必有方 Podcast | 独立游戏潮（RED） |\n    | ---------------- | ----------------- |\n    | 6                | 3                 |\n\n    游戏开发\n\n    | 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |\n    | ------------ | -------------- | ------------ |\n    | 15           | 14             | 7            |\n\n    游戏设计\n\n    | 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |\n    | ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |\n    | 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |\n\n    游戏文化\n\n    | NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |\n    | --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |\n    | 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |\n\n    Game Jam\n\n    | Ludum Dare | Global Game Jam |\n    | ---------- | --------------- |\n    | 31         | 13              |\n  </details>","location":"column.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="indienova" :data='{"path":"/column/:columnId","categories":["game"],"example":"/indienova/column/52","parameters":{"columnId":"专题 ID，可在 URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/column/:columnId"]}],"name":"专题","maintainers":["TonyRL"],"description":"<details>\n    <summary>专题 ID</summary>\n\n    游戏推荐\n\n    | itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |\n    | --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |\n    | 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |\n\n    游戏评论\n\n    | 游必有方 Podcast | 独立游戏潮（RED） |\n    | ---------------- | ----------------- |\n    | 6                | 3                 |\n\n    游戏开发\n\n    | 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |\n    | ------------ | -------------- | ------------ |\n    | 15           | 14             | 7            |\n\n    游戏设计\n\n    | 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |\n    | ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |\n    | 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |\n\n    游戏文化\n\n    | NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |\n    | --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |\n    | 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |\n\n    Game Jam\n\n    | Ludum Dare | Global Game Jam |\n    | ---------- | --------------- |\n    | 31         | 13              |\n  </details>","location":"column.ts"}' :test='{"code":0}' />
 
 <details>
     <summary>专题 ID</summary>
@@ -362,9 +362,42 @@ Region
 
 ## Minecraft <Site url="minecraft.net"/>
 
+### Java Blocked Servers <Site url="minecraft.net/" size="sm" />
+
+<Route namespace="minecraft" :data='{"path":"/blockedservers","categories":["game"],"example":"/minecraft/blockedservers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Blocked Servers","maintainers":["xtexChooser"],"url":"minecraft.net/","description":"Java 版中被 Mojang 通过 sessionserver 阻止的服务器域名的 SHA-1 散列","zh":{"name":"Java版被阻止的服务器域名散列"},"location":"blockedservers.ts"}' :test='{"code":0}' />
+
+Java 版中被 Mojang 通过 sessionserver 阻止的服务器域名的 SHA-1 散列
+
+### Java Runtimes <Site url="minecraft.net/" size="sm" />
+
+<Route namespace="minecraft" :data='{"path":"/java-runtime/:arch?/:javaType?","categories":["game"],"example":"/minecraft/java-runtime","parameters":{"arch":"Arch, `all` by default","javaType":"Java runtime type, `all` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Runtimes","maintainers":["xtexChooser"],"url":"minecraft.net/","description":"\narch:\n\n- gamecore (Currently not used by Mojang)\n- linux\n- linux-i386\n- mac-os\n- mac-os-arm64\n- windows-arm64\n- windows-x64\n- windows-x86\n\njavaType:\n\n- java-runtime-alpha\n- java-runtime-beta\n- java-runtime-delta\n- java-runtime-gamma\n- java-runtime-gamma-snapshot\n- jre-legacy\n- minecraft-java-exe (Only on Windows)\n","zh":{"name":"Java运行时"},"location":"java-runtime.ts"}' :test='{"code":0}' />
+
+
+arch:
+
+- gamecore (Currently not used by Mojang)
+- linux
+- linux-i386
+- mac-os
+- mac-os-arm64
+- windows-arm64
+- windows-x64
+- windows-x86
+
+javaType:
+
+- java-runtime-alpha
+- java-runtime-beta
+- java-runtime-delta
+- java-runtime-gamma
+- java-runtime-gamma-snapshot
+- jre-legacy
+- minecraft-java-exe (Only on Windows)
+
+
 ### Java Game Update <Site url="minecraft.net/" size="sm" />
 
-<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='undefined' />
+<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 311763936564 to be less than 311040000000"}' />
 
 
 | Version                    | versionType |
@@ -424,13 +457,13 @@ Region
 
 ### 首页资讯（中国） <Site url="nintendoswitch.com.cn/" size="sm" />
 
-<Route namespace="nintendo" :data='{"path":"/news/china","categories":["game"],"example":"/nintendo/news/china","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nintendoswitch.com.cn/"]}],"name":"首页资讯（中国）","maintainers":["NeverBehave"],"url":"nintendoswitch.com.cn/","location":"news-china.ts"}' :test='{"code":0}' />
+<Route namespace="nintendo" :data='{"path":"/news/china","categories":["game"],"example":"/nintendo/news/china","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nintendoswitch.com.cn/"]}],"name":"首页资讯（中国）","maintainers":["NeverBehave"],"url":"nintendoswitch.com.cn/","location":"news-china.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## osu! <Site url="osu.ppy.sh"/>
 
 ### Beatmap Packs <Site url="osu.ppy.sh" size="sm" />
 
-<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":0}' />
+<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## PRINCESS CONNECT! Re Dive プリンセスコネクト！Re Dive <Site url="priconne-redive.jp"/>
 
@@ -537,7 +570,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 文章列表 <Site url="tgbus.com" size="sm" />
 
-<Route namespace="tgbus" :data='{"path":"/list/:category","parameters":{"category":"列表分类，见下表"},"categories":["game"],"example":"/tgbus/list/news","radar":[{"source":["www.tgbus.com/list/:category/"],"target":"/list/:category"}],"name":"文章列表","maintainers":["Xzonn"],"description":"| 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |\n    | -------- | -------- | -------- | ------------ | -------- |\n    | news     | review   | video    | special      | hardware |","location":"list.ts"}' :test='{"code":0}' />
+<Route namespace="tgbus" :data='{"path":"/list/:category","parameters":{"category":"列表分类，见下表"},"categories":["game"],"example":"/tgbus/list/news","radar":[{"source":["www.tgbus.com/list/:category/"],"target":"/list/:category"}],"name":"文章列表","maintainers":["Xzonn"],"description":"| 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |\n    | -------- | -------- | -------- | ------------ | -------- |\n    | news     | review   | video    | special      | hardware |","location":"list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |
     | -------- | -------- | -------- | ------------ | -------- |
@@ -567,11 +600,11 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 首页 <Site url="www.iyingdi.com/" size="sm" />
 
-<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 首页（旧版） <Site url="www.iyingdi.com/" size="sm" />
 
-<Route namespace="lfsyd" :data='{"path":"/old_home","categories":["game"],"example":"/lfsyd/old_home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页（旧版）","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"old-home.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lfsyd" :data='{"path":"/old_home","categories":["game"],"example":"/lfsyd/old_home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页（旧版）","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"old-home.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 米哈游 <Site url="genshin.hoyoverse.com"/>
 
@@ -634,7 +667,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 米游社 - 官方公告 <Site url="genshin.hoyoverse.com" size="sm" />
 
-<Route namespace="mihoyo" :data='{"path":"/bbs/official/:gids/:type?/:page_size?/:last_id?","categories":["game"],"example":"/mihoyo/bbs/official/2/3/20/","parameters":{"gids":"游戏id","type":"公告类型，默认为 2(即 活动)","page_size":"分页大小，默认为 20 ","last_id":"跳过的公告数，例如指定为 40 就是从第 40 条公告开始，可用于分页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"米游社 - 官方公告","maintainers":["CaoMeiYouRen"],"description":"游戏 id\n\n  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 绝区零 |\n  | ------ | ---- | ------ | ---------- | -------- | ------ |\n  | 1      | 2    | 3      | 4          | 6        | 8      |\n\n  公告类型\n\n  | 公告 | 活动 | 资讯 |\n  | ---- | ---- | ---- |\n  | 1    | 2    | 3    |","location":"bbs/official.ts"}' :test='{"code":1,"message":"expected 404 to be 200 // Object.is equality"}' />
+<Route namespace="mihoyo" :data='{"path":"/bbs/official/:gids/:type?/:page_size?/:last_id?","categories":["game"],"example":"/mihoyo/bbs/official/2/3/20/","parameters":{"gids":"游戏id","type":"公告类型，默认为 2(即 活动)","page_size":"分页大小，默认为 20 ","last_id":"跳过的公告数，例如指定为 40 就是从第 40 条公告开始，可用于分页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"米游社 - 官方公告","maintainers":["CaoMeiYouRen"],"description":"游戏 id\n\n  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 绝区零 |\n  | ------ | ---- | ------ | ---------- | -------- | ------ |\n  | 1      | 2    | 3      | 4          | 6        | 8      |\n\n  公告类型\n\n  | 公告 | 活动 | 资讯 |\n  | ---- | ---- | ---- |\n  | 1    | 2    | 3    |","location":"bbs/official.ts"}' :test='{"code":1,"message":"expected 301 to be 200 // Object.is equality"}' />
 
 游戏 id
 
@@ -674,7 +707,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 游戏内公告 <Site url="ak.arknights.jp" size="sm" />
 
-<Route namespace="arknights" :data='{"path":"/announce/:platform?/:group?","categories":["game"],"example":"/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -14946685627 to be greater than -432000000"}' />
+<Route namespace="arknights" :data='{"path":"/announce/:platform?/:group?","categories":["game"],"example":"/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -14169035336 to be greater than -432000000"}' />
 
 平台
 
@@ -750,9 +783,13 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ## 小黑盒 <Site url="xiaoheihe.cn"/>
 
+### 喜加一 <Site url="xiaoheihe.cn" size="sm" />
+
+<Route namespace="xiaoheihe" :data='{"path":"/add2cart/:platform","categories":["game"],"example":"/xiaoheihe/add2cart/epic","parameters":{"platform":"平台名：epic、steam或gog"},"name":"喜加一","maintainers":["ladeng07"],"location":"add2cart.ts"}' :test='{"code":0}' />
+
 ### 用户动态 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/user/:id","categories":["game"],"example":"/xiaoheihe/user/30664023","parameters":{"id":"用户 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户动态","maintainers":["tssujt"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoheihe" :data='{"path":"/user/:id","categories":["game"],"example":"/xiaoheihe/user/30664023","parameters":{"id":"用户 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户动态","maintainers":["tssujt"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 游戏折扣 <Site url="xiaoheihe.cn" size="sm" />
 
@@ -764,7 +801,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 游戏新闻 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/news","categories":["game"],"example":"/xiaoheihe/news","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏新闻","maintainers":["tssujt"],"location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoheihe" :data='{"path":"/news","categories":["game"],"example":"/xiaoheihe/news","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏新闻","maintainers":["tssujt"],"location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 英雄联盟 <Site url="lol.garena.tw"/>
 
@@ -798,11 +835,11 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 精彩推荐 <Site url="yxdown.com/" size="sm" />
 
-<Route namespace="yxdown" :data='{"path":"/recommend","categories":["game"],"example":"/yxdown/recommend","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yxdown.com/"]}],"name":"精彩推荐","maintainers":["nczitzk"],"url":"yxdown.com/","location":"recommend.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="yxdown" :data='{"path":"/recommend","categories":["game"],"example":"/yxdown/recommend","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yxdown.com/"]}],"name":"精彩推荐","maintainers":["nczitzk"],"url":"yxdown.com/","location":"recommend.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 资讯 <Site url="yxdown.com" size="sm" />
 
-<Route namespace="yxdown" :data='{"path":"/news/:category?","categories":["game"],"example":"/yxdown/news","parameters":{"category":"分类，见下表，默认为资讯首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"| 资讯首页 | 业界动态 | 视频预告 | 新作发布 | 游戏资讯 | 游戏评测 | 网络游戏 | 手机游戏 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  |          | dongtai  | yugao    | xinzuo   | zixun    | pingce   | wangluo  | shouyou  |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="yxdown" :data='{"path":"/news/:category?","categories":["game"],"example":"/yxdown/news","parameters":{"category":"分类，见下表，默认为资讯首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"| 资讯首页 | 业界动态 | 视频预告 | 新作发布 | 游戏资讯 | 游戏评测 | 网络游戏 | 手机游戏 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  |          | dongtai  | yugao    | xinzuo   | zixun    | pingce   | wangluo  | shouyou  |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 资讯首页 | 业界动态 | 视频预告 | 新作发布 | 游戏资讯 | 游戏评测 | 网络游戏 | 手机游戏 |
   | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |

@@ -14,13 +14,13 @@
 
 ### Exhibitions <Site url="www.brooklynmuseum.org" size="sm" />
 
-<Route namespace="brooklynmuseum" :data='{"path":"/exhibitions/:state?","categories":["travel"],"example":"/brooklynmuseum/exhibitions","parameters":{"state":"展览进行的状态：`current` 对应展览当前正在进行，`past` 对应过去的展览，`upcoming` 对应即将举办的展览，默认为 `current`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Exhibitions","maintainers":[],"location":"exhibitions.ts"}' :test='{"code":0}' />
+<Route namespace="brooklynmuseum" :data='{"path":"/exhibitions/:state?","categories":["travel"],"example":"/brooklynmuseum/exhibitions","parameters":{"state":"展览进行的状态：`current` 对应展览当前正在进行，`past` 对应过去的展览，`upcoming` 对应即将举办的展览，默认为 `current`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Exhibitions","maintainers":[],"location":"exhibitions.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## National Geographic <Site url="www.nationalgeographic.com"/>
 
 ### Latest Stories <Site url="www.nationalgeographic.com/pages/topic/latest-stories" size="sm" />
 
-<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## New Museum 纽约新美术馆 <Site url="www.newmuseum.org"/>
 
@@ -32,7 +32,7 @@
 
 ### 信用卡 <Site url="flyert.com/" size="sm" />
 
-<Route namespace="flyert" :data='{"path":"/creditcard/:bank","categories":["travel"],"example":"/flyert/creditcard/zhongxin","parameters":{"bank":"信用卡板块各银行的拼音简称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flyert.com/"]}],"name":"信用卡","maintainers":["nicolaszf"],"url":"flyert.com/","description":"| 信用卡模块 | bank          |\n  | ---------- | ------------- |\n  | 国内信用卡 | creditcard    |\n  | 浦发银行   | pufa          |\n  | 招商银行   | zhaoshang     |\n  | 中信银行   | zhongxin      |\n  | 交通银行   | jiaotong      |\n  | 中国银行   | zhonghang     |\n  | 工商银行   | gongshang     |\n  | 广发银行   | guangfa       |\n  | 农业银行   | nongye        |\n  | 建设银行   | jianshe       |\n  | 汇丰银行   | huifeng       |\n  | 民生银行   | mingsheng     |\n  | 兴业银行   | xingye        |\n  | 花旗银行   | huaqi         |\n  | 上海银行   | shanghai      |\n  | 无卡支付   | wuka          |\n  | 投资理财   | 137           |\n  | 网站权益汇 | 145           |\n  | 境外信用卡 | intcreditcard |","location":"creditcard.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="flyert" :data='{"path":"/creditcard/:bank","categories":["travel"],"example":"/flyert/creditcard/zhongxin","parameters":{"bank":"信用卡板块各银行的拼音简称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flyert.com/"]}],"name":"信用卡","maintainers":["nicolaszf"],"url":"flyert.com/","description":"| 信用卡模块 | bank          |\n  | ---------- | ------------- |\n  | 国内信用卡 | creditcard    |\n  | 浦发银行   | pufa          |\n  | 招商银行   | zhaoshang     |\n  | 中信银行   | zhongxin      |\n  | 交通银行   | jiaotong      |\n  | 中国银行   | zhonghang     |\n  | 工商银行   | gongshang     |\n  | 广发银行   | guangfa       |\n  | 农业银行   | nongye        |\n  | 建设银行   | jianshe       |\n  | 汇丰银行   | huifeng       |\n  | 民生银行   | mingsheng     |\n  | 兴业银行   | xingye        |\n  | 花旗银行   | huaqi         |\n  | 上海银行   | shanghai      |\n  | 无卡支付   | wuka          |\n  | 投资理财   | 137           |\n  | 网站权益汇 | 145           |\n  | 境外信用卡 | intcreditcard |","location":"creditcard.ts"}' :test='{"code":0}' />
 
 | 信用卡模块 | bank          |
   | ---------- | ------------- |
@@ -58,7 +58,7 @@
 
 ### 优惠信息 <Site url="flyert.com/" size="sm" />
 
-<Route namespace="flyert" :data='{"path":"/preferential","categories":["travel"],"example":"/flyert/preferential","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flyert.com/"]}],"name":"优惠信息","maintainers":["howel52"],"url":"flyert.com/","location":"preferential.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="flyert" :data='{"path":"/preferential","categories":["travel"],"example":"/flyert/preferential","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flyert.com/"]}],"name":"优惠信息","maintainers":["howel52"],"url":"flyert.com/","location":"preferential.ts"}' :test='{"code":0}' />
 
 ## 福州地铁 <Site url="www.fzmtr.com"/>
 
@@ -76,13 +76,13 @@
 
 ### 分类 <Site url="nationalgeographic.com" size="sm" />
 
-<Route namespace="natgeo" :data='{"path":"/:cat/:type?","categories":["travel"],"example":"/natgeo/environment/article","parameters":{"cat":"分类","type":"类型, 例如`https://www.natgeomedia.com/environment/photo/`对应 `cat`, `type` 分别为 `environment`, `photo`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["natgeomedia.com/:cat/:type","natgeomedia.com/"],"target":"/:cat/:type"}],"name":"分类","maintainers":["fengkx"],"location":"natgeo.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="natgeo" :data='{"path":"/:cat/:type?","categories":["travel"],"example":"/natgeo/environment/article","parameters":{"cat":"分类","type":"类型, 例如`https://www.natgeomedia.com/environment/photo/`对应 `cat`, `type` 分别为 `environment`, `photo`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["natgeomedia.com/:cat/:type","natgeomedia.com/"],"target":"/:cat/:type"}],"name":"分类","maintainers":["fengkx"],"location":"natgeo.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 纽约犹太人博物馆 <Site url="thejewishmuseum.org"/>
 
 ### Exhibitions <Site url="thejewishmuseum.org" size="sm" />
 
-<Route namespace="jewishmuseum" :data='{"path":"/exhibitions","categories":["travel"],"example":"/jewishmuseum/exhibitions","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Exhibitions","maintainers":["chazeon"],"location":"exhibitions.ts"}' :test='{"code":1,"message":"expected { &#39;$&#39;: { isPermaLink: &#39;false&#39; } } to deeply equal Any<String>"}' />
+<Route namespace="jewishmuseum" :data='{"path":"/exhibitions","categories":["travel"],"example":"/jewishmuseum/exhibitions","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Exhibitions","maintainers":["chazeon"],"location":"exhibitions.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 中国国际航空公司 <Site url="www.airchina.com.cn"/>
 
