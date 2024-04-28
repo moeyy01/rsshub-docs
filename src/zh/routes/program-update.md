@@ -36,14 +36,14 @@
 
 ### App Update <Site url="apps.apple.com" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/apps/update/:country/:id/:platform?","categories":["program-update"],"example":"/apple/apps/update/us/id408709785","parameters":{"country":"App Store Country, obtain from the app URL, see below","id":"App id, obtain from the app URL","platform":"App Platform, see below, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/:country/app/:appSlug/:id","apps.apple.com/:country/app/:id"],"target":"/apps/update/:country/:id"}],"name":"App Update","maintainers":["EkkoG","nczitzk"],"description":"| All | iOS | macOS | tvOS |\n  | --- | --- | ----- | ---- |\n  |     | iOS | macOS | tvOS |\n\n  :::tip\n  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.moeyy.cn/apple/apps/update/us/id408709785).\n  :::","location":"apps.ts"}' :test='{"code":0}' />
+<Route namespace="apple" :data='{"path":"/apps/update/:country/:id/:platform?","categories":["program-update"],"example":"/apple/apps/update/us/id408709785","parameters":{"country":"App Store Country, obtain from the app URL, see below","id":"App id, obtain from the app URL","platform":"App Platform, see below, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/:country/app/:appSlug/:id","apps.apple.com/:country/app/:id"],"target":"/apps/update/:country/:id"}],"name":"App Update","maintainers":["EkkoG","nczitzk"],"description":"| All | iOS | macOS | tvOS |\n  | --- | --- | ----- | ---- |\n  |     | iOS | macOS | tvOS |\n\n  :::tip\n  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.moeyy.xyz/apple/apps/update/us/id408709785).\n  :::","location":"apps.ts"}' :test='{"code":0}' />
 
 | All | iOS | macOS | tvOS |
   | --- | --- | ----- | ---- |
   |     | iOS | macOS | tvOS |
 
   :::tip
-  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.moeyy.cn/apple/apps/update/us/id408709785).
+  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.moeyy.xyz/apple/apps/update/us/id408709785).
   :::
 
 ## App Store/Mac App Store <Site url="apps.apple.com"/>
@@ -122,18 +122,18 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 ### Image New Build <Site url="hub.docker.com" size="sm" />
 
-<Route namespace="dockerhub" :data='{"path":"/build/:owner/:image/:tag?","categories":["program-update"],"example":"/dockerhub/build/wangqiru/ttrss","parameters":{"owner":"Image owner","image":"Image name","tag":"Image tag，default to latest"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Build","maintainers":["HenryQW"],"description":":::warning\n  The owner of the official image fills in the library, for example: [https://rsshub.moeyy.cn/dockerhub/build/library/mysql](https://rsshub.moeyy.cn/dockerhub/build/library/mysql)\n  :::","location":"build.ts"}' :test='{"code":0}' />
+<Route namespace="dockerhub" :data='{"path":"/build/:owner/:image/:tag?","categories":["program-update"],"example":"/dockerhub/build/wangqiru/ttrss","parameters":{"owner":"Image owner","image":"Image name","tag":"Image tag，default to latest"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Build","maintainers":["HenryQW"],"description":":::warning\n  The owner of the official image fills in the library, for example: [https://rsshub.moeyy.xyz/dockerhub/build/library/mysql](https://rsshub.moeyy.xyz/dockerhub/build/library/mysql)\n  :::","location":"build.ts"}' :test='{"code":0}' />
 
 :::warning
-  The owner of the official image fills in the library, for example: [https://rsshub.moeyy.cn/dockerhub/build/library/mysql](https://rsshub.moeyy.cn/dockerhub/build/library/mysql)
+  The owner of the official image fills in the library, for example: [https://rsshub.moeyy.xyz/dockerhub/build/library/mysql](https://rsshub.moeyy.xyz/dockerhub/build/library/mysql)
   :::
 
 ### Image New Tag <Site url="hub.docker.com" size="sm" />
 
-<Route namespace="dockerhub" :data='{"path":"/tag/:owner/:image/:limits?","categories":["program-update"],"example":"/dockerhub/tag/library/mariadb","parameters":{"owner":"Image owner","image":"Image name","limits":"Tag count, 10 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Tag","maintainers":[],"description":":::warning\n  Use `library` as the `owner` for official images, such as [https://rsshub.moeyy.cn/dockerhub/tag/library/mysql](https://rsshub.moeyy.cn/dockerhub/tag/library/mysql)\n  :::","location":"tag.ts"}' :test='{"code":0}' />
+<Route namespace="dockerhub" :data='{"path":"/tag/:owner/:image/:limits?","categories":["program-update"],"example":"/dockerhub/tag/library/mariadb","parameters":{"owner":"Image owner","image":"Image name","limits":"Tag count, 10 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Tag","maintainers":[],"description":":::warning\n  Use `library` as the `owner` for official images, such as [https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql](https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql)\n  :::","location":"tag.ts"}' :test='{"code":0}' />
 
 :::warning
-  Use `library` as the `owner` for official images, such as [https://rsshub.moeyy.cn/dockerhub/tag/library/mysql](https://rsshub.moeyy.cn/dockerhub/tag/library/mysql)
+  Use `library` as the `owner` for official images, such as [https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql](https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql)
   :::
 
 ## Eagle <Site url="cn.eagle.cool"/>

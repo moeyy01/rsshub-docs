@@ -8,4 +8,4 @@ The API is under active development and is subject to change. All suggestions ar
 
 RSSHub provides the following APIs:
 
-https://rsshub.moeyy.cn/api/ui
+https://rsshub.moeyy.xyz/api/ui

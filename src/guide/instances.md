@@ -8,7 +8,7 @@ If you are willing to contribute your own instance for others to use, please edi
 
 | URL | Location | Maintainer | Online |
 | --- | --- | --- | --- |
-| [rsshub.app](https://rsshub.moeyy.cn) | 🇺🇸 | [DIYgod](https://diygod.cc) | ![](https://img.shields.io/website.svg?label=&url=https://rsshub.moeyy.cn/test/cache) |
+| [rsshub.app](https://rsshub.moeyy.xyz) | 🇺🇸 | [DIYgod](https://diygod.cc) | ![](https://img.shields.io/website.svg?label=&url=https://rsshub.moeyy.xyz/test/cache) |
 
 ## Public
 

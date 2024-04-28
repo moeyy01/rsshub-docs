@@ -124,11 +124,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 发现 <Site url="elasticsearch.cn" size="sm" />
 
-<Route namespace="elasticsearch-cn" :data='{"path":"/:params?","categories":["bbs"],"example":"/elasticsearch-cn","parameters":{"params":"分类，可在对应分类页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["elasticsearch.cn/:params","elasticsearch.cn/"],"target":"/:params"}],"name":"发现","maintainers":["nczitzk"],"description":"如 [Elasticsearch 最新](https://elasticsearch.cn/category-2) 的 URL 为 `https://elasticsearch.cn/category-2`，则分类参数处填写 `category-2`，最后得到路由地址 [`/elasticsearch-cn/category-2`](https://rsshub.moeyy.cn/elasticsearch-cn/category-2)。\n\n  又如 [求职招聘 30 天热门](https://elasticsearch.cn/sort_type-hot____category-12__day-30) 的 URL 为 `https://elasticsearch.cn/sort_type-hot____category-12__day-30`，则分类参数处填写 `sort_type-hot____category-12__day-30`，最后得到路由地址 [`/elasticsearch-cn/sort_type-hot____category-12__day-30`](https://rsshub.moeyy.cn/elasticsearch-cn/sort_type-hot____category-12__day-30)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="elasticsearch-cn" :data='{"path":"/:params?","categories":["bbs"],"example":"/elasticsearch-cn","parameters":{"params":"分类，可在对应分类页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["elasticsearch.cn/:params","elasticsearch.cn/"],"target":"/:params"}],"name":"发现","maintainers":["nczitzk"],"description":"如 [Elasticsearch 最新](https://elasticsearch.cn/category-2) 的 URL 为 `https://elasticsearch.cn/category-2`，则分类参数处填写 `category-2`，最后得到路由地址 [`/elasticsearch-cn/category-2`](https://rsshub.moeyy.xyz/elasticsearch-cn/category-2)。\n\n  又如 [求职招聘 30 天热门](https://elasticsearch.cn/sort_type-hot____category-12__day-30) 的 URL 为 `https://elasticsearch.cn/sort_type-hot____category-12__day-30`，则分类参数处填写 `sort_type-hot____category-12__day-30`，最后得到路由地址 [`/elasticsearch-cn/sort_type-hot____category-12__day-30`](https://rsshub.moeyy.xyz/elasticsearch-cn/sort_type-hot____category-12__day-30)。","location":"index.ts"}' :test='undefined' />
 
-如 [Elasticsearch 最新](https://elasticsearch.cn/category-2) 的 URL 为 `https://elasticsearch.cn/category-2`，则分类参数处填写 `category-2`，最后得到路由地址 [`/elasticsearch-cn/category-2`](https://rsshub.moeyy.cn/elasticsearch-cn/category-2)。
+如 [Elasticsearch 最新](https://elasticsearch.cn/category-2) 的 URL 为 `https://elasticsearch.cn/category-2`，则分类参数处填写 `category-2`，最后得到路由地址 [`/elasticsearch-cn/category-2`](https://rsshub.moeyy.xyz/elasticsearch-cn/category-2)。
 
-  又如 [求职招聘 30 天热门](https://elasticsearch.cn/sort_type-hot____category-12__day-30) 的 URL 为 `https://elasticsearch.cn/sort_type-hot____category-12__day-30`，则分类参数处填写 `sort_type-hot____category-12__day-30`，最后得到路由地址 [`/elasticsearch-cn/sort_type-hot____category-12__day-30`](https://rsshub.moeyy.cn/elasticsearch-cn/sort_type-hot____category-12__day-30)。
+  又如 [求职招聘 30 天热门](https://elasticsearch.cn/sort_type-hot____category-12__day-30) 的 URL 为 `https://elasticsearch.cn/sort_type-hot____category-12__day-30`，则分类参数处填写 `sort_type-hot____category-12__day-30`，最后得到路由地址 [`/elasticsearch-cn/sort_type-hot____category-12__day-30`](https://rsshub.moeyy.xyz/elasticsearch-cn/sort_type-hot____category-12__day-30)。
 
 ## LearnKu <Site url="learnku.com"/>
 
@@ -366,26 +366,26 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### Unknown <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n  :::tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.cn/hupu/all/all-gg)。\n  :::","location":"index.ts"}' :test='undefined' />
+<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n  :::tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.xyz/hupu/all/all-gg)。\n  :::","location":"index.ts"}' :test='undefined' />
 
 | NBA | CBA | 足球   |
   | --- | --- | ------ |
   | nba | cba | soccer |
 
   :::tip
-  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.cn/hupu/all/all-gg)。
+  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.xyz/hupu/all/all-gg)。
   :::
 
 ### Unknown <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n  :::tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.cn/hupu/all/all-gg)。\n  :::","location":"index.ts"}' :test='undefined' />
+<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n  :::tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.xyz/hupu/all/all-gg)。\n  :::","location":"index.ts"}' :test='undefined' />
 
 | NBA | CBA | 足球   |
   | --- | --- | ------ |
   | nba | cba | soccer |
 
   :::tip
-  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.cn/hupu/all/all-gg)。
+  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.moeyy.xyz/hupu/all/all-gg)。
   :::
 
 ### 热帖 <Site url=".hupu.com" size="sm" />
