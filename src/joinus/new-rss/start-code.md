@@ -84,10 +84,12 @@ export const route: Route = {
         supportPodcast: false,
         supportScihub: false,
     },
-    radar: {
-        source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
-        target: '/issue/:user/:repo',
-    },
+    radar: [
+        {
+            source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
+            target: '/issue/:user/:repo',
+        },
+    ],
     name: 'Repo Issues',
     maintainers: ['HenryQW', 'AndreyMZ'],
     handler,
@@ -107,10 +109,12 @@ import { Route } from '@/types';
 
 export const route: Route = {
     // ...
-    radar: {
-        source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
-        target: '/issue/:user/:repo',
-    },
+    radar: [
+        {
+            source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
+            target: '/issue/:user/:repo',
+        },
+    ],
 };
 ```
 
@@ -141,7 +145,7 @@ The handler function will be passed a parameter ctx. By the end of the function,
 We have three common methods of data acquisition:
 
 1.  [Via API](#via-api)
-2.  [Via HTML](#via-html-web-page-using-got)
+2.  [Via HTML](#via-html)
 3.  [Using puppeteer](#using-puppeteer)
 
 Next, we will continue to use GitHub repository Issues as an example to introduce how to write these three common Route Handler functions.

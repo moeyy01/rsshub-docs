@@ -6,8 +6,8 @@
 
 通用参数需要置于路由路径的最后。有些路由在路由路径（route path）的最后引入了<span style="color: blue">**自定义参数**</span>，<span style="color: violet">**通用参数**</span>也需要置于它们之后。
 
-举例: <a href="https://rsshub.moeyy.cn/twitter/user/durov/readable=1&includeRts=0?brief=100&limit=5">
-  https://rsshub.moeyy.cn/twitter/user/durov/<span style="color: blue">**readable=1&includeRts=0**</span>?<span style="color: violet">**brief=100&limit=5**</span>
+举例: <a href="https://rsshub.app/twitter/user/durov/readable=1&includeRts=0?brief=100&limit=5">
+  https://rsshub.app/twitter/user/durov/<span style="color: blue">**readable=1&includeRts=0**</span>?<span style="color: violet">**brief=100&limit=5**</span>
 </a>
 
 
@@ -45,8 +45,8 @@ filter 支持正则表达式。由于正则部分特性可被利用于 DoS (ReDO
 
 -   `filter_time`: 过滤时间，仅支持数字，单位为秒。返回指定时间范围内的内容。如果条目没有输出`pubDate`或者格式不正确将不会被过滤
 
-举例 1: `https://rsshub.moeyy.cn/bilibili/fav/2267573/801952073?filter=编曲|摄影`
-举例 2: `https://rsshub.moeyy.cn/nga/forum/489?filter_time=600`
+举例 1: `https://rsshub.app/bilibili/fav/2267573/801952073?filter=编曲|摄影`
+举例 2: `https://rsshub.app/nga/forum/489?filter_time=600`
 
 `filterout` 去掉不要的内容
 
@@ -60,31 +60,31 @@ filter 支持正则表达式。由于正则部分特性可被利用于 DoS (ReDO
 
 -   `filterout_category`: 过滤分类
 
-举例: `https://rsshub.moeyy.cn/bilibili/fav/2267573/801952073?filterout=编曲|摄影`
+举例: `https://rsshub.app/bilibili/fav/2267573/801952073?filterout=编曲|摄影`
 
 `filter_case_sensitive` 过滤是否区分大小写，`filter` 和 `filterout`同时适用
 
 默认为 `true`，区分大小写
 
-举例 1: [https://rsshub.moeyy.cn/bilibili/user/coin/2267573?filter=diyGOD|RSShub&filter_case_sensitive=false](https://rsshub.moeyy.cn/bilibili/user/coin/2267573?filter=diyGOD|RSShub&filter_case_sensitive=false)
+举例 1: [https://rsshub.app/bilibili/user/coin/2267573?filter=diyGOD|RSShub&filter_case_sensitive=false](https://rsshub.app/bilibili/user/coin/2267573?filter=diyGOD|RSShub&filter_case_sensitive=false)
 
 ## 条数限制
 
 可以使用 `limit` 参数限制最大条数，主要用于排行榜类 RSS
 
-举例: bilibili 排行榜前 10 [https://rsshub.moeyy.cn/bilibili/ranking/0/3?limit=10](https://rsshub.moeyy.cn/bilibili/ranking/0/3?limit=10)
+举例: bilibili 排行榜前 10 [https://rsshub.app/bilibili/ranking/0/3?limit=10](https://rsshub.app/bilibili/ranking/0/3?limit=10)
 
 ## 排序结果
 
 通过 `sorted` 参数控制是否对输出的条目按照发布时间进行排序，这对一些会把部分新闻等置顶的源比较有用（如信息发布网）。默认为 `true` 即进行排序。
 
-举例：不重新排序南京大学本科生院教学信息网的公告通知：[https://rsshub.moeyy.cn/nju/jw/ggtz?sorted=false](https://rsshub.moeyy.cn/nju/jw/ggtz?sorted=false)
+举例：不重新排序南京大学本科生院教学信息网的公告通知：[https://rsshub.app/nju/jw/ggtz?sorted=false](https://rsshub.app/nju/jw/ggtz?sorted=false)
 
 ## 全文输出
 
 可以使用 `mode` 参数来开启自动提取全文内容功能
 
-举例: bilibili 专栏全文输出 [https://rsshub.moeyy.cn/bilibili/user/article/334958638?mode=fulltext](https://rsshub.moeyy.cn/bilibili/user/article/334958638?mode=fulltext)
+举例: bilibili 专栏全文输出 [https://rsshub.app/bilibili/user/article/334958638?mode=fulltext](https://rsshub.app/bilibili/user/article/334958638?mode=fulltext)
 
 ## 访问控制
 
@@ -98,7 +98,7 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 
 -   `tgiv`: 模板 hash，可从模板制作页面分享出来的链接末尾获取（`&rhash=`后面跟着的字符串）
 
-举例: [https://rsshub.moeyy.cn/novel/biquge/94_94525?tgiv=bd3c42818a7f7e](https://rsshub.moeyy.cn/novel/biquge/94_94525?tgiv=bd3c42818a7f7e)
+举例: [https://rsshub.app/novel/biquge/94_94525?tgiv=bd3c42818a7f7e](https://rsshub.app/novel/biquge/94_94525?tgiv=bd3c42818a7f7e)
 
 ## 输出 Sci-hub 链接
 
@@ -106,13 +106,13 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 
 -   `scihub`: 任意值开启
 
-举例: [https://rsshub.moeyy.cn/pnas/latest?scihub=1](https://rsshub.moeyy.cn/pnas/latest?scihub=1)
+举例: [https://rsshub.app/pnas/latest?scihub=1](https://rsshub.app/pnas/latest?scihub=1)
 
 ## 中文简繁体转换
 
 -   `opencc`: `s2t` 简体转繁体、`t2s` 繁体转简体，其它可选值见 [simple-wasm - Configurations](https://github.com/fengkx/simplecc-wasm#%E9%85%8D%E7%BD%AE-configurations)
 
-举例: [https://rsshub.moeyy.cn/dcard/posts/popular?opencc=t2s](https://rsshub.moeyy.cn/dcard/posts/popular?opencc=t2s)
+举例: [https://rsshub.app/dcard/posts/popular?opencc=t2s](https://rsshub.app/dcard/posts/popular?opencc=t2s)
 
 ## 多媒体处理
 
@@ -132,16 +132,16 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 
 ## 输出格式
 
-RSSHub 同时支持 RSS 2.0、Atom、JSON Feed 和 RSS3 UMS 输出格式，在路由添加 `format` 参数（值为`rss`、`atom`、`json` 或 `ums`）即可请求对应输出格式，缺省为 RSS 2.0
+RSSHub 同时支持 RSS 2.0、Atom、JSON Feed 和 RSS3 输出格式，在路由添加 `format` 参数（值为`rss`、`atom`、`json` 或 `rss3`）即可请求对应输出格式，缺省为 RSS 2.0
 
 举例:
 
--   缺省 RSS 2.0 - [https://rsshub.moeyy.cn/jianshu/home](https://rsshub.moeyy.cn/jianshu/home)
--   RSS 2.0 - [https://rsshub.moeyy.cn/jianshu/home?format=rss](https://rsshub.moeyy.cn/jianshu/home?format=rss)
--   Atom - [https://rsshub.moeyy.cn/jianshu/home?format=atom](https://rsshub.moeyy.cn/jianshu/home?format=atom)
--   JSON Feed - [https://rsshub.moeyy.cn/twitter/user/DIYgod?format=json](https://rsshub.moeyy.cn/twitter/user/DIYgod?format=json)
--   RSS3 UMS - [https://rsshub.moeyy.cn/abc?format=ums](https://rsshub.moeyy.cn/abc?format=ums)
--   和 filter 或其他 URL query 一起使用 - `https://rsshub.moeyy.cn/bilibili/user/coin/2267573?format=atom&filter=微小微|赤九玖|暴走大事件`
+-   缺省 RSS 2.0 - [https://rsshub.app/jianshu/home](https://rsshub.app/jianshu/home)
+-   RSS 2.0 - [https://rsshub.app/jianshu/home?format=rss](https://rsshub.app/jianshu/home?format=rss)
+-   Atom - [https://rsshub.app/jianshu/home?format=atom](https://rsshub.app/jianshu/home?format=atom)
+-   JSON Feed - [https://rsshub.app/twitter/user/DIYgod?format=json](https://rsshub.app/twitter/user/DIYgod?format=json)
+-   RSS3 - [https://rsshub.app/abc?format=rss3](https://rsshub.app/abc?format=rss3)
+-   和 filter 或其他 URL query 一起使用 - `https://rsshub.app/bilibili/user/coin/2267573?format=atom&filter=微小微|赤九玖|暴走大事件`
 
 ### debug.json
 
