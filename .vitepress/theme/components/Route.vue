@@ -21,7 +21,7 @@
     <p class="author">
       👨‍💻 Author: {{ ' ' }}
       <a v-for="(uid, index) in data.maintainers" :key="index" :href="`https://github.com/${uid}`" target="_blank">
-        @{{ uid }}{{' '}}
+        @{{ uid }}{{ ' ' }}
       </a>
     </p>
     <p v-if="demoUrl" class="example">
@@ -30,7 +30,7 @@
         {{ demoUrl }}
       </a>
       <CopyButton :text="demoUrl" />
-      <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(demoUrl)}&cacheSeconds=7200`" />
+      <!-- <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(demoUrl)}&cacheSeconds=7200`" /> -->
     </p>
     <p class="path">
       🛎️ Route: <code>/{{ namespace + data.path }}</code>
@@ -42,7 +42,7 @@
           <code>{{ item.replace(/:|\?|\+|\*/g, '') }}</code>,{{ ' ' }}
           <!-- TODO: Handle below translations based on last character in the item -->
           required - {{ ' ' }}
-          <span v-html="renderMarkdown(data.parameters?.[item.replace(/:|\?|\+|\*/g, '')] || '')"/>
+          <span v-html="renderMarkdown(data.parameters?.[item.replace(/:|\?|\+|\*/g, '')] || '')" />
         </li>
       </ul>
     </div>
@@ -53,7 +53,7 @@
           <code>{{ item.name }}</code>,{{ ' ' }}
           {{ item.optional ? 'optional' : 'required' }}
           {{ ' - ' }}
-          <span v-html="renderMarkdown(item.description)"/>
+          <span v-html="renderMarkdown(item.description)" />
         </li>
       </ul>
     </div>
@@ -85,9 +85,9 @@ const demoUrl = props.data.example ? ('https://rsshub.app' + props.data.example)
 const paramMatch = props.data.path.match?.(/(?<=:).*?(?=\/|$)/g);
 
 const renderMarkdown = (item, inline = true) => {
-    const md = new MarkdownIt({
-        html: true,
-    });
-    return inline ? md.renderInline(item) : md.render(item);
+  const md = new MarkdownIt({
+    html: true,
+  });
+  return inline ? md.renderInline(item) : md.render(item);
 };
 </script>

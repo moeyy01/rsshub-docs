@@ -94,7 +94,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '指南',
       items: [
         { text: '开始食用', link: '/zh/guide/' },
-        { text: '公共实例', link: '/zh/guide/instances' },
         { text: '常见问题', link: '/zh/guide/faqs' },
         { text: '故障排除', link: '/zh/guide/troubleshooting' },
         { text: '通用参数', link: '/zh/guide/parameters' },
