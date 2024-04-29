@@ -135,12 +135,12 @@ RSSHub conforms to RSS 2.0, Atom, JSON Feed, and RSS3 Protocol. To obtain the fe
 
 E.g.
 
--   Default (RSS 2.0) - [https://rsshub.app/dribbble/popular](https://rsshub.app/dribbble/popular)
--   RSS 2.0 - [https://rsshub.app/dribbble/popular?format=rss](https://rsshub.app/dribbble/popular?format=rss)
--   Atom - [https://rsshub.app/dribbble/popular?format=atom](https://rsshub.app/dribbble/popular?format=atom)
--   JSON Feed - [https://rsshub.app/twitter/user/DIYgod?format=json](https://rsshub.app/twitter/user/DIYgod?format=json)
--   RSS3 - [https://rsshub.app/abc?format=rss3](https://rsshub.app/abc?format=rss3)
--   Apply filters or URL query - [https://rsshub.app/dribbble/popular?format=atom&filterout=Blue|Yellow|Black](https://rsshub.app/dribbble/popular?format=atom&filterout=Blue|Yellow|Black)
+-   Default (RSS 2.0) - [https://rsshub.moeyy.xyz/dribbble/popular](https://rsshub.moeyy.xyz/dribbble/popular)
+-   RSS 2.0 - [https://rsshub.moeyy.xyz/dribbble/popular?format=rss](https://rsshub.moeyy.xyz/dribbble/popular?format=rss)
+-   Atom - [https://rsshub.moeyy.xyz/dribbble/popular?format=atom](https://rsshub.moeyy.xyz/dribbble/popular?format=atom)
+-   JSON Feed - [https://rsshub.moeyy.xyz/twitter/user/DIYgod?format=json](https://rsshub.moeyy.xyz/twitter/user/DIYgod?format=json)
+-   RSS3 - [https://rsshub.moeyy.xyz/abc?format=rss3](https://rsshub.moeyy.xyz/abc?format=rss3)
+-   Apply filters or URL query - [https://rsshub.moeyy.xyz/dribbble/popular?format=atom&filterout=Blue|Yellow|Black](https://rsshub.moeyy.xyz/dribbble/popular?format=atom&filterout=Blue|Yellow|Black)
 
 ### debug.json
 

@@ -81,7 +81,7 @@ const props = defineProps<{
   }
 }>();
 
-const demoUrl = props.data.example ? ('https://rsshub.app' + props.data.example) : null;
+const demoUrl = props.data.example ? ('https://rsshub.moeyy.xyz' + props.data.example) : null;
 const paramMatch = props.data.path.match?.(/(?<=:).*?(?=\/|$)/g);
 
 const renderMarkdown = (item, inline = true) => {

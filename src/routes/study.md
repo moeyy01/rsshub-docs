@@ -126,12 +126,12 @@
 
 ### 新闻 <Site url="sdzk.cn" size="sm" />
 
-<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.moeyy.xyz/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.moeyy.xyz/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
-  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。
+  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.moeyy.xyz/sdzk/1)。
 
-  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。
+  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.moeyy.xyz/sdzk/1/16)。
   :::
 
 ## 上海市教育考试院 <Site url="www.shmeea.edu.cn"/>
@@ -168,11 +168,11 @@
 
 ### 知识库 <Site url="yuque.com" size="sm" />
 
-<Route namespace="yuque" :data='{"path":"/:name/:book","categories":["study"],"example":"/yuque/ruanyf/weekly","parameters":{"name":"用戶名","book":"知识库 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuque.com/:name/:book"]}],"name":"知识库","maintainers":["aha2mao","ltaoo"],"description":"| Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |\n  | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |\n  | [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |","location":"book.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="yuque" :data='{"path":"/:name/:book","categories":["study"],"example":"/yuque/ruanyf/weekly","parameters":{"name":"用戶名","book":"知识库 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuque.com/:name/:book"]}],"name":"知识库","maintainers":["aha2mao","ltaoo"],"description":"| Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |\n  | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |\n  | [/yuque/egg/nodejs](https://rsshub.moeyy.xyz/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.moeyy.xyz/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.moeyy.xyz/yuque/yuque/help) |","location":"book.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |
   | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |
-  | [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |
+  | [/yuque/egg/nodejs](https://rsshub.moeyy.xyz/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.moeyy.xyz/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.moeyy.xyz/yuque/yuque/help) |
 
 ## 中国人工智能学会 <Site url="caai.cn"/>
 
