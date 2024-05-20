@@ -8,19 +8,19 @@
 
 ### link 公告 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/link/news/:product","categories":["social-media"],"example":"/bilibili/link/news/live","parameters":{"product":"公告分类, 包括 直播:live 小视频:vc 相簿:wh"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"link 公告","maintainers":["Qixingchen"],"location":"link-news.ts"}' :test='{"code":1,"message":"expected [ &#39;【获奖公告】鸣潮奏鸣测试创作激励 评选公示&#39;, …(10) ] to not include &#39;【获奖公告】三角洲行动ZERO测试激励计划（3.7-4.7）获奖公告&#39;"}' />
+<Route namespace="bilibili" :data='{"path":"/link/news/:product","categories":["social-media"],"example":"/bilibili/link/news/live","parameters":{"product":"公告分类, 包括 直播:live 小视频:vc 相簿:wh"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"link 公告","maintainers":["Qixingchen"],"location":"link-news.ts"}' :test='{"code":0}' />
 
 ### UP 主专栏 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/article/:uid","categories":["social-media"],"example":"/bilibili/user/article/334958638","parameters":{"uid":"用户 id, 可在 UP 主主页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"]}],"name":"UP 主专栏","maintainers":["lengthmin","Qixingchen"],"location":"article.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/article/:uid","categories":["social-media"],"example":"/bilibili/user/article/334958638","parameters":{"uid":"用户 id, 可在 UP 主主页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"]}],"name":"UP 主专栏","maintainers":["lengthmin","Qixingchen"],"location":"article.ts"}' :test='{"code":0}' />
 
 ### UP 主投币视频 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/coin/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/coin/208259","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/coin/:uid"}],"name":"UP 主投币视频","maintainers":["DIYgod"],"location":"coin.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/coin/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/coin/208259","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/coin/:uid"}],"name":"UP 主投币视频","maintainers":["DIYgod"],"location":"coin.ts"}' :test='{"code":0}' />
 
 ### UP 主动态 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/dynamic/:uid/:routeParams?","categories":["social-media"],"example":"/bilibili/user/dynamic/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/dynamic/:uid"}],"name":"UP 主动态","maintainers":["DIYgod","zytomorrow","CaoMeiYouRen","JimenezLi"],"description":"| 键           | 含义                              | 接受的值       | 默认值 |\n  | ------------ | --------------------------------- | -------------- | ------ |\n  | showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n  | disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n  | useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n  | directLink   | 使用内容直链                      | 0/1/true/false | false  |\n\n  用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`\n\n  :::tip 动态的专栏显示全文\n  动态的专栏显示全文请使用通用参数里的 `mode=fulltext`\n\n  举例: bilibili 专栏全文输出 /bilibili/user/dynamic/2267573/?mode=fulltext\n  :::","location":"dynamic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/dynamic/:uid/:routeParams?","categories":["social-media","popular"],"example":"/bilibili/user/dynamic/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/dynamic/:uid"}],"name":"UP 主动态","maintainers":["DIYgod","zytomorrow","CaoMeiYouRen","JimenezLi"],"description":"| 键           | 含义                              | 接受的值       | 默认值 |\n  | ------------ | --------------------------------- | -------------- | ------ |\n  | showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n  | disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n  | useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n  | directLink   | 使用内容直链                      | 0/1/true/false | false  |\n\n  用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`\n\n  :::tip 动态的专栏显示全文\n  动态的专栏显示全文请使用通用参数里的 `mode=fulltext`\n\n  举例: bilibili 专栏全文输出 /bilibili/user/dynamic/2267573/?mode=fulltext\n  :::","location":"dynamic.ts"}' :test='{"code":0}' />
 
 | 键           | 含义                              | 接受的值       | 默认值 |
   | ------------ | --------------------------------- | -------------- | ------ |
@@ -59,23 +59,23 @@
 
 ### UP 主点赞视频 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/like/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/like/208259","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/like/:uid"}],"name":"UP 主点赞视频","maintainers":["ygguorun"],"location":"like.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/like/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/like/208259","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/like/:uid"}],"name":"UP 主点赞视频","maintainers":["ygguorun"],"location":"like.ts"}' :test='{"code":1,"message":"expected 1716077420815 to be less than 311040000000"}' />
 
 ### UP 主频道的视频列表 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/channel/:uid/:sid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/channel/2267573/396050","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","sid":"频道 id, 可在频道的 URL 中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"UP 主频道的视频列表","maintainers":["weirongxu"],"location":"user-channel.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/channel/:uid/:sid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/channel/2267573/396050","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","sid":"频道 id, 可在频道的 URL 中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"UP 主频道的视频列表","maintainers":["weirongxu"],"location":"user-channel.ts"}' :test='{"code":0}' />
 
 ### UP 主频道的合集 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/collection/:uid/:sid/:disableEmbed?/:sortReverse?/:page?","categories":["social-media"],"example":"/bilibili/user/collection/245645656/529166","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","sid":"合集 id, 可在合集页面的 URL 中找到","disableEmbed":"空,0与false为开启内嵌视频, 其他任意值为关闭","sortReverse":"默认:默认排序 1:升序排序","page":"页码, 默认1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"UP 主频道的合集","maintainers":["shininome"],"location":"user-collection.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/collection/:uid/:sid/:disableEmbed?/:sortReverse?/:page?","categories":["social-media"],"example":"/bilibili/user/collection/245645656/529166","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","sid":"合集 id, 可在合集页面的 URL 中找到","disableEmbed":"空,0与false为开启内嵌视频, 其他任意值为关闭","sortReverse":"默认:默认排序 1:升序排序","page":"页码, 默认1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"UP 主频道的合集","maintainers":["shininome"],"location":"user-collection.ts"}' :test='{"code":0}' />
 
 ### UP 主默认收藏夹 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/fav/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/fav/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid","space.bilibili.com/:uid/favlist"],"target":"/user/fav/:uid"}],"name":"UP 主默认收藏夹","maintainers":["DIYgod"],"location":"user-fav.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/fav/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/fav/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid","space.bilibili.com/:uid/favlist"],"target":"/user/fav/:uid"}],"name":"UP 主默认收藏夹","maintainers":["DIYgod"],"location":"user-fav.ts"}' :test='{"code":0}' />
 
 ### UP 主投稿 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/video/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/video/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/video/:uid"}],"name":"UP 主投稿","maintainers":["DIYgod"],"description":":::tip 动态的专栏显示全文\n  可以使用 [UP 主动态](#bilibili-up-zhu-dong-tai)路由作为代替绕过反爬限制\n  :::","location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/video/:uid/:disableEmbed?","categories":["social-media","popular"],"example":"/bilibili/user/video/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/video/:uid"}],"name":"UP 主投稿","maintainers":["DIYgod"],"description":":::tip 动态的专栏显示全文\n  可以使用 [UP 主动态](#bilibili-up-zhu-dong-tai)路由作为代替绕过反爬限制\n  :::","location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip 动态的专栏显示全文
   可以使用 [UP 主动态](#bilibili-up-zhu-dong-tai)路由作为代替绕过反爬限制
@@ -239,7 +239,7 @@
 
 ### 排行榜 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/ranking/:rid?/:day?/:arc_type?/:disableEmbed?","name":"排行榜","maintainers":["DIYgod"],"categories":["social-media"],"example":"/bilibili/ranking/0/3/1","parameters":{"rid":"排行榜分区 id, 默认 0","day":"时间跨度, 可为 1 3 7 30","arc_type":"投稿时间, 可为 0(全部投稿) 1(近期投稿) , 默认 1","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"description":"| 全站 | 动画 | 国创相关 | 音乐 | 舞蹈 | 游戏 | 科技 | 数码 | 生活 | 鬼畜 | 时尚 | 娱乐 | 影视 |\n    | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    | 0    | 1    | 168      | 3    | 129  | 4    | 36   | 188  | 160  | 119  | 155  | 5    | 181  |","location":"ranking.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/ranking/:rid?/:day?/:arc_type?/:disableEmbed?","name":"排行榜","maintainers":["DIYgod"],"categories":["social-media","popular"],"example":"/bilibili/ranking/0/3/1","parameters":{"rid":"排行榜分区 id, 默认 0","day":"时间跨度, 可为 1 3 7 30","arc_type":"投稿时间, 可为 0(全部投稿) 1(近期投稿) , 默认 1","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"description":"| 全站 | 动画 | 国创相关 | 音乐 | 舞蹈 | 游戏 | 科技 | 数码 | 生活 | 鬼畜 | 时尚 | 娱乐 | 影视 |\n    | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    | 0    | 1    | 168      | 3    | 129  | 4    | 36   | 188  | 160  | 119  | 155  | 5    | 181  |","location":"ranking.ts"}' :test='{"code":0}' />
 
 | 全站 | 动画 | 国创相关 | 音乐 | 舞蹈 | 游戏 | 科技 | 数码 | 生活 | 鬼畜 | 时尚 | 娱乐 | 影视 |
     | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -247,7 +247,7 @@
 
 ### 热搜 <Site url="www.bilibili.com/" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/hot-search","categories":["social-media"],"example":"/bilibili/hot-search","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.bilibili.com/"]}],"name":"热搜","maintainers":["CaoMeiYouRen"],"url":"www.bilibili.com/","location":"hot-search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/hot-search","categories":["social-media"],"example":"/bilibili/hot-search","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.bilibili.com/"]}],"name":"热搜","maintainers":["CaoMeiYouRen"],"url":"www.bilibili.com/","location":"hot-search.ts"}' :test='{"code":0}' />
 
 ### 视频弹幕 <Site url="www.bilibili.com" size="sm" />
 
@@ -263,7 +263,7 @@
 
 ### 视频搜索 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/vsearch/:kw/:order?/:disableEmbed?/:tid?","categories":["social-media"],"example":"/bilibili/vsearch/RSSHub","parameters":{"kw":"检索关键字","order":"排序方式, 综合:totalrank 最多点击:click 最新发布:pubdate(缺省) 最多弹幕:dm 最多收藏:stow","disableEmbed":"默认为开启内嵌视频, 任意值为关闭","tid":"分区 id"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频搜索","maintainers":["pcrtool","DIYgod"],"description":"分区 id 的取值请参考下表：\n\n  | 全部分区 | 动画 | 番剧 | 国创 | 音乐 | 舞蹈 | 游戏 | 知识 | 科技 | 运动 | 汽车 | 生活 | 美食 | 动物圈 | 鬼畜 | 时尚 | 资讯 | 娱乐 | 影视 | 纪录片 | 电影 | 电视剧 |\n  | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ------ |\n  | 0        | 1    | 13   | 167  | 3    | 129  | 4    | 36   | 188  | 234  | 223  | 160  | 211  | 217    | 119  | 155  | 202  | 5    | 181  | 177    | 23   | 11     |","location":"vsearch.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/vsearch/:kw/:order?/:disableEmbed?/:tid?","categories":["social-media"],"example":"/bilibili/vsearch/RSSHub","parameters":{"kw":"检索关键字","order":"排序方式, 综合:totalrank 最多点击:click 最新发布:pubdate(缺省) 最多弹幕:dm 最多收藏:stow","disableEmbed":"默认为开启内嵌视频, 任意值为关闭","tid":"分区 id"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频搜索","maintainers":["pcrtool","DIYgod"],"description":"分区 id 的取值请参考下表：\n\n  | 全部分区 | 动画 | 番剧 | 国创 | 音乐 | 舞蹈 | 游戏 | 知识 | 科技 | 运动 | 汽车 | 生活 | 美食 | 动物圈 | 鬼畜 | 时尚 | 资讯 | 娱乐 | 影视 | 纪录片 | 电影 | 电视剧 |\n  | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ------ |\n  | 0        | 1    | 13   | 167  | 3    | 129  | 4    | 36   | 188  | 234  | 223  | 160  | 211  | 217    | 119  | 155  | 202  | 5    | 181  | 177    | 23   | 11     |","location":"vsearch.ts"}' :test='{"code":0}' />
 
 分区 id 的取值请参考下表：
 
@@ -305,7 +305,7 @@
 
 ### 用户追番列表 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/bangumi/:uid/:type?","categories":["social-media"],"example":"/bilibili/user/bangumi/208259","parameters":{"uid":"用户 id","type":"1为番，2为剧，留空为1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/bangumi/:uid"}],"name":"用户追番列表","maintainers":["wdssmq"],"location":"user-bangumi.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/bangumi/:uid/:type?","categories":["social-media"],"example":"/bilibili/user/bangumi/208259","parameters":{"uid":"用户 id","type":"1为番，2为剧，留空为1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/bangumi/:uid"}],"name":"用户追番列表","maintainers":["wdssmq"],"location":"user-bangumi.ts"}' :test='{"code":0}' />
 
 ### 用户所有视频 <Site url="www.bilibili.com" size="sm" />
 
@@ -345,35 +345,39 @@
 
 ### Notes of character <Site url="crossbell.io/*" size="sm" />
 
-<Route namespace="crossbell" :data='{"path":"/notes/character/:characterId","categories":["social-media"],"example":"/crossbell/notes/character/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of character","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/character.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="crossbell" :data='{"path":"/notes/character/:characterId","categories":["social-media"],"example":"/crossbell/notes/character/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of character","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/character.ts"}' :test='{"code":0}' />
 
 ### Notes <Site url="crossbell.io/*" size="sm" />
 
-<Route namespace="crossbell" :data='{"path":"/notes","categories":["social-media"],"example":"/crossbell/notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"]}],"name":"Notes","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="crossbell" :data='{"path":"/notes","categories":["social-media"],"example":"/crossbell/notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"]}],"name":"Notes","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/index.ts"}' :test='{"code":0}' />
 
 ### Notes of source <Site url="crossbell.io/*" size="sm" />
 
-<Route namespace="crossbell" :data='{"path":"/notes/source/:source","categories":["social-media"],"example":"/crossbell/notes/source/xlog","parameters":{"source":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of source","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/source.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="crossbell" :data='{"path":"/notes/source/:source","categories":["social-media"],"example":"/crossbell/notes/source/xlog","parameters":{"source":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of source","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/source.ts"}' :test='{"code":0}' />
 
 ## Curius <Site url="curius.app"/>
 
 ### User <Site url="curius.app" size="sm" />
 
-<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":0}' />
 
 ## Daily.dev <Site url="daily.dev"/>
 
 ### Most Discussed <Site url="daily.dev/popular" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/discussed","categories":["social-media"],"example":"/daily/discussed","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["daily.dev/popular"],"target":""}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"discussed.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="daily" :data='{"path":"/discussed","example":"/daily/discussed","radar":[{"source":["daily.dev/popular"]}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"discussed.ts"}' :test='{"code":0}' />
 
 ### Most upvoted <Site url="daily.dev/popular" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/upvoted","categories":["social-media"],"example":"/daily/upvoted","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["daily.dev/popular"],"target":""}],"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"upvoted.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="daily" :data='{"path":"/upvoted","example":"/daily/upvoted","radar":[{"source":["daily.dev/popular"]}],"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"upvoted.ts"}' :test='{"code":0}' />
 
-### Unknown <Site url="daily.dev/popular" size="sm" />
+### Popular <Site url="daily.dev/popular" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/","radar":[{"source":["daily.dev/popular"],"target":""}],"name":"Unknown","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"index.ts"}' :test='undefined' />
+<Route namespace="daily" :data='{"path":"/","example":"/daily","radar":[{"source":["daily.dev/popular"]}],"name":"Popular","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"index.ts"}' :test='{"code":0}' />
+
+### User Posts <Site url="daily.dev" size="sm" />
+
+<Route namespace="daily" :data='{"path":"/user/:userId","example":"/daily/user/kramer","radar":[{"source":["daily.dev/:userId/posts","daily.dev/:userId"]}],"name":"User Posts","maintainers":["TonyRL"],"url":"daily.dev","location":"user.ts"}' :test='{"code":0}' />
 
 ## Discord <Site url="discord.com"/>
 
@@ -381,11 +385,17 @@
 
 <Route namespace="discord" :data='{"path":"/channel/:channelId","categories":["social-media"],"example":"/discord/channel/950465850056536084","parameters":{"channelId":"Channel ID"},"features":{"requireConfig":[{"name":"DISCORD_AUTHORIZATION","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["discord.com/channels/:guildId/:channelId/:messageID","discord.com/channels/:guildId/:channelId"]}],"name":"Channel Messages","maintainers":["TonyRL"],"location":"channel.ts"}' :test='undefined' />
 
+## fanbox <Site url="https://www.fanbox.cc"/>
+
+### Creator <Site url="https://www.fanbox.cc" size="sm" />
+
+<Route namespace="fanbox" :data='{"path":"/:creator","categories":["social-media"],"example":"/fanbox/official","parameters":{"creator":"fanbox user name"},"maintainers":["KarasuShin"],"name":"Creator","features":{"requireConfig":[{"name":"FANBOX_SESSION_ID","description":"Required for private posts. Can be found in browser DevTools -> Application -> Cookies -> https://www.fanbox.cc -> FANBOXSESSID","optional":true}]},"location":"index.ts"}' :test='{"code":0}' />
+
 ## Fansly <Site url="fansly.com"/>
 
 ### Hashtag <Site url="fansly.com" size="sm" />
 
-<Route namespace="fansly" :data='{"path":"/tag/:tag","categories":["social-media"],"example":"/fansly/tag/free","parameters":{"tag":"Hashtag"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fansly.com/explore/tag/:tag"]}],"name":"Hashtag","maintainers":["TonyRL"],"location":"tag.ts"}' :test='{"code":0}' />
+<Route namespace="fansly" :data='{"path":"/tag/:tag","categories":["social-media"],"example":"/fansly/tag/free","parameters":{"tag":"Hashtag"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fansly.com/explore/tag/:tag"]}],"name":"Hashtag","maintainers":["TonyRL"],"location":"tag.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### User Timeline <Site url="fansly.com" size="sm" />
 
@@ -405,7 +415,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### User Profile / Hashtag - Private API <Site url="www.instagram.com" size="sm" />
 
-<Route namespace="instagram" :data='{"path":"/:category/:key","categories":["social-media"],"example":"/instagram/user/stefaniejoosten","parameters":{"category":"Feed category, see table above","key":"Username / Hashtag name"},"features":{"requireConfig":[{"name":"IG_PROXY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag - Private API","maintainers":["oppilate","DIYgod"],"description":":::warning\nDue to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/deploy/) for more.\n:::","location":"private-api/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="instagram" :data='{"path":"/:category/:key","categories":["social-media","popular"],"example":"/instagram/user/stefaniejoosten","parameters":{"category":"Feed category, see table above","key":"Username / Hashtag name"},"features":{"requireConfig":[{"name":"IG_PROXY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag - Private API","maintainers":["oppilate","DIYgod"],"description":":::warning\nDue to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/deploy/) for more.\n:::","location":"private-api/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::warning
 Due to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/deploy/) for more.
@@ -432,7 +442,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### User Profile - Picnob <Site url="picnob.com" size="sm" />
 
-<Route namespace="picnob" :data='{"path":"/user/:id","categories":["social-media"],"example":"/picnob/user/xlisa_olivex","parameters":{"id":"Instagram id"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["picnob.com/profile/:id/*"],"target":"/user/:id"}],"name":"User Profile - Picnob","maintainers":["TonyRL","micheal-death"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="picnob" :data='{"path":"/user/:id","categories":["social-media"],"example":"/picnob/user/xlisa_olivex","parameters":{"id":"Instagram id"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["picnob.com/profile/:id/*"],"target":"/user/:id"}],"name":"User Profile - Picnob","maintainers":["TonyRL","micheal-death"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## Instagram <Site url="www.picuki.com"/>
 
@@ -442,7 +452,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### User Profile - Picuki <Site url="www.picuki.com" size="sm" />
 
-<Route namespace="picuki" :data='{"path":"/profile/:id/:functionalFlag?","categories":["social-media"],"example":"/picuki/profile/stefaniejoosten","parameters":{"id":"Instagram id","functionalFlag":"functional flag, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.picuki.com/profile/:id"],"target":"/profile/:id"}],"name":"User Profile - Picuki","maintainers":["hoilc","Rongronggg9","devinmugen"],"description":"| functionalFlag | Video embedding                         | Fetching Instagram Stories |\n  | -------------- | --------------------------------------- | -------------------------- |\n  | 0              | off, only show video poster as an image | off                        |\n  | 1 (default)    | on                                      | off                        |\n  | 10             | on                                      | on                         |\n\n  :::warning\n  Instagram Stories do not have a reliable guid. It is possible that your RSS reader show the same story more than once.\n  Though, every Story expires after 24 hours, so it may be not so serious.\n  :::","location":"profile.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="picuki" :data='{"path":"/profile/:id/:functionalFlag?","categories":["social-media"],"example":"/picuki/profile/stefaniejoosten","parameters":{"id":"Instagram id","functionalFlag":"functional flag, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.picuki.com/profile/:id"],"target":"/profile/:id"}],"name":"User Profile - Picuki","maintainers":["hoilc","Rongronggg9","devinmugen"],"description":"| functionalFlag | Video embedding                         | Fetching Instagram Stories |\n  | -------------- | --------------------------------------- | -------------------------- |\n  | 0              | off, only show video poster as an image | off                        |\n  | 1 (default)    | on                                      | off                        |\n  | 10             | on                                      | on                         |\n\n  :::warning\n  Instagram Stories do not have a reliable guid. It is possible that your RSS reader show the same story more than once.\n  Though, every Story expires after 24 hours, so it may be not so serious.\n  :::","location":"profile.ts"}' :test='{"code":0}' />
 
 | functionalFlag | Video embedding                         | Fetching Instagram Stories |
   | -------------- | --------------------------------------- | -------------------------- |
@@ -467,6 +477,55 @@ It's highly recommended to deploy with Redis cache enabled.
 
 <Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":"Sort by, defaut to Active"},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123"],"location":"index.ts"}' :test='{"code":0}' />
 
+## LinkedIn 领英 <Site url="linkedin.com"/>
+
+### Jobs <Site url="linkedin.com" size="sm" />
+
+<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media"],"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  #### `routeParams` additional query parameters\n\n  ##### `f_WT` list\n\n  | Onsite | Remote | Hybrid |\n  | ------ | ------- | ------ |\n  |    1   |    2    |   3    |\n\n  ##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n  ##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
+
+#### `job_types` list
+
+  | Full Time | Part Time | Contractor | All |
+  | --------- | --------- | ---------- | --- |
+  | F         | P         | C          | all |
+
+  #### `exp_levels` list
+
+  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
+  | --------- | ----------- | --------- | ---------------- | -------- | --- |
+  | 1         | 2           | 3         | 4                | 5        | all |
+
+  #### `routeParams` additional query parameters
+
+  ##### `f_WT` list
+
+  | Onsite | Remote | Hybrid |
+  | ------ | ------- | ------ |
+  |    1   |    2    |   3    |
+
+  ##### `geoId`
+
+  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.
+
+  For example:
+  91000012 is the ID of East Asia.
+
+  ##### `f_TPR`
+
+  Time posted range. Here are some possible values:
+
+  *   `r86400`: Past 24 hours
+  *   `r604800`: Past week
+  *   `r2592000`: Past month
+
+  For example:
+
+  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`
+  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`
+  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`
+
+  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**
+
 ## Lofter <Site url="www.lofter.com"/>
 
 ### Tag <Site url="www.lofter.com" size="sm" />
@@ -479,7 +538,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### User <Site url="www.lofter.com" size="sm" />
 
-<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media","popular"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## Mastodon <Site url="mastodon.social"/>
 
@@ -534,7 +593,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Keyword <Site url="www.pixiv.net" size="sm" />
 
-<Route namespace="pixiv" :data='{"path":"/search/:keyword/:order?/:mode?","categories":["social-media"],"example":"/pixiv/search/Nezuko/popular/2","parameters":{"keyword":"keyword","order":"rank mode, empty or other for time order, popular for popular order","mode":"filte R18 content"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod"],"description":"| only not R18 | only R18 | no filter      |\n  | ------------ | -------- | -------------- |\n  | safe         | r18      | empty or other |","location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pixiv" :data='{"path":"/search/:keyword/:order?/:mode?","categories":["social-media","popular"],"example":"/pixiv/search/Nezuko/popular/2","parameters":{"keyword":"keyword","order":"rank mode, empty or other for time order, popular for popular order","mode":"filte R18 content"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod"],"description":"| only not R18 | only R18 | no filter      |\n  | ------------ | -------- | -------------- |\n  | safe         | r18      | empty or other |","location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | only not R18 | only R18 | no filter      |
   | ------------ | -------- | -------------- |
@@ -542,7 +601,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Rankings <Site url="www.pixiv.net" size="sm" />
 
-<Route namespace="pixiv" :data='{"path":"/ranking/:mode/:date?","categories":["social-media"],"example":"/pixiv/ranking/week","parameters":{"mode":"rank type","date":"format: `2018-4-25`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Rankings","maintainers":["EYHN"],"description":"| daily rank | weekly rank | monthly rank | male rank | female rank | AI-generated work Rankings | original rank  | rookie user rank |\n  | ---------- | ----------- | ------------ | --------- | ----------- | -------------------------- | -------------- | ---------------- |\n  | day        | week        | month        | day_male | day_female | day_ai                    | week_original | week_rookie     |\n\n  | R-18 daily rank | R-18 AI-generated work | R-18 male rank | R-18 female rank | R-18 weekly rank | R-18G rank |\n  | --------------- | ---------------------- | -------------- | ---------------- | ---------------- | ---------- |\n  | day_r18        | day_r18_ai           | day_male_r18 | day_female_r18 | week_r18        | week_r18g |","location":"ranking.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pixiv" :data='{"path":"/ranking/:mode/:date?","categories":["social-media","popular"],"example":"/pixiv/ranking/week","parameters":{"mode":"rank type","date":"format: `2018-4-25`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Rankings","maintainers":["EYHN"],"description":"| daily rank | weekly rank | monthly rank | male rank | female rank | AI-generated work Rankings | original rank  | rookie user rank |\n  | ---------- | ----------- | ------------ | --------- | ----------- | -------------------------- | -------------- | ---------------- |\n  | day        | week        | month        | day_male | day_female | day_ai                    | week_original | week_rookie     |\n\n  | R-18 daily rank | R-18 AI-generated work | R-18 male rank | R-18 female rank | R-18 weekly rank | R-18G rank |\n  | --------------- | ---------------------- | -------------- | ---------------- | ---------------- | ---------- |\n  | day_r18        | day_r18_ai           | day_male_r18 | day_female_r18 | week_r18        | week_r18g |","location":"ranking.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | daily rank | weekly rank | monthly rank | male rank | female rank | AI-generated work Rankings | original rank  | rookie user rank |
   | ---------- | ----------- | ------------ | --------- | ----------- | -------------------------- | -------------- | ---------------- |
@@ -562,7 +621,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### User Activity <Site url="www.pixiv.net" size="sm" />
 
-<Route namespace="pixiv" :data='{"path":"/user/:id","categories":["social-media"],"example":"/pixiv/user/15288095","parameters":{"id":"user id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id"]}],"name":"User Activity","maintainers":["DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pixiv" :data='{"path":"/user/:id","categories":["social-media","popular"],"example":"/pixiv/user/15288095","parameters":{"id":"user id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id"]}],"name":"User Activity","maintainers":["DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Plurk <Site url="plurk.com"/>
 
@@ -612,28 +671,30 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Channel <Site url="t.me" size="sm" />
 
-<Route namespace="telegram" :data='{"path":"/channel/:username/:routeParams?","categories":["social-media"],"example":"/telegram/channel/awesomeDIYgod/searchQuery=twitter","parameters":{"username":"channel username","routeParams":"extra parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["t.me/s/:username"],"target":"/channel/:username"}],"name":"Channel","maintainers":["DIYgod","Rongronggg9"],"description":"| Key                   | Description                                                           | Accepts                                              | Defaults to       |\n  | --------------------- | --------------------------------------------------------------------- | ---------------------------------------------------- | ----------------- |\n  | showLinkPreview       | Show the link preview from Telegram                                   | 0/1/true/false                                       | true              |\n  | showViaBot            | For messages sent via bot, show the bot                               | 0/1/true/false                                       | true              |\n  | showReplyTo           | For reply messages, show the target of the reply                      | 0/1/true/false                                       | true              |\n  | showFwdFrom           | For forwarded messages, show the forwarding source                    | 0/1/true/false                                       | true              |\n  | showFwdFromAuthor     | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                       | true              |\n  | showInlineButtons     | Show inline buttons                                                   | 0/1/true/false                                       | false             |\n  | showMediaTagInTitle   | Show media tags in the title                                          | 0/1/true/false                                       | true              |\n  | showMediaTagAsEmoji   | Show media tags as emoji                                              | 0/1/true/false                                       | true              |\n  | includeFwd            | Include forwarded messages                                            | 0/1/true/false                                       | true              |\n  | includeReply          | Include reply messages                                                | 0/1/true/false                                       | true              |\n  | includeServiceMsg     | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                       | true              |\n  | includeUnsupportedMsg | Include messages unsupported by t.me                                  | 0/1/true/false                                       | false             |\n  | searchQuery           | search query                                                          | keywords; replace `#` by `%23` for hashtag searching | (search disabled) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.moeyy.xyz/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don&#39;t care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::","location":"channel.ts"}' :test='{"code":0}' />
+<Route namespace="telegram" :data='{"path":"/channel/:username/:routeParams?","categories":["social-media","popular"],"example":"/telegram/channel/awesomeDIYgod/searchQuery=twitter","parameters":{"username":"channel username","routeParams":"extra parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["t.me/s/:username"],"target":"/channel/:username"}],"name":"Channel","maintainers":["DIYgod","Rongronggg9"],"description":"\n  | Key                    | Description                                                           | Accepts                                            | Defaults to  |\n  | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |\n  | showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |\n  | showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |\n  | showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |\n  | showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |\n  | showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |\n  | showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |\n  | showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |\n  | showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |\n  | showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |\n  | includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |\n  | includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |\n  | includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |\n  | includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |\n  | searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don&#39;t care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::","location":"channel.ts"}' :test='{"code":0}' />
 
-| Key                   | Description                                                           | Accepts                                              | Defaults to       |
-  | --------------------- | --------------------------------------------------------------------- | ---------------------------------------------------- | ----------------- |
-  | showLinkPreview       | Show the link preview from Telegram                                   | 0/1/true/false                                       | true              |
-  | showViaBot            | For messages sent via bot, show the bot                               | 0/1/true/false                                       | true              |
-  | showReplyTo           | For reply messages, show the target of the reply                      | 0/1/true/false                                       | true              |
-  | showFwdFrom           | For forwarded messages, show the forwarding source                    | 0/1/true/false                                       | true              |
-  | showFwdFromAuthor     | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                       | true              |
-  | showInlineButtons     | Show inline buttons                                                   | 0/1/true/false                                       | false             |
-  | showMediaTagInTitle   | Show media tags in the title                                          | 0/1/true/false                                       | true              |
-  | showMediaTagAsEmoji   | Show media tags as emoji                                              | 0/1/true/false                                       | true              |
-  | includeFwd            | Include forwarded messages                                            | 0/1/true/false                                       | true              |
-  | includeReply          | Include reply messages                                                | 0/1/true/false                                       | true              |
-  | includeServiceMsg     | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                       | true              |
-  | includeUnsupportedMsg | Include messages unsupported by t.me                                  | 0/1/true/false                                       | false             |
-  | searchQuery           | search query                                                          | keywords; replace `#` by `%23` for hashtag searching | (search disabled) |
+
+  | Key                    | Description                                                           | Accepts                                            | Defaults to  |
+  | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |
+  | showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |
+  | showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |
+  | showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |
+  | showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |
+  | showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |
+  | showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |
+  | showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |
+  | showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |
+  | showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |
+  | includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |
+  | includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |
+  | includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |
+  | includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |
+  | searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |
 
   Specify different option values than default values can meet different needs, URL
 
   ```
-  https://rsshub.moeyy.xyz/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0
+  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0
   ```
 
   generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.
@@ -656,7 +717,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### User timeline <Site url="threads.net" size="sm" />
 
-<Route namespace="threads" :data='{"path":"/:user/:routeParams?","categories":["social-media"],"example":"/threads/zuck","parameters":{"user":"Username","routeParams":"Extra parameters, see the table below"},"name":"User timeline","maintainers":["ninboy"],"description":"Specify options (in the format of query string) in parameter `routeParams` to control some extra features for threads\n\n  | Key                            | Description                                                                                                                  | Accepts                | Defaults to |\n  | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |\n  | `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |\n  | `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |\n  | `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |\n  | `showEmojiForQuotesAndReply`   | Use \"🔁\" instead of \"QT\", \"↩️\" instead of \"Re\"                                                                               | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |\n\n  Specify different option values than default values to improve readability. The URL\n\n  ```\n  https://rsshub.moeyy.xyz/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1\n  ```","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="threads" :data='{"path":"/:user/:routeParams?","categories":["social-media"],"example":"/threads/zuck","parameters":{"user":"Username","routeParams":"Extra parameters, see the table below"},"name":"User timeline","maintainers":["ninboy"],"description":"Specify options (in the format of query string) in parameter `routeParams` to control some extra features for threads\n\n  | Key                            | Description                                                                                                                  | Accepts                | Defaults to |\n  | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |\n  | `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |\n  | `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |\n  | `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |\n  | `showEmojiForQuotesAndReply`   | Use \"🔁\" instead of \"QT\", \"↩️\" instead of \"Re\"                                                                               | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |\n\n  Specify different option values than default values to improve readability. The URL\n\n  ```\n  https://rsshub.app/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1\n  ```","location":"index.ts"}' :test='{"code":0}' />
 
 Specify options (in the format of query string) in parameter `routeParams` to control some extra features for threads
 
@@ -673,7 +734,7 @@ Specify options (in the format of query string) in parameter `routeParams` to co
   Specify different option values than default values to improve readability. The URL
 
   ```
-  https://rsshub.moeyy.xyz/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1
+  https://rsshub.app/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1
   ```
 
 ## TikTok <Site url="tiktok.com"/>
@@ -682,7 +743,25 @@ Specify options (in the format of query string) in parameter `routeParams` to co
 
 <Route namespace="tiktok" :data='{"path":"/user/:user/:iframe?","categories":["social-media"],"example":"/tiktok/user/@linustech/true","parameters":{"user":"User ID, including @","iframe":"Use the official iframe to embed the video, which allows you to view the video if the default option does not work. Default to `false`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tiktok.com/:user"],"target":"/user/:user"}],"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-## Twitter <Site url="twitter.com"/>
+## Vimeo <Site url="vimeo.com"/>
+
+### Category <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/category/:category/:staffpicks?","categories":["social-media"],"example":"/vimeo/category/documentary/staffpicks","parameters":{"category":"Category name can get from url like `documentary` in [https://vimeo.com/categories/documentary/videos](https://vimeo.com/categories/documentary/videos) ","staffpicks":"type `staffpicks` to sort with staffpicks"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["MisteryMonster"],"location":"category.ts"}' :test='{"code":0}' />
+
+### Channel <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/channel/:channel","categories":["social-media"],"example":"/vimeo/channel/bestoftheyear","parameters":{"channel":"channel name can get from url like `bestoftheyear` in  [https://vimeo.com/channels/bestoftheyear/videos](https://vimeo.com/channels/bestoftheyear/videos) ."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vimeo.com/channels/:channel","vimeo.com/channels/:channel/videos","vimeo.com/channels/:channel/videos/:sort/:format"]}],"name":"Channel","maintainers":["MisteryMonster"],"location":"channel.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### User Profile <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/user/:username/:cat?","categories":["social-media"],"example":"/vimeo/user/filmsupply/picks","parameters":{"username":"In this example [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply)  is `filmsupply`","cat":"deafult for all latest videos, others categories in this example such as `Docmentary`, `Narrative`, `Drama`. Set `picks` for promote orders, just orderd like web page. When `picks` added, published date won&#39;t show up"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile","maintainers":["MisteryMonster"],"description":":::tip Special category name attention\n  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.\n  :::","location":"usr-videos.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+
+:::tip Special category name attention
+  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
+  :::
+
+## X (Twitter) <Site url="x.com"/>
 
 Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets
 
@@ -712,7 +791,7 @@ Specify options (in the format of query string) in parameter `routeParams` to co
 Specify different option values than default values to improve readability. The URL
 
 ```
-https://rsshub.moeyy.xyz/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150
+https://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150
 ```
 
 generates
@@ -726,75 +805,61 @@ Currently supports two authentication methods:
 - Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure the Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.
 
 
-### Home timeline <Site url="twitter.com" size="sm" />
+### Home timeline <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/home/:routeParams?","categories":["social-media"],"example":"/twitter/home","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home timeline","maintainers":["DIYgod"],"radar":[{"source":["twitter.com/home"],"target":"/home"}],"location":"home.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/home/:routeParams?","categories":["social-media"],"example":"/twitter/home","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home timeline","maintainers":["DIYgod"],"radar":[{"source":["x.com/home"],"target":"/home"}],"location":"home.ts"}' :test='undefined' />
 
-### Keyword <Site url="twitter.com" size="sm" />
+### Keyword <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media"],"example":"/twitter/keyword/RSSHub","parameters":{"keyword":"keyword","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["twitter.com/search"]}],"location":"keyword.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media","popular"],"example":"/twitter/keyword/RSSHub","parameters":{"keyword":"keyword","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/search"]}],"location":"keyword.ts"}' :test='undefined' />
 
-### List timeline <Site url="twitter.com" size="sm" />
+### List timeline <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media"],"example":"/twitter/list/ladyleet/javascript","parameters":{"id":"username","name":"list name","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer"],"radar":[{"source":["twitter.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media"],"example":"/twitter/list/ladyleet/javascript","parameters":{"id":"username","name":"list name","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer"],"radar":[{"source":["x.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
 
-### Trends <Site url="twitter.com" size="sm" />
+### Trends <Site url="x.com" size="sm" />
 
 <Route namespace="twitter" :data='{"path":"/trends/:woeid?","categories":["social-media"],"example":"/twitter/trends/23424856","parameters":{"woeid":"Yahoo! Where On Earth ID. default to woeid=1 (World Wide)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trends","maintainers":["sakamossan"],"location":"trends.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-### Tweet Details <Site url="twitter.com" size="sm" />
+### Tweet Details <Site url="x.com" size="sm" />
 
 <Route namespace="twitter" :data='{"path":"/tweet/:id/status/:status/:original?","categories":["social-media"],"example":"/twitter/tweet/DIYgod/status/1650844643997646852","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","status":"tweet ID","original":"extra parameters, data type of return, if the value is not `0`/`false` and `config.isPackage` is `true`, return the original data of twitter"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tweet Details","maintainers":["LarchLiu","Rongronggg9"],"location":"tweet.ts"}' :test='undefined' />
 
-### User likes <Site url="twitter.com" size="sm" />
+### User likes <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/likes/:id/:routeParams?","categories":["social-media"],"example":"/twitter/likes/DIYgod","parameters":{"id":"username","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User likes","maintainers":["xyqfer"],"location":"likes.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="twitter" :data='{"path":"/likes/:id/:routeParams?","categories":["social-media"],"example":"/twitter/likes/DIYgod","parameters":{"id":"username","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User likes","maintainers":["xyqfer"],"location":"likes.ts"}' :test='undefined' />
 
-### User media <Site url="twitter.com" size="sm" />
+### User media <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/media/:id/:routeParams?","categories":["social-media"],"example":"/twitter/media/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User media","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["twitter.com/:id/media"],"target":"/media/:id"}],"location":"media.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/media/:id/:routeParams?","categories":["social-media","popular"],"example":"/twitter/media/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User media","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id/media"],"target":"/media/:id"}],"location":"media.ts"}' :test='undefined' />
 
-### User timeline <Site url="twitter.com" size="sm" />
+### User timeline <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/user/:id/:routeParams?","categories":["social-media"],"example":"/twitter/user/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above; particularly when `routeParams=exclude_replies`, replies are excluded; `routeParams=exclude_rts` excludes retweets,`routeParams=exclude_rts_replies` exclude replies and retweets; for default include all."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTHENTICATION_SECRET","description":"TOTP 2FA secret, please see above for details.","optional":true},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["twitter.com/:id"],"target":"/user/:id"}],"location":"user.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/user/:id/:routeParams?","categories":["social-media","popular"],"example":"/twitter/user/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above; particularly when `routeParams=exclude_replies`, replies are excluded; `routeParams=exclude_rts` excludes retweets,`routeParams=exclude_rts_replies` exclude replies and retweets; for default include all."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTHENTICATION_SECRET","description":"TOTP 2FA secret, please see above for details.","optional":true},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id"],"target":"/user/:id"}],"location":"user.ts"}' :test='undefined' />
 
-## Vimeo <Site url="vimeo.com"/>
+## YouTube <Site url="youtube.com"/>
 
-### Category <Site url="vimeo.com" size="sm" />
+### Channel with id <Site url="youtube.com" size="sm" />
 
-<Route namespace="vimeo" :data='{"path":"/category/:category/:staffpicks?","categories":["social-media"],"example":"/vimeo/category/documentary/staffpicks","parameters":{"category":"Category name can get from url like `documentary` in [https://vimeo.com/categories/documentary/videos](https://vimeo.com/categories/documentary/videos) ","staffpicks":"type `staffpicks` to sort with staffpicks"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["MisteryMonster"],"location":"category.ts"}' :test='{"code":0}' />
-
-### Channel <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/channel/:channel","categories":["social-media"],"example":"/vimeo/channel/bestoftheyear","parameters":{"channel":"channel name can get from url like `bestoftheyear` in  [https://vimeo.com/channels/bestoftheyear/videos](https://vimeo.com/channels/bestoftheyear/videos) ."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vimeo.com/channels/:channel","vimeo.com/channels/:channel/videos","vimeo.com/channels/:channel/videos/:sort/:format"]}],"name":"Channel","maintainers":["MisteryMonster"],"location":"channel.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### User Profile <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/user/:username/:cat?","categories":["social-media"],"example":"/vimeo/user/filmsupply/picks","parameters":{"username":"In this example [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply)  is `filmsupply`","cat":"deafult for all latest videos, others categories in this example such as `Docmentary`, `Narrative`, `Drama`. Set `picks` for promote orders, just orderd like web page. When `picks` added, published date won&#39;t show up"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile","maintainers":["MisteryMonster"],"description":":::tip Special category name attention\n  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.\n  :::","location":"usr-videos.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
-
-:::tip Special category name attention
-  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
-  :::
-
-## YouTube Live <Site url="charts.youtube.com"/>
-
-### Channel <Site url="charts.youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/channel/:id/:embed?","categories":["social-media"],"example":"/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ","parameters":{"id":"YouTube channel id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/channel/:id"],"target":"/channel/:id"}],"name":"Channel","maintainers":["DIYgod"],"description":":::tip\nYouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).\n:::","location":"channel.ts"}' :test='undefined' />
+<Route namespace="youtube" :data='{"path":"/channel/:id/:embed?","categories":["social-media"],"example":"/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ","parameters":{"id":"YouTube channel id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/channel/:id"],"target":"/channel/:id"}],"name":"Channel with id","maintainers":["DIYgod"],"description":":::tip\nYouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).\n:::","location":"channel.ts"}' :test='undefined' />
 
 :::tip
 YouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).
 :::
 
-### Community <Site url="charts.youtube.com" size="sm" />
+### Community <Site url="youtube.com" size="sm" />
 
 <Route namespace="youtube" :data='{"path":"/community/:handle","categories":["social-media"],"example":"/youtube/community/@JFlaMusic","parameters":{"handle":"YouTube handles or channel id"},"name":"Community","maintainers":["TonyRL"],"location":"community.ts"}' :test='{"code":0}' />
 
-### Custom URL <Site url="charts.youtube.com" size="sm" />
+### Custom URL <Site url="youtube.com" size="sm" />
 
-<Route namespace="youtube" :data='{"path":"/c/:username/:embed?","categories":["social-media"],"example":"/youtube/c/YouTubeCreators","parameters":{"username":"YouTube custom URL","embed":"Default to embed the video, set to any value to disable embedding"},"radar":[{"source":["www.youtube.com/c/:id"],"target":"/c/:id"}],"name":"Custom URL","maintainers":["TonyRL"],"location":"custom.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="youtube" :data='{"path":"/c/:username/:embed?","categories":["social-media"],"example":"/youtube/c/YouTubeCreators","parameters":{"username":"YouTube custom URL","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/c/:id"],"target":"/c/:id"}],"name":"Custom URL","maintainers":["TonyRL"],"location":"custom.ts"}' :test='undefined' />
 
-### Music Charts <Site url="charts.youtube.com" size="sm" />
+### Channel with username <Site url="youtube.com" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/user/:username/:embed?","categories":["social-media","popular"],"example":"/youtube/user/@JFlaMusic","parameters":{"username":"YouTuber username with @","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/user/:username"],"target":"/user/:username"}],"name":"Channel with username","maintainers":["DIYgod"],"location":"user.ts"}' :test='undefined' />
+
+### Music Charts <Site url="youtube.com" size="sm" />
 
 <Route namespace="youtube" :data='{"path":"/charts/:category?/:country?/:embed?","categories":["social-media"],"example":"/youtube/charts","parameters":{"category":"Chart, see table below, default to `TopVideos`","country":"Country Code, see table below, default to global","embed":"Default to embed the video, set to any value to disable embedding"},"name":"Music Charts","maintainers":["TonyRL"],"description":"Chart\n\n  | Top artists | Top songs | Top music videos | Trending       |\n  | ----------- | --------- | ---------------- | -------------- |\n  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\n  Country Code\n\n  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n  | ar        | au        | at      | be      | bo      | br     | ca     |\n\n  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n  | cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n  | eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n  | hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n  | Uruguay | Zimbabwe |\n  | ------- | -------- |\n  | uy      | zw       |","location":"charts.ts"}' :test='{"code":0}' />
 
@@ -842,17 +907,13 @@ Chart
   | ------- | -------- |
   | uy      | zw       |
 
-### Playlist <Site url="charts.youtube.com" size="sm" />
+### Playlist <Site url="youtube.com" size="sm" />
 
-<Route namespace="youtube" :data='{"path":"/playlist/:id/:embed?","categories":["social-media"],"example":"/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z","parameters":{"id":"YouTube playlist id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Playlist","maintainers":["HenryQW"],"location":"playlist.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="youtube" :data='{"path":"/playlist/:id/:embed?","categories":["social-media"],"example":"/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z","parameters":{"id":"YouTube playlist id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Playlist","maintainers":["HenryQW"],"location":"playlist.ts"}' :test='undefined' />
 
 ### Subscriptions <Site url="www.youtube.com/feed/subscriptions" size="sm" />
 
 <Route namespace="youtube" :data='{"path":"/subscriptions/:embed?","categories":["social-media"],"example":"/youtube/subscriptions","parameters":{"embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":""},{"name":"YOUTUBE_CLIENT_ID","description":""},{"name":"YOUTUBE_CLIENT_SECRET","description":""},{"name":"YOUTUBE_REFRESH_TOKEN","description":""}]},"radar":[{"source":["www.youtube.com/feed/subscriptions","www.youtube.com/feed/channels"],"target":"/subscriptions"}],"name":"Subscriptions","maintainers":["TonyRL"],"url":"www.youtube.com/feed/subscriptions","location":"subscriptions.ts"}' :test='undefined' />
-
-### User <Site url="charts.youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/user/:username/:embed?","categories":["social-media"],"example":"/youtube/user/JFlaMusic","parameters":{"username":"YouTuber id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/user/:username"],"target":"/user/:username"}],"name":"User","maintainers":["DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 唱吧 <Site url="changba.com"/>
 
@@ -918,7 +979,7 @@ Chart
 
 ### 豆瓣读书论坛 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/:id/discussion","categories":["social-media"],"example":"/douban/36328704/discussion","parameters":{"id":"书本id;默认论坛文章使用\"按回应时间排序\",仅第一页文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.douban.com/:id/discussion"]}],"name":"豆瓣读书论坛","maintainers":["nightmare-mio"],"location":"other/discussion.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/:id/discussion","categories":["social-media"],"example":"/douban/36328704/discussion","parameters":{"id":"书本id;默认论坛文章使用\"按回应时间排序\",仅第一页文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.douban.com/:id/discussion"]}],"name":"豆瓣读书论坛","maintainers":["nightmare-mio"],"location":"other/discussion.ts"}' :test='{"code":0}' />
 
 ### 豆瓣豆列 <Site url="www.douban.com" size="sm" />
 
@@ -926,7 +987,7 @@ Chart
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media","popular"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":0}' />
 
 ### 豆瓣招聘 <Site url="www.douban.com" size="sm" />
 
@@ -938,7 +999,7 @@ Chart
 
 ### 豆瓣榜单与集合 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n  | ------------------ | ----------------------------- |\n  | 实时热门书影音     | subject_real_time_hotest   |\n  | 影院热映           | movie_showing                |\n  | 实时热门电影       | movie_real_time_hotest     |\n  | 实时热门电视       | tv_real_time_hotest        |\n  | 一周口碑电影榜     | movie_weekly_best           |\n  | 华语口碑剧集榜     | tv_chinese_best_weekly     |\n  | 全球口碑剧集榜     | tv_global_best_weekly      |\n  | 国内口碑综艺榜     | show_chinese_best_weekly   |\n  | 国外口碑综艺榜     | show_global_best_weekly    |\n  | 热播新剧国产剧     | tv_domestic                  |\n  | 热播新剧欧美剧     | tv_american                  |\n  | 热播新剧日剧       | tv_japanese                  |\n  | 热播新剧韩剧       | tv_korean                    |\n  | 热播新剧动画       | tv_animation                 |\n  | 虚构类小说热门榜   | book_fiction_hot_weekly    |\n  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n  | 热门单曲榜         | music_single                 |\n  | 华语新碟榜         | music_chinese                |\n  | ...                | ...                           |\n\n  | 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.moeyy.xyz/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n  | ------------------ | ----------------------------- |\n  | 实时热门书影音     | subject_real_time_hotest   |\n  | 影院热映           | movie_showing                |\n  | 实时热门电影       | movie_real_time_hotest     |\n  | 实时热门电视       | tv_real_time_hotest        |\n  | 一周口碑电影榜     | movie_weekly_best           |\n  | 华语口碑剧集榜     | tv_chinese_best_weekly     |\n  | 全球口碑剧集榜     | tv_global_best_weekly      |\n  | 国内口碑综艺榜     | show_chinese_best_weekly   |\n  | 国外口碑综艺榜     | show_global_best_weekly    |\n  | 热播新剧国产剧     | tv_domestic                  |\n  | 热播新剧欧美剧     | tv_american                  |\n  | 热播新剧日剧       | tv_japanese                  |\n  | 热播新剧韩剧       | tv_korean                    |\n  | 热播新剧动画       | tv_animation                 |\n  | 虚构类小说热门榜   | book_fiction_hot_weekly    |\n  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n  | 热门单曲榜         | music_single                 |\n  | 华语新碟榜         | music_chinese                |\n  | ...                | ...                           |\n\n  | 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":0}' />
 
 | 榜单 / 集合        | 路由                          |
   | ------------------ | ----------------------------- |
@@ -973,7 +1034,7 @@ Chart
   >
   > 如何找到榜单对应的路由参数：
   > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。
-  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.moeyy.xyz/douban/list/ECDIHUN4A)
+  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)
 
 ### 豆瓣每月推荐片单 <Site url="www.douban.com" size="sm" />
 
@@ -1012,7 +1073,7 @@ Chart
 
 ### 频道专题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 328433232161 to be less than 311040000000"}' />
+<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 330334087415 to be less than 311040000000"}' />
 
 | 默认    | 热门 | 最新 |
   | ------- | ---- | ---- |
@@ -1102,35 +1163,35 @@ Chart
 
 ### 圈子 <Site url="m.okjike.com" size="sm" />
 
-<Route namespace="jike" :data='{"path":"/topic/:id/:showUid?","categories":["social-media"],"example":"/jike/topic/556688fae4b00c57d9dd46ee","parameters":{"id":"圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到","showUid":"是否在内容中显示用户信息，设置为 1 则开启"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/topic/:id"],"target":"/topic/:id"}],"name":"圈子","maintainers":["DIYgod","prnake"],"location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="jike" :data='{"path":"/topic/:id/:showUid?","categories":["social-media","popular"],"example":"/jike/topic/556688fae4b00c57d9dd46ee","parameters":{"id":"圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到","showUid":"是否在内容中显示用户信息，设置为 1 则开启"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/topic/:id"],"target":"/topic/:id"}],"name":"圈子","maintainers":["DIYgod","prnake"],"location":"topic.ts"}' :test='{"code":0}' />
 
 ### 用户动态 <Site url="m.okjike.com" size="sm" />
 
-<Route namespace="jike" :data='{"path":"/user/:id","categories":["social-media"],"example":"/jike/user/3EE02BC9-C5B3-4209-8750-4ED1EE0F67BB","parameters":{"id":"用户 id, 可在即刻分享出来的单条动态页点击用户头像进入个人主页，然后在个人主页的 URL 中找到，或者在单条动态页使用 RSSHub Radar 插件"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/u/:uid"],"target":"/user/:uid"}],"name":"用户动态","maintainers":["DIYgod","prnake"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="jike" :data='{"path":"/user/:id","categories":["social-media","popular"],"example":"/jike/user/3EE02BC9-C5B3-4209-8750-4ED1EE0F67BB","parameters":{"id":"用户 id, 可在即刻分享出来的单条动态页点击用户头像进入个人主页，然后在个人主页的 URL 中找到，或者在单条动态页使用 RSSHub Radar 插件"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/u/:uid"],"target":"/user/:uid"}],"name":"用户动态","maintainers":["DIYgod","prnake"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## 简书 <Site url="www.jianshu.com"/>
 
 ### 首页 <Site url="www.jianshu.com/" size="sm" />
 
-<Route namespace="jianshu" :data='{"path":"/home","categories":["social-media"],"example":"/jianshu/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/"]}],"name":"首页","maintainers":["DIYgod","HenryQW","JimenezLi"],"url":"www.jianshu.com/","location":"home.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jianshu" :data='{"path":"/home","categories":["social-media"],"example":"/jianshu/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/"]}],"name":"首页","maintainers":["DIYgod","HenryQW","JimenezLi"],"url":"www.jianshu.com/","location":"home.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 专题 <Site url="www.jianshu.com" size="sm" />
 
-<Route namespace="jianshu" :data='{"path":"/collection/:id","categories":["social-media"],"example":"/jianshu/collection/xYuZYD","parameters":{"id":"专题 id, 可在专题页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/c/:id"]}],"name":"专题","maintainers":["DIYgod","HenryQW","JimenezLi"],"location":"collection.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jianshu" :data='{"path":"/collection/:id","categories":["social-media"],"example":"/jianshu/collection/xYuZYD","parameters":{"id":"专题 id, 可在专题页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/c/:id"]}],"name":"专题","maintainers":["DIYgod","HenryQW","JimenezLi"],"location":"collection.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 作者 <Site url="www.jianshu.com" size="sm" />
 
-<Route namespace="jianshu" :data='{"path":"/user/:id","categories":["social-media"],"example":"/jianshu/user/yZq3ZV","parameters":{"id":"作者 id, 可在作者主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/u/:id"]}],"name":"作者","maintainers":["DIYgod","HenryQW","JimenezLi"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jianshu" :data='{"path":"/user/:id","categories":["social-media"],"example":"/jianshu/user/yZq3ZV","parameters":{"id":"作者 id, 可在作者主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/u/:id"]}],"name":"作者","maintainers":["DIYgod","HenryQW","JimenezLi"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 酷安 <Site url="coolapk.com"/>
 
 ### 话题 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":0}' />
 
 ### 看看号 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":0}' />
 
 :::tip
   仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。
@@ -1138,7 +1199,7 @@ Chart
 
 ### 热榜 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |
   | -------- | -------- | ------ | ------ | ------ | ------ |
@@ -1180,13 +1241,13 @@ Chart
 
 <Route namespace="coolapk" :data='{"path":"/user/:uid/dynamic","categories":["social-media"],"example":"/coolapk/user/3177668/dynamic","parameters":{"uid":"在个人界面右上分享-复制链接获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户","maintainers":["xizeyoupan"],"location":"user-dynamic.ts"}' :test='{"code":0}' />
 
-## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
+## 腾讯网 <Site url="qq.com"/>
 
-### 用户作品评论动态 <Site url="ac.qq.com" size="sm" />
+### 用户作品评论动态 <Site url="qq.com" size="sm" />
 
 <Route namespace="qq" :data='{"path":"/kg/reply/:playId","categories":["social-media"],"example":"/qq/kg/reply/OhXHMdO1VxLWQOOm","parameters":{"playId":"音频页 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户作品评论动态","maintainers":["zhangxiang012"],"location":"kg/reply.ts"}' :test='{"code":0}' />
 
-### 用户作品列表 <Site url="ac.qq.com" size="sm" />
+### 用户作品列表 <Site url="qq.com" size="sm" />
 
 <Route namespace="qq" :data='{"path":"/kg/:userId","categories":["social-media"],"example":"/qq/kg/639a9a86272c308e33","parameters":{"userId":"用户 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"用户作品列表","maintainers":["zhangxiang012"],"location":"kg/user.ts"}' :test='{"code":0}' />
 
@@ -1221,7 +1282,7 @@ Chart
 
 指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如
 
-[https://rsshub.moeyy.xyz/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150](https://rsshub.moeyy.xyz/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150)
+[https://rsshub.app/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150](https://rsshub.app/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150)
 
 的效果为
 
@@ -1229,7 +1290,7 @@ Chart
 
 ### 博主 <Site url="weibo.com" size="sm" />
 
-<Route namespace="weibo" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media"],"example":"/weibo/user/1195230310","parameters":{"uid":"用户 id, 博主主页打开控制台执行 `$CONFIG.oid` 获取","routeParams":"额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.weibo.cn/u/:uid","m.weibo.cn/profile/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["DIYgod","iplusx","Rongronggg9"],"description":":::warning\n  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证。如需要订阅该部分博主，可配置 Cookie 后订阅。\n\n  未提供 Cookie 的情况下偶尔会触发反爬限制，提供 Cookie 可缓解该情况。\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="weibo" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media","popular"],"example":"/weibo/user/1195230310","parameters":{"uid":"用户 id, 博主主页打开控制台执行 `$CONFIG.oid` 获取","routeParams":"额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.weibo.cn/u/:uid","m.weibo.cn/profile/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["DIYgod","iplusx","Rongronggg9"],"description":":::warning\n  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证。如需要订阅该部分博主，可配置 Cookie 后订阅。\n\n  未提供 Cookie 的情况下偶尔会触发反爬限制，提供 Cookie 可缓解该情况。\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"user.ts"}' :test='{"code":0}' />
 
 :::warning
   部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证。如需要订阅该部分博主，可配置 Cookie 后订阅。
@@ -1264,7 +1325,7 @@ Chart
 
 ### 关键词 <Site url="weibo.com" size="sm" />
 
-<Route namespace="weibo" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media"],"example":"/weibo/keyword/DIYgod","parameters":{"keyword":"你想订阅的微博关键词","routeParams":"额外参数；请参阅上面的说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键词","maintainers":["DIYgod","Rongronggg9"],"location":"keyword.ts"}' :test='{"code":0}' />
+<Route namespace="weibo" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media","popular"],"example":"/weibo/keyword/DIYgod","parameters":{"keyword":"你想订阅的微博关键词","routeParams":"额外参数；请参阅上面的说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键词","maintainers":["DIYgod","Rongronggg9"],"location":"keyword.ts"}' :test='{"code":0}' />
 
 ### 热搜榜 <Site url="s.weibo.com/top/summary" size="sm" />
 
@@ -1315,7 +1376,7 @@ Chart
 
 ### 专辑 <Site url="xiaohongshu.com" size="sm" />
 
-<Route namespace="xiaohongshu" :data='{"path":"/board/:board_id","categories":["social-media"],"example":"/xiaohongshu/board/5db6f79200000000020032df","parameters":{"board_id":"专辑 ID"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaohongshu.com/board/:board_id"]}],"name":"专辑","maintainers":["lotosbin"],"location":"board.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="xiaohongshu" :data='{"path":"/board/:board_id","categories":["social-media"],"example":"/xiaohongshu/board/5db6f79200000000020032df","parameters":{"board_id":"专辑 ID"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaohongshu.com/board/:board_id"]}],"name":"专辑","maintainers":["lotosbin"],"location":"board.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 新榜 <Site url="newrank.cn"/>
 
@@ -1389,7 +1450,7 @@ Chart
 
 ### 用户动态 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/people/activities/:id","categories":["social-media"],"example":"/zhihu/people/activities/diygod","parameters":{"id":"作者 id，可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/people/:id"]}],"name":"用户动态","maintainers":["DIYgod"],"location":"activities.ts"}' :test='{"code":0}' />
+<Route namespace="zhihu" :data='{"path":"/people/activities/:id","categories":["social-media","popular"],"example":"/zhihu/people/activities/diygod","parameters":{"id":"作者 id，可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/people/:id"]}],"name":"用户动态","maintainers":["DIYgod"],"location":"activities.ts"}' :test='{"code":0}' />
 
 ### 用户回答 <Site url="www.zhihu.com" size="sm" />
 
@@ -1425,7 +1486,7 @@ Chart
 
 ### 知乎分类热榜 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media"],"example":"/zhihu/hot","parameters":{"category":"分类，见下表，默认为全站"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎分类热榜","maintainers":["nczitzk"],"description":"| 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |\n  | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |\n  | total | focus | science | car  | zvideo | fashion | depth | digital | sport | school | film |","location":"hot.ts"}' :test='{"code":0}' />
+<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media"],"example":"/zhihu/hot","parameters":{"category":"分类，见下表，默认为全站"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎分类热榜","maintainers":["nczitzk"],"description":"| 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |\n  | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |\n  | total | focus | science | car  | zvideo | fashion | depth | digital | sport | school | film |","location":"hot.ts"}' :test='{"code":1,"message":"expected 337197864559 to be less than 311040000000"}' />
 
 | 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |
   | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |

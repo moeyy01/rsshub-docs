@@ -61,7 +61,7 @@
 
 ### Manga <Site url="www.colamanga.com" size="sm" />
 
-<Route namespace="colamanga" :data='{"path":"/:id","parameters":{"id":"漫画id"},"name":"Manga","maintainers":["machsix"],"example":"/colamanga/manga-qq978758","categories":["anime"],"radar":[{"source":["www.colamanga.com/:id/"],"target":"/:id"}],"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"manga.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="colamanga" :data='{"path":"/:id","parameters":{"id":"漫画id"},"name":"Manga","maintainers":["machsix"],"example":"/colamanga/manga-qq978758","categories":["anime"],"radar":[{"source":["www.colamanga.com/:id/"],"target":"/:id"}],"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"manga.ts"}' :test='{"code":0}' />
 
 ## Comicat <Site url="comicat.org"/>
 
@@ -420,7 +420,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 熱門推薦 <Site url="acg.gamer.com.tw" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime"],"example":"/gamer/hot/47157","parameters":{"bsn":"板块 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":0}' />
+<Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime"],"example":"/gamer/hot/47157","parameters":{"bsn":"板块 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 包子漫画 <Site url="www.baozimh.com"/>
 
@@ -448,13 +448,13 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 开播提醒 <Site url="bgmlist.com" size="sm" />
 
-<Route namespace="bgmlist" :data='{"path":"/onair/:lang?","categories":["anime"],"example":"/bgmlist/onair/zh-Hans","parameters":{"lang":"语言"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"开播提醒","maintainers":["x2cf"],"location":"onair.ts"}' :test='{"code":1,"message":"expected 317117374796 to be less than 311040000000"}' />
+<Route namespace="bgmlist" :data='{"path":"/onair/:lang?","categories":["anime"],"example":"/bgmlist/onair/zh-Hans","parameters":{"lang":"语言"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"开播提醒","maintainers":["x2cf"],"location":"onair.ts"}' :test='{"code":1,"message":"expected 319018214744 to be less than 311040000000"}' />
 
 ## 风之动漫 <Site url="manhua.fffdm.com"/>
 
 ### 在线漫画 <Site url="manhua.fffdm.com" size="sm" />
 
-<Route namespace="fffdm" :data='{"path":"/manhua/:id/:cdn?","categories":["anime"],"example":"/fffdm/manhua/93","parameters":{"id":"漫画ID。默认获取全部，建议使用通用参数limit获取指定数量","cdn":"cdn加速器。默认5，当前可选1-5"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.fffdm.com/manhua/:id","www.fffdm.com/:id"],"target":"/manhua/:id"}],"name":"在线漫画","maintainers":["zytomorrow"],"location":"manhua/manhua.ts"}' :test='{"code":1,"message":"expected [ …(86) ] to not include &#39;https://manhua.fffdm.com/93/030/&#39;"}' />
+<Route namespace="fffdm" :data='{"path":"/manhua/:id/:cdn?","categories":["anime"],"example":"/fffdm/manhua/93","parameters":{"id":"漫画ID。默认获取全部，建议使用通用参数limit获取指定数量","cdn":"cdn加速器。默认5，当前可选1-5"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.fffdm.com/manhua/:id","www.fffdm.com/:id"],"target":"/manhua/:id"}],"name":"在线漫画","maintainers":["zytomorrow"],"location":"manhua/manhua.ts"}' :test='{"code":1,"message":"expected [ …(86) ] to not include &#39;https://manhua.fffdm.com/93/020/&#39;"}' />
 
 ## 幻之羁绊动漫网 <Site url="005.tv"/>
 
@@ -535,7 +535,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 漫画更新 <Site url="www.manhuagui.com" size="sm" />
 
-<Route namespace="manhuagui" :data='{"path":["/comic/:id/:chapterCnt?","/:domain?/comic/:id/:chapterCnt?"],"categories":["anime"],"example":"/manhuagui/comic/22942/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为0，返回所有章节"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mhgui.com/comic/:id/"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["MegrezZhu"],"location":"comic.ts"}' :test='{"code":0}' />
+<Route namespace="manhuagui" :data='{"path":["/comic/:id/:chapterCnt?","/:domain?/comic/:id/:chapterCnt?"],"categories":["anime"],"example":"/manhuagui/comic/22942/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为0，返回所有章节"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mhgui.com/comic/:id/"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["MegrezZhu"],"location":"comic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 漫画个人订阅 <Site url="www.mhgui.com/user/book/shelf" size="sm" />
 
@@ -564,13 +564,9 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route namespace="freexcomic" :data='{"path":"/book/:id","example":"/freexcomic/book/90","parameters":{"id":"漫画id，漫画主页的地址栏中"},"radar":[{"source":["www.jjmhw.cc/book/:id"]}],"name":"漫画更新","maintainers":["junfengP"],"url":"www.jjmhw.cc","location":"book.ts"}' :test='{"code":0}' />
 
-## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
+## 腾讯网 <Site url="qq.com"/>
 
-### Unknown <Site url="ac.qq.com" size="sm" />
-
-<Route namespace="qq" :data='{"path":"/ac/comic/:id?","radar":[{"source":["ac.qq.com/Comic/ComicInfo/id/:id","ac.qq.com/"],"target":"/ac/comic/:id"}],"name":"Unknown","maintainers":[],"location":"ac/comic.ts"}' :test='undefined' />
-
-### 排行榜 <Site url="ac.qq.com" size="sm" />
+### 排行榜 <Site url="qq.com" size="sm" />
 
 <Route namespace="qq" :data='{"path":"/ac/rank/:type?/:time?","categories":["anime"],"example":"/qq/ac/rank","parameters":{"type":"分类，见下表，默认为月票榜","time":"时间，`cur` 为当周、`prev` 为上周"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ac.qq.com/Rank/comicRank/type/:type","ac.qq.com/"]}],"name":"排行榜","maintainers":["nczitzk"],"description":"| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n  | mt     | rise   | new    | pay    | top    | male   | female |\n\n  :::tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n  :::","location":"ac/rank.ts"}' :test='{"code":0}' />
 
@@ -602,13 +598,13 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route namespace="bangumi" :data='{"path":"/moe/*","radar":[{"source":["bangumi.moe/"],"target":"/moe"}],"name":"Unknown","maintainers":[],"url":"bangumi.moe/","location":"moe/index.ts"}' :test='undefined' />
 
-### 成员关注动画榜 <Site url="bgm.tv/anime" size="sm" />
+### 成员关注榜 <Site url="bangumi.moe" size="sm" />
 
-<Route namespace="bangumi" :data='{"path":"/tv/followrank","categories":["anime"],"example":"/bangumi/tv/followrank","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/anime"]}],"name":"成员关注动画榜","maintainers":["honue"],"url":"bgm.tv/anime","location":"tv/other/followrank.ts"}' :test='{"code":0}' />
+<Route namespace="bangumi" :data='{"path":"/:type/followrank","categories":["anime"],"example":"/bangumi/anime/followrank","parameters":{"type":"类型：anime - 动画, book - 图书, music - 音乐, game - 游戏, real - 三次元"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/:type"],"target":"/:type/followrank"}],"name":"成员关注榜","maintainers":["honue","zhoukuncheng"],"location":"tv/other/followrank.ts"}' :test='{"code":0}' />
 
 ### 當季新番 <Site url="bangumi.online/" size="sm" />
 
-<Route namespace="bangumi" :data='{"path":"/online","categories":["anime"],"example":"/bangumi/online","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bangumi.online/"]}],"name":"當季新番","maintainers":["devinmugen"],"url":"bangumi.online/","location":"online/online.ts"}' :test='{"code":0}' />
+<Route namespace="bangumi" :data='{"path":"/online","categories":["anime"],"example":"/bangumi/online","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bangumi.online/"]}],"name":"當季新番","maintainers":["devinmugen"],"url":"bangumi.online/","location":"online/online.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 放送列表 <Site url="bgm.tv/calendar" size="sm" />
 
@@ -636,7 +632,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 用户日志 <Site url="bangumi.moe" size="sm" />
 
-<Route namespace="bangumi" :data='{"path":"/tv/user/blog/:id","categories":["anime"],"example":"/bangumi/tv/user/blog/sai","parameters":{"id":"用户 id, 在用户页面地址栏查看"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/user/:id"]}],"name":"用户日志","maintainers":["nczitzk"],"location":"tv/user/blog.ts"}' :test='{"code":1,"message":"expected 325554931589 to be less than 311040000000"}' />
+<Route namespace="bangumi" :data='{"path":"/tv/user/blog/:id","categories":["anime"],"example":"/bangumi/tv/user/blog/sai","parameters":{"id":"用户 id, 在用户页面地址栏查看"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/user/:id"]}],"name":"用户日志","maintainers":["nczitzk"],"location":"tv/user/blog.ts"}' :test='{"code":1,"message":"expected 327455772429 to be less than 311040000000"}' />
 
 ### 用户想看 <Site url="bangumi.moe" size="sm" />
 

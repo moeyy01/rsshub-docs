@@ -1,11 +1,5 @@
 # 🔍 Uncategorized
 
-## 423Down <Site url="www.423down.com"/>
-
-### Unknown <Site url="www.423down.com" size="sm" />
-
-<Route namespace="423down" :data='{"path":"/:category/:type?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
-
 ## 591 Rental house <Site url="rent.591.com.tw"/>
 
 ### Rental house <Site url="rent.591.com.tw" size="sm" />
@@ -66,7 +60,7 @@
 
 ### Exchange and Repair Extension Programs <Site url="apps.apple.com" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 311558958151 to be less than 311040000000"}' />
+<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 313459795272 to be less than 311040000000"}' />
 
 ## Aqara <Site url="aqara.com"/>
 
@@ -114,7 +108,7 @@ News from the official site of men's professional tennis.
 
 ### 搜索 <Site url="cn.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":0}' />
 
 ## biodiscover.com 生物探索 <Site url="www.biodiscover.com"/>
 
@@ -127,16 +121,6 @@ News from the official site of men's professional tennis.
 ### 文章 <Site url="clickme.net" size="sm" />
 
 <Route namespace="clickme" :data='{"path":"/:site/:grouping/:name","categories":["other"],"example":"/clickme/default/category/beauty","parameters":{"site":"站点，`default`为普通站，`r18`为成人站，其它值默认为普通站","grouping":"分组方式，`category`为分类，`tag`为标签，其他值默认为分类","name":"分类名或标签名，分类名为英文，可以在分类 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-## cnBeta.COM <Site url="cnbeta.com.tw"/>
-
-### Unknown <Site url="cnbeta.com.tw/" size="sm" />
-
-<Route namespace="cnbeta" :data='{"path":["/:type/:id","/"],"radar":[{"source":["cnbeta.com.tw/"],"target":""}],"name":"Unknown","maintainers":[],"url":"cnbeta.com.tw/","location":"type.ts"}' :test='undefined' />
-
-### Unknown <Site url="cnbeta.com.tw/" size="sm" />
-
-<Route namespace="cnbeta" :data='{"path":["/:type/:id","/"],"radar":[{"source":["cnbeta.com.tw/"],"target":""}],"name":"Unknown","maintainers":[],"url":"cnbeta.com.tw/","location":"type.ts"}' :test='undefined' />
 
 ## CuriousCat <Site url="curiouscat.live"/>
 
@@ -152,13 +136,9 @@ News from the official site of men's professional tennis.
 
 ## Darwin Awards <Site url="darwinawards.com"/>
 
-### Unknown <Site url="darwinawards.com/darwin" size="sm" />
+### Award Winners <Site url="darwinawards.com/darwin" size="sm" />
 
-<Route namespace="darwinawards" :data='{"path":["/all","/"],"radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"],"target":""}],"name":"Unknown","maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="darwinawards.com/darwin" size="sm" />
-
-<Route namespace="darwinawards" :data='{"path":["/all","/"],"radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"],"target":""}],"name":"Unknown","maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='undefined' />
+<Route namespace="darwinawards" :data='{"name":"Award Winners","example":"/darwinawards","path":"/","radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"]}],"maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='{"code":0}' />
 
 ## Deadline <Site url="deadline.com"/>
 
@@ -262,7 +242,7 @@ News from the official site of men's professional tennis.
 
 ### Search <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":0}' />
 
 ## Grub Street <Site url="grubstreet.com"/>
 
@@ -292,7 +272,7 @@ News from the official site of men's professional tennis.
 
 ### 每日环球视野 <Site url="idai.ly" size="sm" />
 
-<Route namespace="idaily" :data='{"path":["/:language?"],"name":"每日环球视野","example":"/idaily","maintainers":["zphw","nczitzk"],"parameters":{"language":"语言，见下表，默认为简体中文"},"radar":[{"source":["idai.ly/"]}],"description":"| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="idaily" :data='{"path":["/:language?"],"name":"每日环球视野","example":"/idaily","maintainers":["zphw","nczitzk"],"parameters":{"language":"语言，见下表，默认为简体中文"},"radar":[{"source":["idai.ly/"]}],"description":"| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |","location":"index.ts"}' :test='{"code":0}' />
 
 | 简体中文 | 繁体中文 |
   | -------- | -------- |
@@ -324,30 +304,6 @@ News from the official site of men's professional tennis.
   | -------- | ------- |
   | ja       | en      |
 
-## JavBus <Site url="www.javbus.com"/>
-
-:::warning
-Requests from non-Asia areas will be redirected to login page.
-:::
-
-:::tip Language
-You can change the language of each route to the languages listed below.
-
-| English | 日本语 | 한국의 | 中文             |
-| ------- | ------ | ------ | ---------------- |
-| en      | ja     | ko     | (leave it empty) |
-:::
-
-:::tip
-JavBus has multiple backup domains, these routes use default domain `https://javbus.com`. If the domain is unreachable, you can add `?domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.icu`, you can add `?domain=javsee.icu` to the end of the route, then the route will be [`/javbus/en?domain=javsee.icu`](https://rsshub.moeyy.xyz/javbus?domain=javsee.icu)
-
-**Note**: **Western** has different domain than the main site, the backup domains are also different. The default domain is `https://javbus.org` and you can add `?western_domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.one`, you can add `?western_domain=javsee.one` to the end of the route, then the route will be [`/javbus/western/en?western_domain=javsee.one`](https://rsshub.moeyy.xyz/javbus/western?western_domain=javsee.one)
-:::
-
-### Unknown <Site url="www.seejav.pw/" size="sm" />
-
-<Route namespace="javbus" :data='{"path":"*","radar":[{"source":["www.seejav.pw/"],"target":""}],"name":"Unknown","maintainers":[],"url":"www.seejav.pw/","location":"index.ts"}' :test='undefined' />
-
 ## Kantar Worldpanel <Site url="kantarworldpanel.com"/>
 
 ### Unknown <Site url="kantarworldpanel.com" size="sm" />
@@ -364,7 +320,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 ### Insights <Site url="kpmg.com/xx/en/home/insights.html" size="sm" />
 
-<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":0}' />
+<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Layoffs.fyi <Site url="layoffs.fyi"/>
 
@@ -372,34 +328,11 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 <Route namespace="layoffs" :data='{"path":"/","radar":[{"source":["layoffs.fyi/"],"target":""}],"name":"Unknown","maintainers":["BrandNewLifeJackie26"],"url":"layoffs.fyi/","location":"index.ts"}' :test='undefined' />
 
-## LinkedIn 领英中国 <Site url="linkedin.com"/>
+## LinkedIn 领英 <Site url="linkedin.com"/>
 
 ### Jobs <Site url="linkedin.com" size="sm" />
 
-<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?","categories":["other"],"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":[],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
-
-#### `job_types` list
-
-  | Full Time | Part Time | Contractor | All |
-  | --------- | --------- | ---------- | --- |
-  | F         | P         | C          | all |
-
-  #### `exp_levels` list
-
-  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
-  | --------- | ----------- | --------- | ---------------- | -------- | --- |
-  | 1         | 2           | 3         | 4                | 5        | all |
-
-  For example:
-
-  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`
-  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`
-
-  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**
-
-### Jobs <Site url="linkedin.com" size="sm" />
-
-<Route namespace="linkedin" :data='{"path":"/cn/jobs/:keywords?","categories":["other"],"example":"/linkedin/cn/jobs/Software","parameters":{"keywords":"搜索关键字"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":["bigfei"],"description":"另外，可以通过添加额外的以下 query 参数来输出满足特定要求的工作职位：\n\n  | 参数       | 描述                                              | 举例                                                    | 默认值  |\n  | ---------- | ------------------------------------------------- | ------------------------------------------------------- | ------- |\n  | `geo`      | geo 编码                                          | 102890883（中国）、102772228（上海）、103873152（北京） | 空      |\n  | `remote`   | 是否只显示远程工作                                | `true/false`                                            | `false` |\n  | `location` | 工作地点                                          | `china/shanghai/beijing`                                | 空      |\n  | `relevant` | 排序方式 (true: 按相关性排序，false： 按日期排序) | `true/false`                                            | `false` |\n  | `period`   | 发布时间                                          | `1/7/30`                                                | 空      |\n\n  例如：\n  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.moeyy.xyz/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作\n\n  **为了方便起见，建议您在 [LinkedIn.cn](https://www.linkedin.cn/incareer/jobs/search) 上进行搜索，并使用 [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 加载特定的 feed。**","location":"cn/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="linkedin" :data='{"path":"/cn/jobs/:keywords?","categories":["other"],"example":"/linkedin/cn/jobs/Software","parameters":{"keywords":"搜索关键字"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":["bigfei"],"description":"另外，可以通过添加额外的以下 query 参数来输出满足特定要求的工作职位：\n\n  | 参数       | 描述                                              | 举例                                                    | 默认值  |\n  | ---------- | ------------------------------------------------- | ------------------------------------------------------- | ------- |\n  | `geo`      | geo 编码                                          | 102890883（中国）、102772228（上海）、103873152（北京） | 空      |\n  | `remote`   | 是否只显示远程工作                                | `true/false`                                            | `false` |\n  | `location` | 工作地点                                          | `china/shanghai/beijing`                                | 空      |\n  | `relevant` | 排序方式 (true: 按相关性排序，false： 按日期排序) | `true/false`                                            | `false` |\n  | `period`   | 发布时间                                          | `1/7/30`                                                | 空      |\n\n  例如：\n  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.app/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作\n\n  **为了方便起见，建议您在 [LinkedIn.cn](https://www.linkedin.cn/incareer/jobs/search) 上进行搜索，并使用 [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 加载特定的 feed。**","location":"cn/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 另外，可以通过添加额外的以下 query 参数来输出满足特定要求的工作职位：
 
@@ -412,7 +345,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
   | `period`   | 发布时间                                          | `1/7/30`                                                | 空      |
 
   例如：
-  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.moeyy.xyz/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作
+  [`/linkedin/cn/jobs/Software?location=shanghai&period=1`](https://rsshub.app/linkedin/cn/jobs/Software?location=shanghai&period=1): 查找所有在上海的今日发布的所有 Software 工作
 
   **为了方便起见，建议您在 [LinkedIn.cn](https://www.linkedin.cn/incareer/jobs/search) 上进行搜索，并使用 [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 加载特定的 feed。**
 
@@ -424,23 +357,23 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 ## LogoNews 标志情报局 <Site url="logonews.cn"/>
 
-### Unknown <Site url="logonews.cn/work" size="sm" />
+### Unknown <Site url="logonews.cn/" size="sm" />
 
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.xyz/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
 
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.xyz/logonews/tag/china)。
+如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
 
-### Unknown <Site url="logonews.cn/work" size="sm" />
+### Unknown <Site url="logonews.cn/" size="sm" />
 
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.xyz/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
 
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.xyz/logonews/tag/china)。
+如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
 
-### Unknown <Site url="logonews.cn/work" size="sm" />
+### Unknown <Site url="logonews.cn/" size="sm" />
 
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.xyz/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
 
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.moeyy.xyz/logonews/tag/china)。
+如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
 
 ## Mozilla <Site url="monitor.firefox.com"/>
 
@@ -503,7 +436,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 ## Notion <Site url="notion.so"/>
 
 :::warning
-Need to set up Notion integration, please refer to [Route-specific Configurations](https://moeyy.cn/rsshub/deploy/config#route-specific-configurations) for details.
+Need to set up Notion integration, please refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations) for details.
 :::
 
 :::tip Recommendation
@@ -562,7 +495,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Sustainability <Site url="strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html" size="sm" />
 
-<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":0}' />
 
 ## Panda <Site url="usepanda.com"/>
 
@@ -799,7 +732,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 507000099799 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 366083821956 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -824,6 +757,18 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 ### Unknown <Site url="web3caff.com" size="sm" />
 
 <Route namespace="web3caff" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
+
+## Wellcee 唯心所寓 <Site url="wellcee.com"/>
+
+### 支持的城市 <Site url="www.wellcee.com" size="sm" />
+
+<Route namespace="wellcee" :data='{"path":"/support-city","example":"/wellcee/support-city","name":"支持的城市","maintainers":["TonyRL"],"radar":[{"source":["www.wellcee.com"]}],"url":"www.wellcee.com","location":"support-city.ts"}' :test='{"code":0}' />
+
+### 租房信息 <Site url="www.wellcee.com" size="sm" />
+
+<Route namespace="wellcee" :data='{"path":"/rent/:city/:district?","example":"/wellcee/rent/北京","parameters":{"city":"城市","district":"地区"},"name":"租房信息","maintainers":["TonyRL"],"url":"www.wellcee.com","description":"支持的城市可以通过 [/wellcee/support-city](https://rsshub.app/wellcee/support-city) 获取","location":"rent.ts"}' :test='{"code":0}' />
+
+支持的城市可以通过 [/wellcee/support-city](https://rsshub.app/wellcee/support-city) 获取
 
 ## WFDF <Site url="wfdf.sport"/>
 
@@ -950,7 +895,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 商品住房购房登记 <Site url="zw.cdzjryb.com/lottery/accept/projectList" size="sm" />
 
-<Route namespace="cdzjryb" :data='{"path":"/zw/projectList","categories":["other"],"example":"/cdzjryb/zw/projectList","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zw.cdzjryb.com/lottery/accept/projectList","zw.cdzjryb.com/"]}],"name":"商品住房购房登记","maintainers":["TonyRL"],"url":"zw.cdzjryb.com/lottery/accept/projectList","location":"project-list.ts"}' :test='{"code":0}' />
+<Route namespace="cdzjryb" :data='{"path":"/zw/projectList","categories":["other"],"example":"/cdzjryb/zw/projectList","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zw.cdzjryb.com/lottery/accept/projectList","zw.cdzjryb.com/"]}],"name":"商品住房购房登记","maintainers":["TonyRL"],"url":"zw.cdzjryb.com/lottery/accept/projectList","location":"project-list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 大连理工大学 <Site url="dutdice.dlut.edu.cn"/>
 
@@ -983,18 +928,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 ### Unknown <Site url="sohac.nenu.edu.cn" size="sm" />
 
 <Route namespace="nenu" :data='{"path":"/yjsy/*","name":"Unknown","maintainers":[],"location":"yjsy.ts"}' :test='undefined' />
-
-## 端传媒 <Site url="theinitium.com"/>
-
-通过提取文章全文，以提供比官方源更佳的阅读体验。
-
-:::warning
-付费内容全文可能需要登陆获取，详情见部署页面的配置模块。
-:::
-
-### Unknown <Site url="theinitium.com" size="sm" />
-
-<Route namespace="theinitium" :data='{"path":"/:model?/:type?/:language?","name":"Unknown","maintainers":[],"location":"full.ts"}' :test='undefined' />
 
 ## 二次元虫洞 <Site url="2cycd.com"/>
 
@@ -1041,12 +974,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 ### Unknown <Site url="www.cmde.org.cn" size="sm" />
 
 <Route namespace="cmde" :data='{"path":"/:cate{.+}?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
-
-## 国家气候中心 <Site url="cmdp.ncc-cma.net"/>
-
-### Unknown <Site url="cmdp.ncc-cma.net" size="sm" />
-
-<Route namespace="ncc-cma" :data='{"path":"/cmdp/image/:id{.+}?","name":"Unknown","maintainers":[],"location":"cmdp.ts"}' :test='undefined' />
 
 ## 环球法律评论 <Site url="globallawreview.org"/>
 
@@ -1118,7 +1045,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 实时 AQI <Site url="aqicn.org" size="sm" />
 
-<Route namespace="aqicn" :data='{"path":"/:city/:pollution?","categories":["other"],"example":"/aqicn/beijing/pm25","parameters":{"city":"城市拼音或地区 ID，详见[aqicn.org](http://aqicn.org/city/)","pollution":"可选择显示更详细的空气污染成分"},"radar":[{"source":["aqicn.org"]}],"name":"实时 AQI","maintainers":["ladeng07"],"url":"aqicn.org","descriptions":"\n|   参数   | 污染成分 |\n| -------- | -------- |\n|   pm25   |  PM2.5   |\n|   pm10   |  PM10    |\n|   o3     |  O3      |\n|   no2    |  NO2     |\n|   so2    |  SO2     |\n|   co     |  CO      |\n\n举例: [https://rsshub.moeyy.xyz/aqicn/beijing/pm25,pm10](https://rsshub.moeyy.xyz/aqicn/beijing/pm25,pm10)\n\n1. 显示单个污染成分，例如「pm25」, [https://rsshub.moeyy.xyz/aqicn/beijing/pm25](https://rsshub.moeyy.xyz/aqicn/beijing/pm25)\n2. 逗号分隔显示多个污染成分，例如「pm25,pm10」，[https://rsshub.moeyy.xyz/aqicn/beijing/pm25,pm10](https://rsshub.moeyy.xyz/aqicn/beijing/pm25,pm10)\n3. 城市子站 ID 获取方法：右键显示网页源代码，搜索 \"idx\" （带双冒号），后面的 ID 就是子站的 ID，如你给的链接 ID 是 4258，RSS 地址就是 [https://rsshub.moeyy.xyz/aqicn/4258](https://rsshub.moeyy.xyz/aqicn/4258)\n","location":"aqi.ts"}' :test='{"code":0}' />
+<Route namespace="aqicn" :data='{"path":"/:city/:pollution?","categories":["other"],"example":"/aqicn/beijing/pm25","parameters":{"city":"城市拼音或地区 ID，详见[aqicn.org](http://aqicn.org/city/)","pollution":"可选择显示更详细的空气污染成分"},"radar":[{"source":["aqicn.org"]}],"name":"实时 AQI","maintainers":["ladeng07"],"url":"aqicn.org","descriptions":"\n|   参数   | 污染成分 |\n| -------- | -------- |\n|   pm25   |  PM2.5   |\n|   pm10   |  PM10    |\n|   o3     |  O3      |\n|   no2    |  NO2     |\n|   so2    |  SO2     |\n|   co     |  CO      |\n\n举例: [https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n\n1. 显示单个污染成分，例如「pm25」, [https://rsshub.app/aqicn/beijing/pm25](https://rsshub.app/aqicn/beijing/pm25)\n2. 逗号分隔显示多个污染成分，例如「pm25,pm10」，[https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n3. 城市子站 ID 获取方法：右键显示网页源代码，搜索 \"idx\" （带双冒号），后面的 ID 就是子站的 ID，如你给的链接 ID 是 4258，RSS 地址就是 [https://rsshub.app/aqicn/4258](https://rsshub.app/aqicn/4258)\n","location":"aqi.ts"}' :test='{"code":0}' />
 
 ## 快递 100 <Site url="kuaidi100.com"/>
 
@@ -1202,12 +1129,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="iqilu" :data='{"path":"/v/:category{.+}?","name":"Unknown","maintainers":[],"location":"program.ts"}' :test='undefined' />
 
-## 其乐 <Site url="keylol.com"/>
-
-### Unknown <Site url="keylol.com" size="sm" />
-
-<Route namespace="keylol" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
-
 ## 汽油价格网 <Site url="qiyoujiage.com"/>
 
 ### Unknown <Site url="qiyoujiage.com" size="sm" />
@@ -1236,7 +1157,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### CloudFlareYes <Site url="stock.hostmonit.com" size="sm" />
 
-<Route namespace="hostmonit" :data='{"path":"/cloudflareyes/:type?","categories":["other"],"example":"/hostmonit/cloudflareyes","parameters":{"type":"类型，见下表，默认为 v4"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"CloudFlareYes","maintainers":["nczitzk"],"description":"| v4 | v6 |\n  | -- | -- |\n  |    | v6 |","location":"cloudflareyes.ts"}' :test='{"code":0}' />
+<Route namespace="hostmonit" :data='{"path":"/cloudflareyes/:type?","categories":["other"],"example":"/hostmonit/cloudflareyes","parameters":{"type":"类型，见下表，默认为 v4"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"CloudFlareYes","maintainers":["nczitzk"],"description":"| v4 | v6 |\n  | -- | -- |\n  |    | v6 |","location":"cloudflareyes.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | v4 | v6 |
   | -- | -- |
@@ -1296,17 +1217,17 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ## 紳士漫畫 <Site url="wnacg.org"/>
 
-### Unknown <Site url="wnacg.org/albums.html" size="sm" />
+### 標籤更新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"path":["/","/category/:cid","/tag/:tag"],"radar":[{"source":["wnacg.org/albums.html","wnacg.org/"],"target":""}],"name":"Unknown","maintainers":["KenMizz"],"url":"wnacg.org/albums.html","location":"index.ts"}' :test='undefined' />
+<Route namespace="wnacg" :data='{"name":"標籤更新","maintainers":["Gandum2077"],"path":"/tag/:tag","example":"/wnacg/tag/漢化","radar":[{"source":["wnacg.com/*"]}],"url":"wnacg.com/albums.html","location":"tag.ts"}' :test='{"code":0}' />
 
-### Unknown <Site url="wnacg.org/albums.html" size="sm" />
+### 分类更新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"path":["/","/category/:cid","/tag/:tag"],"radar":[{"source":["wnacg.org/albums.html","wnacg.org/"],"target":""}],"name":"Unknown","maintainers":["KenMizz"],"url":"wnacg.org/albums.html","location":"index.ts"}' :test='undefined' />
+<Route namespace="wnacg" :data='{"name":"分类更新","maintainers":["Gandum2077"],"path":"/category/:cid","example":"/wnacg/category/6","radar":[{"source":["wnacg.com/*"]}],"url":"wnacg.com/albums.html","location":"category.ts"}' :test='{"code":0}' />
 
-### Unknown <Site url="wnacg.org/albums.html" size="sm" />
+### 最新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"path":["/","/category/:cid","/tag/:tag"],"radar":[{"source":["wnacg.org/albums.html","wnacg.org/"],"target":""}],"name":"Unknown","maintainers":["KenMizz"],"url":"wnacg.org/albums.html","location":"index.ts"}' :test='undefined' />
+<Route namespace="wnacg" :data='{"name":"最新","maintainers":["KenMizz"],"path":"/","example":"/wnacg","radar":[{"source":["wnacg.com/albums.html","wnacg.com/"]}],"url":"wnacg.com/albums.html","location":"index.ts"}' :test='{"code":0}' />
 
 ## 世界新聞網 <Site url="worldjournal.com"/>
 
@@ -1330,33 +1251,29 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 搜索 <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 356747123974 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 358647949544 to be less than 311040000000"}' />
 
 ### 特色 LOGO <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 311732722911 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 313633546906 to be less than 311040000000"}' />
 
 ## 台灣事實查核中心 <Site url="tfc-taiwan.org.tw"/>
 
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
+### 專題 / 重點專區 <Site url="tfc-taiwan.org.tw/articles/report" size="sm" />
 
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
+<Route namespace="tfc-taiwan" :data='{"name":"專題 / 重點專區","maintainers":["TonyRL"],"example":"/tfc-taiwan/category/242","path":"/:type/:id{.+}","parameters":{"type":"分類，見下表，預設為 `report`"},"url":"tfc-taiwan.org.tw/articles/report","description":"| 專題     | 重點專區 |\n| -------- | -------- |\n| category | topic    |","location":"topic.ts"}' :test='undefined' />
 
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
+| 專題     | 重點專區 |
+| -------- | -------- |
+| category | topic    |
 
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
+### 最新相關資訊 / 最新查核報告 <Site url="tfc-taiwan.org.tw/articles/report" size="sm" />
 
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
+<Route namespace="tfc-taiwan" :data='{"name":"最新相關資訊 / 最新查核報告","maintainers":["TonyRL"],"example":"/tfc-taiwan","path":"/:type?","parameters":{"type":"分類，見下表，預設為 `report`"},"url":"tfc-taiwan.org.tw/articles/report","description":"| 最新相關資訊 | 最新查核報告 |\n| ------------ | ------------ |\n| info         | report       |","location":"index.ts"}' :test='undefined' />
 
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
-
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
-
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
+| 最新相關資訊 | 最新查核報告 |
+| ------------ | ------------ |
+| info         | report       |
 
 ## 太原师范学院 <Site url="tynu.edu.cn"/>
 
@@ -1364,7 +1281,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="tynu" :data='{"path":"/","radar":[{"source":["tynu.edu.cn/index/tzgg.htm","tynu.edu.cn/index.htm","tynu.edu.cn/"],"target":""}],"name":"Unknown","maintainers":["2PoL"],"url":"tynu.edu.cn/index/tzgg.htm","location":"tynu.ts"}' :test='undefined' />
 
-## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
+## 腾讯网 <Site url="qq.com"/>
 
 ### 最新辟谣 <Site url="vp.fact.qq.com/home" size="sm" />
 
@@ -1384,9 +1301,9 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ## 新假期周刊 <Site url="weekendhk.com"/>
 
-### Unknown <Site url="weekendhk.com/" size="sm" />
+### 最新文章 <Site url="weekendhk.com/" size="sm" />
 
-<Route namespace="weekendhk" :data='{"path":"/","radar":[{"source":["weekendhk.com/"],"target":""}],"name":"Unknown","maintainers":["TonyRL"],"url":"weekendhk.com/","location":"posts.ts"}' :test='undefined' />
+<Route namespace="weekendhk" :data='{"path":"/","example":"/weekendhk","radar":[{"source":["weekendhk.com/"]}],"name":"最新文章","maintainers":["TonyRL"],"url":"weekendhk.com/","location":"posts.ts"}' :test='{"code":0}' />
 
 ## 星洲网 <Site url="sinchew.com.my"/>
 
@@ -1424,12 +1341,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="getitfree" :data='{"path":"/:filter{.+}?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
-## 中国军网 <Site url="81rc.81.cn"/>
-
-### Unknown <Site url="81rc.81.cn" size="sm" />
-
-<Route namespace="81" :data='{"path":"/81rc/*","name":"Unknown","maintainers":[],"location":"81rc/index.ts"}' :test='undefined' />
-
 ## 中华全国专利代理师协会 <Site url="acpaa.cn"/>
 
 ### 标签 <Site url="acpaa.cn" size="sm" />
@@ -1450,7 +1361,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="boc.cn/sourcedb/whpj" size="sm" />
 
-<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"expected [ Array(1) ] to not include &#39;英镑 GBP 现汇买入价：903.23 现钞买入价：885.36 现汇卖出…&#39;"}' />
+<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"expected [ Array(1) ] to not include &#39;英镑 GBP 现汇买入价：915.34 现钞买入价：888.04 现汇卖出…&#39;"}' />
 
 | 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1472,11 +1383,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### Unknown <Site url="cebbank.com/site/ygzx/whpj/index.html" size="sm" />
 
-<Route namespace="cebbank" :data='{"path":"/quotation/all","categories":["other"],"example":"/cebbank/quotation/all","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cebbank.com/site/ygzx/whpj/index.html","cebbank.com/eportal/ui","cebbank.com/"]}],"name":"Unknown","maintainers":["linbuxiao"],"url":"cebbank.com/site/ygzx/whpj/index.html","location":"all.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cebbank" :data='{"path":"/quotation/all","categories":["other"],"example":"/cebbank/quotation/all","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cebbank.com/site/ygzx/whpj/index.html","cebbank.com/eportal/ui","cebbank.com/"]}],"name":"Unknown","maintainers":["linbuxiao"],"url":"cebbank.com/site/ygzx/whpj/index.html","location":"all.ts"}' :test='{"code":0}' />
 
 ### 外汇牌价 <Site url="cebbank.com" size="sm" />
 
-<Route namespace="cebbank" :data='{"path":"/quotation/history/:type","categories":["other"],"example":"/cebbank/quotation/history/usd","parameters":{"type":"货币的缩写，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"外汇牌价","maintainers":["linbuxiao"],"description":"#### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}\n\n\n#### 历史牌价 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-li-shi-pai-jia}\n\n  | 美元 | 英镑 | 港币 | 瑞士法郎 | 瑞典克郎 | 丹麦克郎 | 挪威克郎 | 日元 | 加拿大元 | 澳大利亚元 | 新加坡元 | 欧元 | 澳门元 | 泰国铢 | 新西兰元 | 韩圆 |\n  | ---- | ---- | ---- | -------- | -------- | -------- | -------- | ---- | -------- | ---------- | -------- | ---- | ------ | ------ | -------- | ---- |\n  | usd  | gbp  | hkd  | chf      | sek      | dkk      | nok      | jpy  | cad      | aud        | sgd      | eur  | mop    | thb    | nzd      | krw  |","location":"history.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cebbank" :data='{"path":"/quotation/history/:type","categories":["other"],"example":"/cebbank/quotation/history/usd","parameters":{"type":"货币的缩写，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"外汇牌价","maintainers":["linbuxiao"],"description":"#### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}\n\n\n#### 历史牌价 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-li-shi-pai-jia}\n\n  | 美元 | 英镑 | 港币 | 瑞士法郎 | 瑞典克郎 | 丹麦克郎 | 挪威克郎 | 日元 | 加拿大元 | 澳大利亚元 | 新加坡元 | 欧元 | 澳门元 | 泰国铢 | 新西兰元 | 韩圆 |\n  | ---- | ---- | ---- | -------- | -------- | -------- | -------- | ---- | -------- | ---------- | -------- | ---- | ------ | ------ | -------- | ---- |\n  | usd  | gbp  | hkd  | chf      | sek      | dkk      | nok      | jpy  | cad      | aud        | sgd      | eur  | mop    | thb    | nzd      | krw  |","location":"history.ts"}' :test='{"code":1,"message":"expected [ &#39;美元(USD)&#39; ] to not include &#39;美元(USD)&#39;"}' />
 
 #### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}
 
@@ -1666,7 +1577,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 读者云平台 <Site url="read.nlc.cn" size="sm" />
 
-<Route namespace="nlc" :data='{"path":"/read/:type?","categories":["other"],"example":"/nlc/read/电子图书","parameters":{"type":"分类，见下表，默认为电子图书"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"读者云平台","maintainers":["nczitzk"],"description":"| [电子图书](http://read.nlc.cn/outRes/outResList?type=电子图书) | [电子期刊](http://read.nlc.cn/outRes/outResList?type=电子期刊) | [电子论文](http://read.nlc.cn/outRes/outResList?type=电子论文) | [电子报纸](http://read.nlc.cn/outRes/outResList?type=电子报纸) | [音视频](http://read.nlc.cn/outRes/outResList?type=音视频) |\n  | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------- |\n\n  | [标准专利](http://read.nlc.cn/outRes/outResList?type=标准专利) | [工具书](http://read.nlc.cn/outRes/outResList?type=工具书) | [少儿资源](http://read.nlc.cn/outRes/outResList?type=少儿资源) |\n  | -------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- |","location":"read.ts"}' :test='{"code":0}' />
+<Route namespace="nlc" :data='{"path":"/read/:type?","categories":["other"],"example":"/nlc/read/电子图书","parameters":{"type":"分类，见下表，默认为电子图书"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"读者云平台","maintainers":["nczitzk"],"description":"| [电子图书](http://read.nlc.cn/outRes/outResList?type=电子图书) | [电子期刊](http://read.nlc.cn/outRes/outResList?type=电子期刊) | [电子论文](http://read.nlc.cn/outRes/outResList?type=电子论文) | [电子报纸](http://read.nlc.cn/outRes/outResList?type=电子报纸) | [音视频](http://read.nlc.cn/outRes/outResList?type=音视频) |\n  | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------- |\n\n  | [标准专利](http://read.nlc.cn/outRes/outResList?type=标准专利) | [工具书](http://read.nlc.cn/outRes/outResList?type=工具书) | [少儿资源](http://read.nlc.cn/outRes/outResList?type=少儿资源) |\n  | -------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- |","location":"read.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | [电子图书](http://read.nlc.cn/outRes/outResList?type=电子图书) | [电子期刊](http://read.nlc.cn/outRes/outResList?type=电子期刊) | [电子论文](http://read.nlc.cn/outRes/outResList?type=电子论文) | [电子报纸](http://read.nlc.cn/outRes/outResList?type=电子报纸) | [音视频](http://read.nlc.cn/outRes/outResList?type=音视频) |
   | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------- |
@@ -1687,7 +1598,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 若只查看榜单前 50，可在订阅 URL 后加入 `?limit=50`。
 
-即，以 [热门节目](https://xyzrank.com/#/) 为例，路由为[`/xyzrank?limit=50`](https://rsshub.moeyy.xyz/xyzrank?limit=50)。
+即，以 [热门节目](https://xyzrank.com/#/) 为例，路由为[`/xyzrank?limit=50`](https://rsshub.app/xyzrank?limit=50)。
 :::
 
 ### Unknown <Site url="xyzrank.com/" size="sm" />

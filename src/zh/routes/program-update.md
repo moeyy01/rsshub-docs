@@ -1,5 +1,42 @@
 # 🔄 程序更新
 
+## 423Down <Site url="423down.com"/>
+
+### 423Down <Site url="423down.com" size="sm" />
+
+<Route namespace="423down" :data='{"path":"/:category{.+}?","name":"423Down","url":"423down.com","maintainers":["nczitzk"],"example":"/423down","parameters":{"category":"分类，默认为首页，可在对应分类页 URL 中找到"},"description":":::tip\n  若订阅 [Android - 423Down](https://www.423down.com/apk)，网址为 `https://www.423down.com/apk`。截取 `https://www.423down.com/` 到末尾的部分 `apk` 作为参数填入，此时路由为 [`/423down/apk`](https://rsshub.app/423down/apk)。\n  :::\n\n  #### [安卓软件](https://www.423down.com/apk)\n\n  | [安卓软件](https://www.423down.com/apk) |\n  | --------------------------------------- |\n  | [apk](https://rsshub.app/423down/apk)   |\n  \n  #### 电脑软件\n  \n  | [原创软件](https://www.423down.com/zd423) | [媒体播放](https://www.423down.com/multimedia)      | [网页浏览](https://www.423down.com/browser)   | [图形图像](https://www.423down.com/image) | [聊天软件](https://www.423down.com/im) |\n  | ----------------------------------------- | --------------------------------------------------- | --------------------------------------------- | ----------------------------------------- | -------------------------------------- |\n  | [zd423](https://rsshub.app/423down/zd423) | [multimedia](https://rsshub.app/423down/multimedia) | [browser](https://rsshub.app/423down/browser) | [image](https://rsshub.app/423down/image) | [im](https://rsshub.app/423down/im)    |\n  \n  | [办公软件](https://www.423down.com/work) | [上传下载](https://www.423down.com/down) | [实用软件](https://www.423down.com/softtool)    | [系统辅助](https://www.423down.com/systemsoft)      | [系统必备](https://www.423down.com/systemplus)      |\n  | ---------------------------------------- | ---------------------------------------- | ----------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |\n  | [work](https://rsshub.app/423down/work)  | [down](https://rsshub.app/423down/down)  | [softtool](https://rsshub.app/423down/softtool) | [systemsoft](https://rsshub.app/423down/systemsoft) | [systemplus](https://rsshub.app/423down/systemplus) |\n  \n  | [安全软件](https://www.423down.com/security)    | [补丁相关](https://www.423down.com/patch) | [硬件相关](https://www.423down.com/hardware)    |\n  | ----------------------------------------------- | ----------------------------------------- | ----------------------------------------------- |\n  | [security](https://rsshub.app/423down/security) | [patch](https://rsshub.app/423down/patch) | [hardware](https://rsshub.app/423down/hardware) |\n  \n  #### 操作系统\n  \n  | [Windows 11](https://www.423down.com/win11) | [Windows 10](https://www.423down.com/win10) | [Windows 7](https://www.423down.com/win7) | [Windows XP](https://www.423down.com/win7/winxp)    | [WinPE](https://www.423down.com/pe-system)        |\n  | ------------------------------------------- | ------------------------------------------- | ----------------------------------------- | --------------------------------------------------- | ------------------------------------------------- |\n  | [win11](https://rsshub.app/423down/win11)   | [win10](https://rsshub.app/423down/win10)   | [win7](https://rsshub.app/423down/win7)   | [win7/winxp](https://rsshub.app/423down/win7/winxp) | [pe-system](https://rsshub.app/423down/pe-system) |\n  ","categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["423down.com/:category","423down.com"]},{"title":"首页","source":["www.423down.com"],"target":"/"},{"title":"安卓软件","source":["www.423down.com/apk"],"target":"/apk"},{"title":"电脑软件 - 原创软件","source":["www.423down.com/zd423"],"target":"/zd423"},{"title":"电脑软件 - 媒体播放","source":["www.423down.com/multimedia"],"target":"/multimedia"},{"title":"电脑软件 - 网页浏览","source":["www.423down.com/browser"],"target":"/browser"},{"title":"电脑软件 - 图形图像","source":["www.423down.com/image"],"target":"/image"},{"title":"电脑软件 - 聊天软件","source":["www.423down.com/im"],"target":"/im"},{"title":"电脑软件 - 办公软件","source":["www.423down.com/work"],"target":"/work"},{"title":"电脑软件 - 上传下载","source":["www.423down.com/down"],"target":"/down"},{"title":"电脑软件 - 实用软件","source":["www.423down.com/softtool"],"target":"/softtool"},{"title":"电脑软件 - 系统辅助","source":["www.423down.com/systemsoft"],"target":"/systemsoft"},{"title":"电脑软件 - 系统必备","source":["www.423down.com/systemplus"],"target":"/systemplus"},{"title":"电脑软件 - 安全软件","source":["www.423down.com/security"],"target":"/security"},{"title":"电脑软件 - 补丁相关","source":["www.423down.com/patch"],"target":"/patch"},{"title":"电脑软件 - 硬件相关","source":["www.423down.com/hardware"],"target":"/hardware"},{"title":"操作系统 - Windows 11","source":["www.423down.com/win11"],"target":"/win11"},{"title":"操作系统 - Windows 10","source":["www.423down.com/win10"],"target":"/win10"},{"title":"操作系统 - Windows 7","source":["www.423down.com/win7"],"target":"/win7"},{"title":"操作系统 - Windows XP","source":["www.423down.com/win7/winxp"],"target":"/win7/winxp"},{"title":"操作系统 - WinPE","source":["www.423down.com/pe-system"],"target":"/pe-system"}],"location":"index.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [Android - 423Down](https://www.423down.com/apk)，网址为 `https://www.423down.com/apk`。截取 `https://www.423down.com/` 到末尾的部分 `apk` 作为参数填入，此时路由为 [`/423down/apk`](https://rsshub.app/423down/apk)。
+  :::
+
+  #### [安卓软件](https://www.423down.com/apk)
+
+  | [安卓软件](https://www.423down.com/apk) |
+  | --------------------------------------- |
+  | [apk](https://rsshub.app/423down/apk)   |
+  
+  #### 电脑软件
+  
+  | [原创软件](https://www.423down.com/zd423) | [媒体播放](https://www.423down.com/multimedia)      | [网页浏览](https://www.423down.com/browser)   | [图形图像](https://www.423down.com/image) | [聊天软件](https://www.423down.com/im) |
+  | ----------------------------------------- | --------------------------------------------------- | --------------------------------------------- | ----------------------------------------- | -------------------------------------- |
+  | [zd423](https://rsshub.app/423down/zd423) | [multimedia](https://rsshub.app/423down/multimedia) | [browser](https://rsshub.app/423down/browser) | [image](https://rsshub.app/423down/image) | [im](https://rsshub.app/423down/im)    |
+  
+  | [办公软件](https://www.423down.com/work) | [上传下载](https://www.423down.com/down) | [实用软件](https://www.423down.com/softtool)    | [系统辅助](https://www.423down.com/systemsoft)      | [系统必备](https://www.423down.com/systemplus)      |
+  | ---------------------------------------- | ---------------------------------------- | ----------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
+  | [work](https://rsshub.app/423down/work)  | [down](https://rsshub.app/423down/down)  | [softtool](https://rsshub.app/423down/softtool) | [systemsoft](https://rsshub.app/423down/systemsoft) | [systemplus](https://rsshub.app/423down/systemplus) |
+  
+  | [安全软件](https://www.423down.com/security)    | [补丁相关](https://www.423down.com/patch) | [硬件相关](https://www.423down.com/hardware)    |
+  | ----------------------------------------------- | ----------------------------------------- | ----------------------------------------------- |
+  | [security](https://rsshub.app/423down/security) | [patch](https://rsshub.app/423down/patch) | [hardware](https://rsshub.app/423down/hardware) |
+  
+  #### 操作系统
+  
+  | [Windows 11](https://www.423down.com/win11) | [Windows 10](https://www.423down.com/win10) | [Windows 7](https://www.423down.com/win7) | [Windows XP](https://www.423down.com/win7/winxp)    | [WinPE](https://www.423down.com/pe-system)        |
+  | ------------------------------------------- | ------------------------------------------- | ----------------------------------------- | --------------------------------------------------- | ------------------------------------------------- |
+  | [win11](https://rsshub.app/423down/win11)   | [win10](https://rsshub.app/423down/win10)   | [win7](https://rsshub.app/423down/win7)   | [win7/winxp](https://rsshub.app/423down/win7/winxp) | [pe-system](https://rsshub.app/423down/pe-system) |
+  
+
 ## Amazon <Site url="amazon.com"/>
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
@@ -36,14 +73,14 @@
 
 ### App Update <Site url="apps.apple.com" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/apps/update/:country/:id/:platform?","categories":["program-update"],"example":"/apple/apps/update/us/id408709785","parameters":{"country":"App Store Country, obtain from the app URL, see below","id":"App id, obtain from the app URL","platform":"App Platform, see below, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/:country/app/:appSlug/:id","apps.apple.com/:country/app/:id"],"target":"/apps/update/:country/:id"}],"name":"App Update","maintainers":["EkkoG","nczitzk"],"description":"| All | iOS | macOS | tvOS |\n  | --- | --- | ----- | ---- |\n  |     | iOS | macOS | tvOS |\n\n  :::tip\n  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.moeyy.xyz/apple/apps/update/us/id408709785).\n  :::","location":"apps.ts"}' :test='{"code":0}' />
+<Route namespace="apple" :data='{"path":"/apps/update/:country/:id/:platform?","categories":["program-update"],"example":"/apple/apps/update/us/id408709785","parameters":{"country":"App Store Country, obtain from the app URL, see below","id":"App id, obtain from the app URL","platform":"App Platform, see below, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/:country/app/:appSlug/:id","apps.apple.com/:country/app/:id"],"target":"/apps/update/:country/:id"}],"name":"App Update","maintainers":["EkkoG","nczitzk"],"description":"| All | iOS | macOS | tvOS |\n  | --- | --- | ----- | ---- |\n  |     | iOS | macOS | tvOS |\n\n  :::tip\n  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.app/apple/apps/update/us/id408709785).\n  :::","location":"apps.ts"}' :test='{"code":0}' />
 
 | All | iOS | macOS | tvOS |
   | --- | --- | ----- | ---- |
   |     | iOS | macOS | tvOS |
 
   :::tip
-  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.moeyy.xyz/apple/apps/update/us/id408709785).
+  For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.app/apple/apps/update/us/id408709785).
   :::
 
 ## App Store/Mac App Store <Site url="apps.apple.com"/>
@@ -74,7 +111,7 @@
 
 ### GPU Tweak <Site url="asus.com/campaign/GPU-Tweak-III/*" size="sm" />
 
-<Route namespace="asus" :data='{"path":"/gpu-tweak","categories":["program-update"],"example":"/asus/gpu-tweak","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["asus.com/campaign/GPU-Tweak-III/*","asus.com/"]}],"name":"GPU Tweak","maintainers":["TonyRL"],"url":"asus.com/campaign/GPU-Tweak-III/*","location":"gpu-tweak.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="asus" :data='{"path":"/gpu-tweak","categories":["program-update"],"example":"/asus/gpu-tweak","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["asus.com/campaign/GPU-Tweak-III/*","asus.com/"]}],"name":"GPU Tweak","maintainers":["TonyRL"],"url":"asus.com/campaign/GPU-Tweak-III/*","location":"gpu-tweak.ts"}' :test='{"code":0}' />
 
 ## Bilibili <Site url="www.bilibili.com"/>
 
@@ -90,7 +127,7 @@
 
 ### BlueStacks 5 Release Notes <Site url="bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5" size="sm" />
 
-<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":0}' />
 
 ## Brave <Site url="brave.com"/>
 
@@ -122,18 +159,18 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 ### Image New Build <Site url="hub.docker.com" size="sm" />
 
-<Route namespace="dockerhub" :data='{"path":"/build/:owner/:image/:tag?","categories":["program-update"],"example":"/dockerhub/build/wangqiru/ttrss","parameters":{"owner":"Image owner","image":"Image name","tag":"Image tag，default to latest"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Build","maintainers":["HenryQW"],"description":":::warning\n  The owner of the official image fills in the library, for example: [https://rsshub.moeyy.xyz/dockerhub/build/library/mysql](https://rsshub.moeyy.xyz/dockerhub/build/library/mysql)\n  :::","location":"build.ts"}' :test='{"code":0}' />
+<Route namespace="dockerhub" :data='{"path":"/build/:owner/:image/:tag?","categories":["program-update","popular"],"example":"/dockerhub/build/wangqiru/ttrss","parameters":{"owner":"Image owner","image":"Image name","tag":"Image tag，default to latest"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Build","maintainers":["HenryQW"],"description":":::warning\n  The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)\n  :::","location":"build.ts"}' :test='{"code":0}' />
 
 :::warning
-  The owner of the official image fills in the library, for example: [https://rsshub.moeyy.xyz/dockerhub/build/library/mysql](https://rsshub.moeyy.xyz/dockerhub/build/library/mysql)
+  The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)
   :::
 
 ### Image New Tag <Site url="hub.docker.com" size="sm" />
 
-<Route namespace="dockerhub" :data='{"path":"/tag/:owner/:image/:limits?","categories":["program-update"],"example":"/dockerhub/tag/library/mariadb","parameters":{"owner":"Image owner","image":"Image name","limits":"Tag count, 10 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Tag","maintainers":[],"description":":::warning\n  Use `library` as the `owner` for official images, such as [https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql](https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql)\n  :::","location":"tag.ts"}' :test='{"code":0}' />
+<Route namespace="dockerhub" :data='{"path":"/tag/:owner/:image/:limits?","categories":["program-update"],"example":"/dockerhub/tag/library/mariadb","parameters":{"owner":"Image owner","image":"Image name","limits":"Tag count, 10 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Tag","maintainers":[],"description":":::warning\n  Use `library` as the `owner` for official images, such as [https://rsshub.app/dockerhub/tag/library/mysql](https://rsshub.app/dockerhub/tag/library/mysql)\n  :::","location":"tag.ts"}' :test='{"code":0}' />
 
 :::warning
-  Use `library` as the `owner` for official images, such as [https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql](https://rsshub.moeyy.xyz/dockerhub/tag/library/mysql)
+  Use `library` as the `owner` for official images, such as [https://rsshub.app/dockerhub/tag/library/mysql](https://rsshub.app/dockerhub/tag/library/mysql)
   :::
 
 ## Eagle <Site url="cn.eagle.cool"/>
@@ -170,7 +207,7 @@ Language
 
 ### Extension Update <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/chrome/extension/:id","categories":["program-update"],"example":"/google/chrome/extension/kefjpfngnndepjbopdmoebkipbgkggaa","parameters":{"id":"Extension id, can be found in extension url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chromewebstore.google.com/detail/:name/:id"]}],"name":"Extension Update","maintainers":["DIYgod"],"location":"extension.ts"}' :test='{"code":0}' />
+<Route namespace="google" :data='{"path":"/chrome/extension/:id","categories":["program-update"],"example":"/google/chrome/extension/kefjpfngnndepjbopdmoebkipbgkggaa","parameters":{"id":"Extension id, can be found in extension url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chromewebstore.google.com/detail/:name/:id"]}],"name":"Extension Update","maintainers":["DIYgod"],"location":"extension.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## Greasy Fork <Site url="greasyfork.org"/>
 
@@ -180,7 +217,7 @@ Language
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 315016795330 to be less than 311040000000"}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -212,7 +249,7 @@ Language
 
 ### Release Notes <Site url="firecore.com" size="sm" />
 
-<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 312941662413 to be less than 311040000000"}' />
+<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 314842515869 to be less than 311040000000"}' />
 
 ## iFi audio <Site url="ifi-audio.com"/>
 
@@ -285,7 +322,7 @@ Language
 
 ### Tesla Software Updates <Site url="notateslaapp.com/software-updates/history" size="sm" />
 
-<Route namespace="notateslaapp" :data='{"path":"/ota","categories":["program-update"],"example":"/notateslaapp/ota","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notateslaapp.com/software-updates/history","notateslaapp.com/software-updates","notateslaapp.com/"]}],"name":"Tesla Software Updates","maintainers":["mrbruce516"],"url":"notateslaapp.com/software-updates/history","location":"update.ts"}' :test='{"code":1,"message":"expected [ …(3) ] to not include &#39;https://www.notateslaapp.com/software…&#39;"}' />
+<Route namespace="notateslaapp" :data='{"path":"/ota","categories":["program-update"],"example":"/notateslaapp/ota","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notateslaapp.com/software-updates/history","notateslaapp.com/software-updates","notateslaapp.com/"]}],"name":"Tesla Software Updates","maintainers":["mrbruce516"],"url":"notateslaapp.com/software-updates/history","location":"update.ts"}' :test='{"code":1,"message":"expected [ …(4) ] to not include &#39;https://www.notateslaapp.com/software…&#39;"}' />
 
 ## O&O Software <Site url="oo-software.com"/>
 
@@ -310,13 +347,35 @@ Language
 
 ### Change Log <Site url="www.chiark.greenend.org.uk/~sgtatham/putty/changes.html" size="sm" />
 
-<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 338430176537 to be less than 311040000000"}' />
+<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 340331008772 to be less than 311040000000"}' />
 
 ## qBittorrent <Site url="qbittorrent.org"/>
 
 ### News <Site url="qbittorrent.org/news.php" size="sm" />
 
-<Route namespace="qbittorrent" :data='{"path":"/news","categories":["program-update"],"example":"/qbittorrent/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbittorrent.org/news.php","qbittorrent.org/"]}],"name":"News","maintainers":["TonyRL"],"url":"qbittorrent.org/news.php","location":"news.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="qbittorrent" :data='{"path":"/news","categories":["program-update"],"example":"/qbittorrent/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbittorrent.org/news.php","qbittorrent.org/"]}],"name":"News","maintainers":["TonyRL"],"url":"qbittorrent.org/news.php","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+## REPACK скачать <Site url="lrepacks.net"/>
+
+### REPACK скачать <Site url="lrepacks.net" size="sm" />
+
+<Route namespace="lrepacks" :data='{"path":"/:category?","name":"REPACK скачать","url":"lrepacks.net","maintainers":["nczitzk"],"example":"/lrepacks","parameters":{"category":"Category, Homepage by default"},"description":":::tip\n  If you subscribe to [Системные программы](https://lrepacks.net/repaki-sistemnyh-programm/)，where the URL is `https://lrepacks.net/repaki-sistemnyh-programm/`, extract the part `https://lrepacks.net/` to the end, which is `repaki-sistemnyh-programm`, and use it as the parameter to fill in. Therefore, the route will be [`/lrepacks/repaki-sistemnyh-programm`](https://rsshub.app/lrepacks/repaki-sistemnyh-programm).\n\n  | Category                                                                        | ID                                                                                           |\n  | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |\n  | [Новые репаки на сегодня](https://lrepacks.net/novye-repaki-elchupacabra/)      | [novye-repaki-elchupacabra](https://rsshub.app/lrepacks/novye-repaki-elchupacabra)           |\n  | [Системные программы](https://lrepacks.net/repaki-sistemnyh-programm/)          | [repaki-sistemnyh-programm](https://rsshub.app/lrepacks/repaki-sistemnyh-programm)           |\n  | [Программы для графики](https://lrepacks.net/repaki-programm-dlya-grafiki/)     | [repaki-programm-dlya-grafiki](https://rsshub.app/lrepacks/repaki-programm-dlya-grafiki)     |\n  | [Программы для интернета](https://lrepacks.net/repaki-programm-dlya-interneta/) | [repaki-programm-dlya-interneta](https://rsshub.app/lrepacks/repaki-programm-dlya-interneta) |\n  | [Мультимедиа программы](https://lrepacks.net/repaki-multimedia-programm/)       | [repaki-multimedia-programm](https://rsshub.app/lrepacks/repaki-multimedia-programm)         |\n  | [Программы для офиса](https://lrepacks.net/repaki-programm-dlya-ofisa/)         | [repaki-programm-dlya-ofisa](https://rsshub.app/lrepacks/repaki-programm-dlya-ofisa)         |\n  | [Разные программы](https://lrepacks.net/repaki-raznyh-programm/)                | [repaki-raznyh-programm](https://rsshub.app/lrepacks/repaki-raznyh-programm)                 |\n  | [Системные библиотеки](https://lrepacks.net/sistemnye-biblioteki/)              | [sistemnye-biblioteki](https://rsshub.app/lrepacks/sistemnye-biblioteki)                     |\n  | [Важная информация](https://lrepacks.net/informaciya/)                          | [informaciya](https://rsshub.app/lrepacks/informaciya)                                       |\n  :::","categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lrepacks.net/:category"]},{"title":"Новые репаки на сегодня","source":["lrepacks.net/novye-repaki-elchupacabra/"],"target":"/novye-repaki-elchupacabra"},{"title":"Системные программы","source":["lrepacks.net/repaki-sistemnyh-programm/"],"target":"/repaki-sistemnyh-programm"},{"title":"Программы для графики","source":["lrepacks.net/repaki-programm-dlya-grafiki/"],"target":"/repaki-programm-dlya-grafiki"},{"title":"Программы для интернета","source":["lrepacks.net/repaki-programm-dlya-interneta/"],"target":"/repaki-programm-dlya-interneta"},{"title":"Мультимедиа программы","source":["lrepacks.net/repaki-multimedia-programm/"],"target":"/repaki-multimedia-programm"},{"title":"Программы для офиса","source":["lrepacks.net/repaki-programm-dlya-ofisa/"],"target":"/repaki-programm-dlya-ofisa"},{"title":"Разные программы","source":["lrepacks.net/repaki-raznyh-programm/"],"target":"/repaki-raznyh-programm"},{"title":"Системные библиотеки","source":["lrepacks.net/sistemnye-biblioteki/"],"target":"/sistemnye-biblioteki"},{"title":"Важная информация","source":["lrepacks.net/informaciya/"],"target":"/informaciya"}],"location":"index.ts"}' :test='{"code":1,"message":"expected -19604382908 to be greater than -432000000"}' />
+
+:::tip
+  If you subscribe to [Системные программы](https://lrepacks.net/repaki-sistemnyh-programm/)，where the URL is `https://lrepacks.net/repaki-sistemnyh-programm/`, extract the part `https://lrepacks.net/` to the end, which is `repaki-sistemnyh-programm`, and use it as the parameter to fill in. Therefore, the route will be [`/lrepacks/repaki-sistemnyh-programm`](https://rsshub.app/lrepacks/repaki-sistemnyh-programm).
+
+  | Category                                                                        | ID                                                                                           |
+  | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+  | [Новые репаки на сегодня](https://lrepacks.net/novye-repaki-elchupacabra/)      | [novye-repaki-elchupacabra](https://rsshub.app/lrepacks/novye-repaki-elchupacabra)           |
+  | [Системные программы](https://lrepacks.net/repaki-sistemnyh-programm/)          | [repaki-sistemnyh-programm](https://rsshub.app/lrepacks/repaki-sistemnyh-programm)           |
+  | [Программы для графики](https://lrepacks.net/repaki-programm-dlya-grafiki/)     | [repaki-programm-dlya-grafiki](https://rsshub.app/lrepacks/repaki-programm-dlya-grafiki)     |
+  | [Программы для интернета](https://lrepacks.net/repaki-programm-dlya-interneta/) | [repaki-programm-dlya-interneta](https://rsshub.app/lrepacks/repaki-programm-dlya-interneta) |
+  | [Мультимедиа программы](https://lrepacks.net/repaki-multimedia-programm/)       | [repaki-multimedia-programm](https://rsshub.app/lrepacks/repaki-multimedia-programm)         |
+  | [Программы для офиса](https://lrepacks.net/repaki-programm-dlya-ofisa/)         | [repaki-programm-dlya-ofisa](https://rsshub.app/lrepacks/repaki-programm-dlya-ofisa)         |
+  | [Разные программы](https://lrepacks.net/repaki-raznyh-programm/)                | [repaki-raznyh-programm](https://rsshub.app/lrepacks/repaki-raznyh-programm)                 |
+  | [Системные библиотеки](https://lrepacks.net/sistemnye-biblioteki/)              | [sistemnye-biblioteki](https://rsshub.app/lrepacks/sistemnye-biblioteki)                     |
+  | [Важная информация](https://lrepacks.net/informaciya/)                          | [informaciya](https://rsshub.app/lrepacks/informaciya)                                       |
+  :::
 
 ## RemNote <Site url="remnote.com"/>
 
@@ -328,7 +387,7 @@ Language
 
 ### New routes <Site url="docs.rsshub.app/*" size="sm" />
 
-<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ …(128) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
+<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update","popular"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ …(131) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
 
 ### Unknown <Site url="docs.rsshub.app" size="sm" />
 
@@ -378,11 +437,21 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 <Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;https://typora.io/releases/dev#1.8.3-…&#39;"}' />
 
+## Typst <Site url="typst.com"/>
+
+
+Compose papers faster: Focus on your text and let Typst take care of layout and formatting.
+
+
+### Universe <Site url="typst.com" size="sm" />
+
+<Route namespace="typst" :data='{"path":"/universe","categories":["program-update"],"example":"/typst/universe","radar":[{"source":["typst.app/universe"],"target":"/universe"}],"name":"Universe","maintainers":["HPDell"],"location":"universe.ts"}' :test='{"code":1,"message":"expected [ …(9) ] to not include &#39;https://typst.app/universe/package/su…&#39;"}' />
+
 ## Unraid <Site url="unraid.net"/>
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
 
-<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ …(16) ] to not include &#39;https://hub.docker.com/r/tabbyml/tabb…&#39;"}' />
+<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ Array(1) ] to not include &#39;https://hub.docker.com/r/ich777/steam…&#39;"}' />
 
 ## WizTree <Site url="diskanalyzer.com"/>
 
@@ -394,7 +463,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Download <Site url="support.wdc.com" size="sm" />
 
-<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -34558350876 to be greater than -432000000"}' />
+<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -32657511738 to be greater than -432000000"}' />
 
 ## winstall <Site url="winstall.app"/>
 
